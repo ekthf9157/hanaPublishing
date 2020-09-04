@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="ko">
+<title>메인</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="copyright" content="[하나 1Q 다이렉트 보험]" />
+<meta name="keywords" content="[하나 1Q 다이렉트 보험]" />
+<meta name="description" content="[하나 1Q 다이렉트 보험]" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../css/3rd_open.css" />
+<!-- 3차 open용 -->
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/3rd_open.js"></script>
+<script type="text/javascript" src="../js/Chart.js"></script>
+<script type="text/javascript" src="../js/onlypub.js"></script>
+<script type="text/javascript" src="../js/swiper.js"></script>
+	
+	<script type="text/javascript">
+		// 비홀성화 컬러 : rgba(204 , 204 , 204);
+		// 개인 연금 활성화 컬러 : rgba(204 , 204 , 204);
+		// 퇴직 연금 활성화 컬러 : rgba( 134, 201, 203);
+		// 국민연금 활성화 컬러 : rgba( 243, 209, 104);
+		window.onload = function() {
+			window.myRadar = new Chart(document.getElementById('jsRadorSample1'), config1);
+			
+		}
+	
+		var color = Chart.helpers.color;
+		var config1 = {
+			type: 'doughnut',
+			data: {
+				labels: ['2018', '2019', '2020'],
+				datasets: [{
+					label: 'My First dataset',   
+					backgroundColor:  'rgba(243, 209, 104)',
+					borderColor:  'rgba(243, 209, 104)', 
+					pointBackgroundColor:  'rgba(243, 209, 104)',
+					data: [158, 163, 173,180],
+					borderWidth: 1,
+					fill : false
+				}]
+			},
+			options: {
+				
+				legend: {
+					position: 'top',
+					display: false
+				}
+			}
+		};
+		
+		
+	</script>
+</head>
+
+
+
+<body>
+<!-- skipToContent -->
+<div id="skipToContent">
+   <a href="#container">본문 바로가기</a>
+</div>
+<!-- //skipToContent -->
+<!-- wrapper -->
+<div id="wrapper">
+    
+    <header id="header" class="header-3rd-type">  <!-- // 3차 오픈 페이지  .header-3rd-type 추가  -->
+    	<div class="header-inner">
+            <h1 class="page-tit">통합연금조회</h1>
+        </div>   
+        <button type="button" class="btnAllMenu" title="메뉴 열기">메뉴 열기</button>
+        <button type="button" class="btn_share" title="공유하기" onclick="layerPop('sharePop');" >공유하기</button><!-- //2020-08-10 공유버튼 추가 -->
+        <button type="button" class="btn_go_prev" title="이전페이지로 이동">이전페이지로 이동</button>
+    </header>
+   
+	<!-- 전체메뉴 popup -->
+	<article id="menuAll" class="layer_popup menuAll"><!-- 20200420 -->
+	    <div class="wrapper_popup">
+	        <!-- header -->
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1 class="logo"><a href="javascript:;">하나생명</a></h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <!-- //header -->
+	        <!-- container -->
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content fix_btn_menuall">
+	                <!-- menu list -->
+                    <ul class="list_menu_all">
+                        <li>
+                            <a href="javascript:;" title="상품">상품</a>
+                            <ul>
+                                <li>
+                                    <!-- toggle 버튼 클릭시 상위 li에 'active' class 자동 토글 -->
+                                    <a href="javascript:;" class="link_toggle" title="하나1Q다이렉트보험">하나1Q다이렉트보험</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" title="My보험설계">My보험설계</a><!-- 20200302 -->
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="new" title="건강보장">건강보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="사망보장">사망보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="암보장">암보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="연금저축">연금저축</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="어린이보장">어린이보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="교통사고보장">교통사고보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="상해보장">상해보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="목회자복지연금">목회자복지연금</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="다이렉트 이벤트">다이렉트 이벤트</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="보험검진">보험검진</a><!-- 20200514 -->
+                            <ul>
+                                <li>
+                                    <a href="javscript:;" class="link_toggle" title="보험검진 서비스">보험검진 서비스</a><!-- 20200514 -->
+                                    <ul>
+                                        <li>
+                                            <a href="javscript:;" title="보유계약분석">보유계약분석</a>
+                                        </li>
+                                        <li>
+                                            <a href="javscript:;" title="보장내용분석">보장내용분석</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="모바일창구">모바일창구</a>
+                            <ul>
+								<li>
+									<a href="javascript:;" title="메인화면">메인화면</a>
+								</li> 
+								<li>
+									<a href="javascript:;" class="link_toggle" title="보험계약조회">보험계약조회</a>
+									<ul>
+										<li><a href="javascript:;" title="계약조회">계약조회</a></li>
+										<li><a href="javascript:;" title="내 안내장">내 안내장</a></li>
+									</ul>
+								</li>                             
+								<li>                              
+									<a href="javascript:;" class="link_toggle" title="보험계약대출">보험계약대출</a>
+									<ul>
+										<li><a href="javascript:;" title="대출안내">대출안내</a></li>
+										<li><a href="javascript:;" title="대출 조회/신청">대출 조회/신청</a></li>
+										<li><a href="javascript:;" title="변액보험 예약 조회/취소">변액보험 예약 조회/취소</a></li>
+										<li><a href="javascript:;" title="이자납입/원리금상환">이자납입/원리금상환</a></li>
+									</ul>
+								</li>                             
+								<li>                              
+									<a href="javascript:;" class="link_toggle" title="입출금서비스">입출금서비스</a>
+									<ul>
+										<li><a href="javascript:;" title="보험료 납입">보험료 납입</a></li>
+										<li><a href="javascript:;" title="자동이체 계좌변경">자동이체 계좌변경</a></li>
+										<li><a href="javascript:;" title="납입일시중지 신청/해지">납입일시중지 신청/해지</a></li>
+										<li><a href="javascript:;" title="해지환급금">해지환급금</a></li>
+										<li><a href="javascript:;" title="중도인출금">중도인출금</a></li>
+										<li><a href="javascript:;" title="중도급부금">중도급부금</a></li>
+										<li><a href="javascript:;" title="미지급연금">미지급연금</a></li>
+										<li><a href="javascript:;" title="만기보험금">만기보험금</a></li>
+										<li><a href="javascript:;" title="(자동)송금 계좌변경">(자동)송금 계좌변경</a></li>
+										<li><a href="javascript:;" title="자동송금 신청/해지">자동송금 신청/해지</a></li>
+										<li><a href="javascript:;" title="청약철회">청약철회</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="연금/변액보험">연금/변액보험</a>
+									<ul>
+										<li><a href="javascript:;" title="예상연금액 조회">예상연금액 조회</a></li>
+										<li><a href="javascript:;" title="연금신청">연금신청</a></li>
+										<li><a href="javascript:;" title="펀드 변경">펀드 변경</a></li>
+										<li><a href="javascript:;" title="채권형펀드/일반계정 자동전환">채권형펀드/일반계정 자동전환</a></li>
+										<li><a href="javascript:;" title="계약자적립금">계약자적립금</a></li>
+										<li><a href="javascript:;" title="수수료 안내표">수수료 안내표</a></li>
+										<li><a href="javascript:;" title="변액보험 상담센터">변액보험 상담센터</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="사고보험금">사고보험금</a>
+									<ul>
+										<li><a href="javascript:;" title="보험금 안내">보험금 안내</a></li>
+										<li><a href="javascript:;" title="보험금접수">보험금접수</a></li>
+										<li><a href="javascript:;" title="보험금진행현황">보험금진행현황</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="계약변경">계약변경</a>
+									<ul>
+										<li><a href="javascript:;" title="계약내용 변경">계약내용 변경</a></li>
+										<li><a href="javascript:;" title="계약관계자 변경">계약관계자 변경</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="고객서비스">고객 정보 변경</a>
+									<ul>
+										<li><a href="javascript:;" title="연락처">연락처</a></li>
+										<li><a href="javascript:;" title="성명 정정">z성명 정정</a></li>
+										<li><a href="javascript:;" title="e-안내장 수신 동의">e-안내장 수신 동의</a></li>
+									</ul>
+								</li>    
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="고객서비스">고객서비스</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" title="구비서류 안내">구비서류 안내</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="모바일 창구 이용 안내">모바일 창구 이용 안내</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="push 수신동의">push 수신동의</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="하나서비스">하나서비스</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" title="변액자산관리">변액자산관리</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="하나멤버스">하나멤버스</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="공시실" class="link_direct">공시실</a>
+                        </li>
+                    </ul>
+	                <!-- //menu list -->
+	            </div>
+	            <!-- //content -->
+		        <!-- bottom button -->
+				<div class="grp_button_menuall customerMenu">
+					<span><a href="tel:1577-1112" title="고객센터 전화걸기">고객센터</a></span>
+					<span><a href="javascript:;">전화상담예약</a></span>
+					<span><a href="javascript:;">인증센터</a></span>
+				</div>
+		        <!-- //bottom button -->
+	        </div>
+	        <!-- //container -->
+	    </div>
+	</article>
+	<!-- //전체메뉴 popup -->
+	
+	 <!-- container -->
+    <section id="container" class="container-3rd-type"> <!-- // 3차 오픈 페이지  .container-3rd-type 추가  --> 
+        <!-- content -->
+        <div id="content" class="content-3rd-type">  <!-- // 3차 오픈 페이지  .content-3rd-type 추가  --> 
+			
+			<!-- .annuity-slider -->
+			<div class="annuity-slider">
+				<div class="annuity-slider__update">
+					<button class="btn-update" onclick="layerPop('popup1');">
+		                <span class="btn-update__txt">20200616 기준</span>
+		            </button>
+				</div>
+				<!-- .annuity-slider__inner -->
+				<div class="annuity-slider__inner">
+					<!-- swiper-container--annuity -->
+			        <div class="swiper-container swiper-container--annuity">
+			            <div class="swiper-wrapper">
+			            	<!-- swiper-slide -->
+			                <div class="swiper-slide">         
+		                       <div class="annuity-price">
+		                       		<p class="annuity-price__tit">총 납입 연금액</p>
+			                        <p class="annuity-price__won"><strong>1,000,000,000</strong> 원</p>
+			                        <p class="annuity-price__won02"><span>예상 월 연금액</span> <strong>2,000,000</strong>원</p>	        
+		                       </div>        
+		                       <!-- 차트  -->
+		                       <div class="annuity-chart-warp">
+		                       		<div class="annuity-chart">
+		                       			<div class="annuity-chart__inner">
+		                       				<canvas id="jsRadorSample1"></canvas>
+		                       				
+		                       				<!--  차트 안에 원 시작 -->
+		                       				<div class="chart-circle">
+		                       					<div class="chart-circle__inner">
+		                       						<!-- 차트 안에 작은 원 시작  -->
+		                       						<div class="chart-small-circle">
+		                       							<div class="annuity-chart__info">
+		                       								<p class="annuity-chart__money">450,000,000</p>
+		                       								<p class="annuity-chart__name">국민연금</p>
+		                       							</div>
+		                       						</div>
+		                       						<!-- //차트 안에 작은 원 끝  -->
+		                       					</div>
+		                       				</div>
+		                       				<!-- //차트 안에 원 끝 -->
+		                       				
+		                       				<button class="chart-btn-next"><span></span></button>
+		                       				<button class="chart-btn-prev"><span></span></button>
+		                       			</div>
+		                       		</div>
+		                       </div>
+		                       <!-- //차트  --> 
+		                       
+		                       <div class="annuity-chart-bot">
+		                       		<p class="annuity-chart-bot__txt">
+		                       		
+		                       			<span class="ico-tip-wrap"><i class="ico-tip">Tip!</i>국민연금은</span> 
+		                       			<span class="pt-color01">만 65세부터 수령</span><br/> 가능합니다.
+		                       		</p>
+		                       </div>
+			                </div>
+			                <!-- //swiper-slide -->
+			                
+			                <!-- swiper-slide -->
+			                <div class="swiper-slide">
+			                
+			                	<div class="swiper-slide__header">
+			                		<p class="swiper-slide__tit">퇴직 후 적정 생활비</p>
+			                	</div>
+			                	<div class="annuity-advice">
+			                		<div class="annuity-advice__left">
+			                		<!-- 2020-08-24 아이콘 변경(클래스명 변경) .ico-status(기본 1등급) -->
+			                			<i class="ico-status">1등급</i>
+			                			<!-- 
+			                			<i class="ico-status ico-status--num02">2등급</i>
+			                			<i class="ico-status ico-status--num03">3등급</i>
+			                			<i class="ico-status ico-status--num04">4등급</i>
+			                			<i class="ico-status ico-status--num05">5등급</i>
+			                			 -->
+			                		</div>
+			                		<div class="annuity-advice__right">
+			                			<p class="annuity-advice__status">좋음<p>
+			                			<!-- 2020-08-24 1등급 ~ 5등급 멘투 추가 (내용 기존거 수정 ) -->
+			                			<p class="annuity-advice__desc"><span class="pt-color01">만 65세</span>에 월 적정 생활비 <span class="pt-color01">200만원 이상</span>의 연금을 <span class="pt-color01">수령</span>할 수 있습니다.<p> <!-- 1등급 멘트 -->  <!-- //2020-08-26 문구수정 -->
+			                			<p class="annuity-advice__desc"><span class="pt-color01">만 65세</span>에 월 적정 생활비 <span class="pt-color01">200만원</span>정도의 연금을 <span class="pt-color01">수령</span>할 수 있습니다.<p><!-- 2등급 멘트 -->  <!-- //2020-08-26 문구수정 -->
+			                			<p class="annuity-advice__desc"><span class="pt-color01">만 65세</span>에 월 적정 생활비 <span class="pt-color01">200만원</span>을 수령하시려면 <span class="pt-color01">추가 납부가</span> 필요합니다.<p> <!-- 3,4,5등급 멘트 동일 --> <!-- //2020-08-26 문구수정 -->		                			
+			                		</div>
+			                	</div>
+			                	<!-- 그래프 영역 -->
+			                	<div class="annuity-graph">
+			                		<div class="annuity-graph__left">
+			                			<div class="graph-stick">
+			                				<span class="graph-stick__move" style="height:60%;"></span> <!-- height : 0 ~ 100%  -->
+			                			</div>
+			                			<div class="graph-bot-txt">
+			                				<p>김하나님 예상 월 연금액</p>
+			                				<p class="graph-bot-txt__won"><strong>1,600,000</strong> 원</p>
+			                			</div>
+			                			<p class="graph-top-txt">부족연금액<br/>400,000원</p>
+			                		</div>
+			                		
+			                		<div class="annuity-graph__right">
+			                			<div class="graph-stick">
+			                				<span class="graph-stick__move" style="height:100%;"></span>
+			                			</div>
+			                			<div class="graph-bot-txt">
+			                				<p>월 적정 생활비</p>
+			                				<p class="graph-bot-txt__won"><strong>2,000,000</strong> 원</p>
+			                			</div>
+			                		</div>
+			                	</div>
+			                	<!-- //그래프 영역 -->
+
+		                		<ul class="annuity-notice-lst">
+		                			<li>예상 연금액 정보는 실제 금액과 상이할 수 있음</li>
+		                			<li class="pt-color02">적정 생활비 기준은 2018년 생명보험협회,「생명보험성향조사」출처</li>
+		                		</ul>
+		                		
+		                		<div class="swiper-slide__btns">
+		                			<button class="btn-annuity-type">연금저축보험 가입하기</button>
+		                		</div>
+			                </div>
+			                <!-- //swiper-slide -->
+			            </div>
+			            <div class="swiper-pagination"></div>			          
+			        </div>
+			        <!-- //swiper-container--annuity -->
+		        </div>
+		        <!-- //.annuity-slider__inner -->
+			</div>
+			<!-- //.annuity-slide -->
+			
+			<!-- recom-box -->
+			<div class="annuity-box-wrap">
+				<!-- 2020-09-03 추가 요청 내용으로 변경 시작 -->
+				<div class="recom-box recom-box--gray">
+					<p class="recom-box__tit">개인연금을 어떤 연금 종류로 <br/>노후에 받으시기를 원하십니까?</p>					
+					<div class="recom-box__btns">
+						<a href="javascript:void(0)" class="btn-go" onclick="layerPop('videoPop');">연금수령형태 상세 가이드 받으러 가기 </a>						
+					</div>
+				</div>
+				<!-- //2020-09-03 추가 요청 내용으로 변경 시작 -->
+			</div>
+			<!-- //recom-box -->
+			
+			
+			<div class="annuity-chk-header">
+				<p class="annuity-chk-tit">가입하신 연금</p><!-- //2020-08-26 문구수정 -->
+			</div>
+			
+			
+			<div class="annuity-chk-warp">
+			
+				<!-- .chk-list 시작 -->
+				<div class="chk-list chk-list--annuity">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header flex-header">
+						<div class="flex-header__left">
+							국민연금
+						</div>
+						<div class="flex-header__right">
+							<button class="chk-list__btn02"><strong>6,000,000</strong> 원</button>
+						</div>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<div class="chk-list__header flex-header">
+							<div class="flex-header__left">
+								개인연금
+							</div>
+							<div class="flex-header__right"> 
+								<!-- <button class="chk-list__btn02"><strong>8,000,000</strong> 원</button> --> <!-- 2020-08-24 버튼 아님 :  기존 버튼 제거 -->
+								<p class="flex-header__money"><strong>6,000,000</strong>원<p><!-- 2020-08-24 버튼 아님 : .flex-header__money 로 변경 --> 
+							</div>
+						</div>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table lst-table--annuity">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="lst-tabl__annuity-name">하나은행/연금저축신탁하나은행/연금저축신탁하나은행/연금저축신탁</span>
+	                        </div>
+	                        <div class="lst-table__right">
+	                        	<button class="btn-price-arrow"><strong>3,000,000</strong> 원</button>
+	                        </div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	
+	                     <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="lst-tabl__annuity-name">하나은행/연금신탁 채권형</span>
+	                        </div>
+	                        <div class="lst-table__right">
+	                        	<button class="btn-price-arrow"><strong>5,000,000</strong> 원</button>
+	                        </div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<div class="chk-list__header flex-header">
+							<div class="flex-header__left">
+								퇴직연금
+							</div>
+							<div class="flex-header__right"> 
+								<!-- <button class="chk-list__btn02"><strong>8,000,000</strong> 원</button> --> <!-- 2020-08-24 버튼 아님 :  기존 버튼 제거 -->
+								<p class="flex-header__money"><strong>6,000,000</strong>원<p><!-- 2020-08-24 버튼 아님 : .flex-header__money 로 변경 --> 
+							</div>
+						</div>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table lst-table--annuity">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="lst-tabl__annuity-name">확정급여형(DB)</span>
+	                        </div>
+	                        <div class="lst-table__right">
+	                        	<button class="btn-price-arrow"><strong>0</strong> 원</button>
+	                        </div>
+	                        <div class="lst-table__full">
+	                        	<p class="bg-exclam-txt02">“금융감독원 통합연금포털”에서 퇴직금 정보를 입력을 하셔야 예시연금액 정보가 노출됩니다.</p>
+	                        </div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	
+	                     <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="lst-tabl__annuity-name">확정기여형(DC/IRP)</span>
+	                        </div>
+	                        <div class="lst-table__right">
+	                        	<button class="btn-price-arrow"><strong>5,000,000</strong> 원</button>
+	                        </div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+			</div>
+			
+			
+        </div>
+        <!-- //content -->
+        
+	    <!-- 하단 fixed 버튼 -->
+	    <div class="bot-gnb">
+	    	<div id="gnb">
+		        <!-- 버튼 활성화 : 'active' class 추가 -->
+		        <button type="button" class="btn_main active" title="메인"><span>메인</span></button>
+		        <button type="button" class="btn_product" title="상품"><span>상품</span></button>
+		        <button type="button" class="btn_mobile_counter" title="모바일 창구"><span>모바일 창구</span></button>
+	            <button type="button" class="btn_diagnosis" title="원큐라이프"><span>원큐라이프</span></button><!-- 20200514 -->
+		    </div>
+	    </div>   
+	    <!-- //하단 fixed 버튼 -->
+    </section>
+    <!-- //container -->
+
+<!-- -------------------- 팝업 ---------------------------- -->
+
+    <!--공유하기-->
+	<article class="layerWrap" id="sharePop">
+	  <div id="shareLayerArea" class="popupLayer popStyle02 share-pop">
+	    <div class="back">딤드영역</div>
+	    
+	    <!-- popup -->
+	    <div class="layerContent">
+	      <div class="popup" style="margin-top: 138.833px;">
+	        <div class="popHead">
+	         	<h1>SNS 공유하기</h1>
+	           <button type="button" class="btn_close_popup close-share-lypop" >닫기</button>
+	        </div>
+	        <div class="popCont">
+               <!-- 20200423 -->
+                <div class="sns_link clear">
+                	<span class="kakao">
+						<a href="javascript:;">
+							카카오톡
+						</a>
+					</span>
+                	<span class="kakao_story">
+						<a href="javascript:;">
+							카카오스토리
+						</a>
+					</span>
+                	<span class="facebook">
+						<a href="javascript:;">
+							페이스북
+						</a>
+					</span>
+                </div>
+                <div class="sns_link clear">
+                	<span class="naver_band">
+						<a href="javascript:;">
+							네이버밴드
+						</a>
+					</span>
+                	<span class="naver_blog">
+						<a href="javascript:;">
+							네이버블로그
+						</a>
+					</span>
+                	<span class="link">
+						<a href="javascript:;">
+							링크복사
+						</a>
+					</span>
+                </div>
+               <!-- 20200423 -->
+	        </div>
+	       
+	      </div>
+	      <!-- // popup  --> 
+	    </div>
+	  </div>
+	</article>
+	<!--//공유하기-->
+	
+	
+	<!-- 2020-09-03 연금수령 안내 popup -->
+	<article id="videoPop" class="layer_popup full">
+	    <div class="wrapper_popup">
+	        <!-- header -->
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>연금수령방법 안내 팝업</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <!-- //header -->
+	        <!-- container -->
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content pop-bgcolor02">
+	            
+	                <!-- popup_content_inner -->
+		            <div class="popup_content_inner padding-r-l-0" > <!-- //.padding-r-l-0 추가 -->
+		            	
+		            	<div class="video-wrap video-wrap--annuity">
+		            		<!-- 비디요 영역 시작 -->
+		            		<div class="video-area">
+			            		<!-- <video tabindex="0" x-webkit-airplay="allow" controlslist="nodownload" title="하나생명+유비케어.mp4" controls="" src=""></video>  -->
+			            	</div>
+			            	<!-- //비디요 영역 시작 -->
+		            		<button type="button" class="btn-video-play"></button>
+		            	</div>
+
+		    			
+				 		<div id="menu" class="tab-menu-wrap">
+				            <ul class="tab-menu-group">
+				                <li class="active-menu"><a class="tab-menu" href="#tab1"> <span>종신연금형<br/>(개인/부부)</span> </a></li>
+				                <li><a class="tab-menu" href="#tab2"><span>확정연금형</span></a></li>
+				                <li><a class="tab-menu" href="#tab3"><span>상속연금형</span></a></li>
+				            </ul>
+				        </div>
+				        
+						<!-- .3rd-tabconts -->
+						<div id="txt_cont" class="tabconts-wrap">
+				            <div class="tabcont" id="tab1">				        
+				             	<div class="tabcont__img">
+				             		<img src="../images/lifecheck/thum/annuity_receive_tabcont01.jpg" alt=""/>
+				             	</div>
+				             </div>
+				            <div class="tabcont" id="tab2">
+				               <div class="tabcont__img">
+				             		<img src="../images/lifecheck/thum/annuity_receive_tabcont02.jpg" alt=""/>
+				             	</div>
+				            </div>
+				            <div class="tabcont" id="tab3">
+				                <div class="tabcont__img">
+				             		<img src="../images/lifecheck/thum/annuity_receive_tabcont03.jpg" alt=""/>
+				             	</div>
+				            </div> 
+				        </div>
+		    			<!-- //.3rd-tabconts -->
+		            </div>		     
+	                <!-- //popup_content_inner -->
+	                
+	            </div>
+	            <!-- //content -->
+		        
+	        </div>
+	        <!-- //container -->
+	    </div>
+	</article>
+	<!-- //2020-09-03 연금수령 안내 popup -->
+	
+	
+	
+	
+	
+	
+</div>
+<!-- //wrapper -->
+
+<script>
+    $(document).ready(function () {
+        var swiper = new Swiper(".swiper-container--annuity", {
+            spaceBetween: 13,
+            hashNavigation: {
+                watchState: true,
+            },         
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        })
+    })
+    
+    //팝업 내 탭메뉴
+    $(document).ready(function(){
+	 
+	  $('#menu ul li a').click(function(event){
+	    event.preventDefault();
+	    var id_tab = $(this).attr('href');
+	    $('#menu ul li').removeClass('active-menu');
+	    $(this).parent('li').addClass('active-menu');
+	    $('div.tabcont:visible').hide();
+	    $(id_tab).show();
+	  });
+	});
+    
+</script>
+</body>
+</html>

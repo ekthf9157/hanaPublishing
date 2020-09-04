@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Language" content="ko" />
+        <title>메인</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+        />
+        <meta name="format-detection" content="telephone=no, address=no, email=no" />
+        <meta name="copyright" content="[하나 1Q 다이렉트 보험]" />
+        <meta name="keywords" content="[하나 1Q 다이렉트 보험]" />
+        <meta name="description" content="[하나 1Q 다이렉트 보험]" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/swiper.css" />
+        <link rel="stylesheet" type="text/css" href="../css/3rd_open.css" />
+        <!-- 3차 open용 -->
+        <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/3rd_open.js"></script>
+        <script type="text/javascript" src="../js/Chart.js"></script>
+        <script type="text/javascript" src="../js/onlypub.js"></script>
+        <script type="text/javascript" src="../js/swiper.js"></script>
+    </head>
+    <body>
+        <!-- skipToContent -->
+        <div id="skipToContent">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!-- //skipToContent -->
+        <!-- wrapper -->
+        <div id="wrapper">
+            <header id="header" class="header-3rd-type">
+                <!-- // 3차 오픈 페이지  .header-3rd-type 추가  -->
+                <!-- //.header-fixed-type2 추가  -->
+                <div class="header-inner">
+                    <h1 class="page-tit">보험계약대출조회</h1>
+                    <!-- <p class="page-tit-desc">나의 건강에 도움이 되는 추천 보험을 확인하세요!</p> -->
+                    <!--  .page-tit-desc 내용이 있으면 header,#container에  .header-fixed-type2 추가   -->
+                </div>
+                <button type="button" class="btnAllMenu" title="메뉴 열기">메뉴 열기</button>
+                <button
+                    type="button"
+                    class="btn_share"
+                    title="공유하기"
+                    onclick="layerPop('sharePop');"
+                >
+                    공유하기</button
+                ><!-- //2020-08-10 공유버튼 추가 -->
+                <button type="button" class="btn_go_prev" title="이전페이지로 이동">
+                    이전페이지로 이동
+                </button>
+            </header>
+
+            <!-- 전체메뉴 popup -->
+            <article id="menuAll" class="layer_popup menuAll">
+                <!-- 20200420 -->
+                <div class="wrapper_popup">
+                    <!-- header -->
+                    <div class="popup_header">
+                        <!-- title -->
+                        <div class="grp_title_popup lv_01">
+                            <h1 class="logo"><a href="javascript:;">하나생명</a></h1>
+                            <div class="box_button">
+                                <button type="button" class="btn_close_popup" title="닫기">
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //title -->
+                    </div>
+                    <!-- //header -->
+                    <!-- container -->
+                    <div class="popup_body">
+                        <!-- content -->
+                        <div class="popup_content fix_btn_menuall">
+                            <!-- menu list -->
+                            <ul class="list_menu_all">
+                                <li>
+                                    <a href="javascript:;" title="상품">상품</a>
+                                    <ul>
+                                        <li>
+                                            <!-- toggle 버튼 클릭시 상위 li에 'active' class 자동 토글 -->
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="하나1Q다이렉트보험"
+                                                >하나1Q다이렉트보험</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="My보험설계"
+                                                        >My보험설계</a
+                                                    ><!-- 20200302 -->
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        class="new"
+                                                        title="건강보장"
+                                                        >건강보장</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="사망보장"
+                                                        >사망보장</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="암보장">암보장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="연금저축"
+                                                        >연금저축</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="어린이보장"
+                                                        >어린이보장</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="교통사고보장"
+                                                        >교통사고보장</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="상해보장"
+                                                        >상해보장</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="목회자복지연금"
+                                                        >목회자복지연금</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="다이렉트 이벤트"
+                                                        >다이렉트 이벤트</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="보험검진">보험검진</a
+                                    ><!-- 20200514 -->
+                                    <ul>
+                                        <li>
+                                            <a
+                                                href="javscript:;"
+                                                class="link_toggle"
+                                                title="보험검진 서비스"
+                                                >보험검진 서비스</a
+                                            ><!-- 20200514 -->
+                                            <ul>
+                                                <li>
+                                                    <a href="javscript:;" title="보유계약분석"
+                                                        >보유계약분석</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javscript:;" title="보장내용분석"
+                                                        >보장내용분석</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="모바일창구">모바일창구</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" title="메인화면">메인화면</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="보험계약조회"
+                                                >보험계약조회</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="계약조회"
+                                                        >계약조회</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="내 안내장"
+                                                        >내 안내장</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="보험계약대출"
+                                                >보험계약대출</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="대출안내"
+                                                        >대출안내</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="대출 조회/신청"
+                                                        >대출 조회/신청</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        title="변액보험 예약 조회/취소"
+                                                        >변액보험 예약 조회/취소</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        title="이자납입/원리금상환"
+                                                        >이자납입/원리금상환</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="입출금서비스"
+                                                >입출금서비스</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="보험료 납입"
+                                                        >보험료 납입</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="자동이체 계좌변경"
+                                                        >자동이체 계좌변경</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        title="납입일시중지 신청/해지"
+                                                        >납입일시중지 신청/해지</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="해지환급금"
+                                                        >해지환급금</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="중도인출금"
+                                                        >중도인출금</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="중도급부금"
+                                                        >중도급부금</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="미지급연금"
+                                                        >미지급연금</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="만기보험금"
+                                                        >만기보험금</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        title="(자동)송금 계좌변경"
+                                                        >(자동)송금 계좌변경</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        title="자동송금 신청/해지"
+                                                        >자동송금 신청/해지</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="청약철회"
+                                                        >청약철회</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="연금/변액보험"
+                                                >연금/변액보험</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="예상연금액 조회"
+                                                        >예상연금액 조회</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="연금신청"
+                                                        >연금신청</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="펀드 변경"
+                                                        >펀드 변경</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        title="채권형펀드/일반계정 자동전환"
+                                                        >채권형펀드/일반계정 자동전환</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="계약자적립금"
+                                                        >계약자적립금</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="수수료 안내표"
+                                                        >수수료 안내표</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="변액보험 상담센터"
+                                                        >변액보험 상담센터</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="사고보험금"
+                                                >사고보험금</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="보험금 안내"
+                                                        >보험금 안내</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="보험금접수"
+                                                        >보험금접수</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="보험금진행현황"
+                                                        >보험금진행현황</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="계약변경"
+                                                >계약변경</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="계약내용 변경"
+                                                        >계약내용 변경</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="계약관계자 변경"
+                                                        >계약관계자 변경</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:;"
+                                                class="link_toggle"
+                                                title="고객서비스"
+                                                >고객 정보 변경</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:;" title="연락처">연락처</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" title="성명 정정"
+                                                        >z성명 정정</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="javascript:;"
+                                                        title="e-안내장 수신 동의"
+                                                        >e-안내장 수신 동의</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="고객서비스">고객서비스</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" title="구비서류 안내"
+                                                >구비서류 안내</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="모바일 창구 이용 안내"
+                                                >모바일 창구 이용 안내</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="push 수신동의"
+                                                >push 수신동의</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="하나서비스">하나서비스</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" title="변액자산관리"
+                                                >변액자산관리</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="하나멤버스">하나멤버스</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="공시실" class="link_direct"
+                                        >공시실</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- //menu list -->
+                        </div>
+                        <!-- //content -->
+                        <!-- bottom button -->
+                        <div class="grp_button_menuall customerMenu">
+                            <span
+                                ><a href="tel:1577-1112" title="고객센터 전화걸기"
+                                    >고객센터</a
+                                ></span
+                            >
+                            <span><a href="javascript:;">전화상담예약</a></span>
+                            <span><a href="javascript:;">인증센터</a></span>
+                        </div>
+                        <!-- //bottom button -->
+                    </div>
+                    <!-- //container -->
+                </div>
+            </article>
+            <!-- //전체메뉴 popup -->
+
+            <!-- container -->
+            <section id="container" class="container-3rd-type">
+                <!-- // 3차 오픈 페이지  .container-3rd-type 추가  -->
+                <!-- // .header-fixed-type2 추가  -->
+                <!-- content -->
+                <div id="content" class="content-3rd-type">
+                    <!-- // 3차 오픈 페이지  .content-3rd-type 추가  -->
+                    <div class="bs-bgbox">
+                        <p class="bs-bgbox__txt">
+                            하나생명 보험으로 대출가능금액 조회하고 <br />신용등급 상관없이 급한
+                            생활자금을 신청해보세요!
+                        </p>
+                        <p class="bs-bgbox__txt txt-color02">
+                            서비스 이용시 휴대폰 본인인증이 필요합니다.
+                        </p>
+                    </div>
+                    <div class="terms-header">
+                        <p class="terms-header__tit">보험계약대출 이자 비교 예시</p>
+                    </div>
+
+                    <div class="terms-guide-img">
+                        <img src="../images/lifecheck/thum/termsLoan_guide_img01.jpg" />
+
+                        <div class="blind">
+                            <h3>혹시 3%이상 고금리 대출을 갖고 계시진 않나요?</h3>
+                            <ul>
+                                <li>이자 비교로 월 절감액 확인</li>
+                                <li>보험계약대축 한도 조회/신청</li>
+                                <li>가장 낮은 이자로 빠른 일괄 대출</li>
+                            </ul>
+                            <h3>보험계약대출 갈아타고,이자 절감 받기!</h3>
+                            <p>나의 보험계약대출 총 금액 : 8,000,000원</p>
+                            <h4>나의 보험계약대출 평균 이자율은?</h4>
+                            <p>연 5.0 %</p>
+                            <p>약관데츨 이자 비교</p>
+                            <p>
+                                김하나님의 현재 보험계약대출 300,000원을 평균 2.3% 약관 대출로
+                                갈아타시면 현재보다 월 이자가 최소 6,900원 이상 절감됩니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="terms-header">
+                        <p class="terms-header__tit">보험계약대출 한도 조회 예시</p>
+                    </div>
+
+                    <div class="terms-guide-img">
+                        <img src="../images/lifecheck/thum/termsLoan_guide_img02.jpg" />
+                        <div class="blind">
+                            <h3>신용등급 상관없이 가장 낮은 이자로 알아서 ‘빠른’ 일괄 대출</h3>
+                            <p>나나의 약관대출 가능 한도 : 200,000원</p>
+                            <p>빠른 일괄 대출 신청</p>
+                        </div>
+                    </div>
+
+                    <div class="termsguide-notice">
+                        <div class="terms-header">
+                            <p class="terms-header__tit">보험계약대출 한도 조회 예시</p>
+                        </div>
+                        <ul class="txt-lst">
+                            <li>
+                                <p class="txt-lst__tit">1. 보험조회</p>
+                                가입 보험은 한국신용정보원에 기초하여 제공됩니다.
+                            </li>
+                            <li>
+                                <p class="txt-lst__tit">2. 보이지 않는 보험</p>
+                                아래와 같은 보험 정보는 한국신용정보원에서 제공하지 않습니다.
+                            </li>
+                        </ul>
+                        <p class="bulit-circle">2019년 9월 이전 가입한 보험</p>
+                    </div>
+                    <div class="terms-guide-bot-btns">
+                        <button type="button" class="btn-square-full">보험계약대출 조회</button>
+                    </div>
+                </div>
+                <!-- //content -->
+
+                <!-- 하단 fixed 버튼 -->
+                <div class="bot-gnb">
+                    <div id="gnb">
+                        <!-- 버튼 활성화 : 'active' class 추가 -->
+                        <button type="button" class="btn_main active" title="메인">
+                            <span>메인</span>
+                        </button>
+                        <button type="button" class="btn_product" title="상품">
+                            <span>상품</span>
+                        </button>
+                        <button type="button" class="btn_mobile_counter" title="모바일 창구">
+                            <span>모바일 창구</span>
+                        </button>
+                        <button type="button" class="btn_diagnosis" title="보험검진">
+                            <span>보험검진</span></button
+                        ><!-- 20200514 -->
+                    </div>
+                </div>
+                <!-- //하단 fixed 버튼 -->
+            </section>
+            <!-- //container -->
+
+            <!--공유하기-->
+            <article class="layerWrap" id="sharePop">
+                <div id="shareLayerArea" class="popupLayer popStyle02 share-pop">
+                    <div class="back">딤드영역</div>
+
+                    <!-- popup -->
+                    <div class="layerContent">
+                        <div class="popup" style="margin-top: 138.833px">
+                            <div class="popHead">
+                                <h1>SNS 공유하기</h1>
+                                <button type="button" class="btn_close_popup close-share-lypop">
+                                    닫기
+                                </button>
+                            </div>
+                            <div class="popCont">
+                                <!-- 20200423 -->
+                                <div class="sns_link clear">
+                                    <span class="kakao">
+                                        <a href="javascript:;"> 카카오톡 </a>
+                                    </span>
+                                    <span class="kakao_story">
+                                        <a href="javascript:;"> 카카오스토리 </a>
+                                    </span>
+                                    <span class="facebook">
+                                        <a href="javascript:;"> 페이스북 </a>
+                                    </span>
+                                </div>
+                                <div class="sns_link clear">
+                                    <span class="naver_band">
+                                        <a href="javascript:;"> 네이버밴드 </a>
+                                    </span>
+                                    <span class="naver_blog">
+                                        <a href="javascript:;"> 네이버블로그 </a>
+                                    </span>
+                                    <span class="link">
+                                        <a href="javascript:;"> 링크복사 </a>
+                                    </span>
+                                </div>
+                                <!-- 20200423 -->
+                            </div>
+                        </div>
+                        <!-- // popup  -->
+                    </div>
+                </div>
+            </article>
+            <!--//공유하기-->
+        </div>
+        <!-- //wrapper -->
+    </body>
+</html>

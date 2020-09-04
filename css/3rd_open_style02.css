@@ -1,0 +1,517 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------------------------
+	2020-07-3차오픈 관련  신규 추가 관련건
+ ------------------------------------------------------------------------------- */
+/* 폰트 포인트 컬러 */
+.pt-color01{color:#00a8ae!important;}
+/*대체텍스트*/
+.blind{visibility:hidden;overflow:hidden;position:absolute !important;top:0;left:0;width:1px !important;height:1px !important;margin:0 !important;padding:0 !important;font-size:0 !important;line-height:0 !important}
+/* 메인 page */
+.main-pg {background:#f5f5f5;}
+.main-pg__inner {padding:36px 24px 64px;}
+.main-info {position:relative;display:flex;align-items:center;}
+.main-info__txt {flex:1 1 54%;margin-right:auto;font-size:16px;color:#111;}
+.main-info__img {flex:1 1 46%;margin-left:auto;border:1px solid #ddd;border-bottom:0; text-align:center;}
+.main-lst__item:first-child{margin-top:0;}
+.main-lst__item {display:flex;margin-top:10px;align-items:center;padding:25px 12px 25px 20px;background:#fff;border:1px solid #ddd;border-radius:4px;box-shadow:3px 3px 6px 0 rgba(0, 0, 0, 0.1);}
+.main-lst__img {overflow:hidden;background:#width:60px;width:60px;height:60px;border:1px solid #ddd;}
+.main-lst__texarae{padding-left:20px;}
+.main-lst__tit {font-size:20px;color:#111;}
+.main-lst__desc {font-size:13px;color:#111;margin-top:2px;}
+@media only screen and (max-width:330px) {
+	.main-info__txt{font-size:14px;flex:1 1 56%;}
+	.main-info__img{flex:1 1 44%;}
+}
+/* 서브 page */
+.sub-notic-txt{padding:24px 24px 20px;font-size:14px;color:#666;}
+.sub-notic-txt em {font-weight:bold;color:inherit;}
+.sub-notic-txt strong{color:#111;}
+.agree-form{padding:20px 36px;background:#f5f5f5}
+.agree-form__inner{padding:18px 19px;background:#fff;}
+.helpBox--right{float:right;}
+.helpBox>span{text-decoration:underline;text-decoration-color:#999;font-size: 12px;color: #999;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움';letter-spacing:0;}
+/**** 메인 상단 -조회 화면 시작 ****/
+.contents-wrap{padding:0 24px 14px;}
+.ask-result{position:relative;padding:0 24px 14px;}
+a.btn-full-arow {display:inline-block;}
+.btn-full-arow {position:relative;width:100%;padding:16px 0;text-align:left;font-size:16px;color:#000;font-weight:bold;}
+.btn-full-arow:after{content: "";position: absolute;right: 15px;top: 50%;width: 7px;height: 7px;border-top: 1px solid #111;border-right: 1px solid #111;transform: rotate(45deg) translateY(-50%);vertical-align: middle;border-left: 0;}
+.ask-result__ment{padding:12px 24px;font-size:18px;color:#111;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+.ask-result__ment em{color:#e5005a}
+.ask-result__update{text-align:right;padding-top:6px;}
+.ask-result__update .update-txt{color:#999;font-size:12px;letter-spacing:0;}
+.ask-result__update .btn-update{width:10px;height:10px;margin-left:4px;border:1px solid #ddd}
+.contents-wrap .contents-tit{font-size:16px;margin-bottom:10px;}
+.contents-wrap .contents-box{border-width:1px;border-style:solid;padding:20px 24px;}
+.contents-wrap .contents-box__tit{font-size:16px;margin-bottom:4px;}
+.contents-wrap .contents-box__txt{font-size:14px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.contents-wrap.bg-contens{padding:24px;background:#00a8ae;}
+.ask-result + .contents-wrap.bg-contens{margin-top:5px;}
+.bg-contens *{color:#fff;}
+.bg-contens .contents-box{border-color:#fff;}
+.btn-join-go {position:relative;display:block;padding-right:20px;font-size:12px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;letter-spacing:0;}
+.btn-join-go:after{content:'⇀';position:absolute;transform: translate(4px, 0);font-size:16px;}
+/** 연금 조회 화면 **/
+.ask-result__leftarea{width:50%}
+.ask-result__price{display:inline-block;font-size:20px;color:#00a8ae;}
+.ask-result__price strong{color:inherit;font-size:24px;letter-spacing:-2px;}
+.btn-ask-annuity {width:50%;padding:6px 0;font-size:20px;} 
+.ask-result__price{min-width:50%;}
+.ask-result--type2 .ask-result__update{position:absolute;top:0;right:24px;text-align:right;}
+.ask-result__top-right{position:absolute;top:0;right:24px;text-align:right;}
+.lst-table .btn-lst-arrow{position:relative;width:100%;padding-right:12px;text-align:right;font-size:14px;color:#111;letter-spacing:-1px;font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;}
+.lst-table .btn-lst-arrow:after{content: "";position: absolute;right: 2px;top: 50%;width: 6px;height: 6px;border-top: 1px solid #111;border-right: 1px solid #111;transform: rotate(45deg) translateY(-50%);vertical-align: middle;border-left: 0;}
+.ico-ins-comp{display:inline-block;width:16px;height:16px;border:1px solid #ddd;}
+.lst-table__left .ico-ins-comp{vertical-align:middle;margin-right:3px;}
+.lst-table__left .ins-comp-name{vertical-align:middle;color:inherit;
+display:inline-block;overflow:hidden;;max-width:180px;text-overflow: ellipsis;white-space: nowrap
+}
+/**** 메인 상단 -조회 화면 끝 ****/
+/* 건강검진 메인에서 사용중 */
+.lst-group {background:#f5f5f5;}
+.popCont .lst-group{margin:0 -24px;}/*팝업 안에서 사용*/
+.lst-group__header{padding:22px 24px 16px;background:#eee;}
+.lst-group__tit{font-size:14px;color:#111;letter-spacing:0;font-weight:bold;}
+.lst-group__item{padding:20px 24px;background:#fff;}
+.lst-group__item .lst-table:first-child{border-top:0;}
+.lst-group__item + .lst-group__item{margin-top:12px;}
+/* 건강검진 리스트 테이블 */
+.lst-table{border-top:1px solid #ddd;padding:13px 0 12px 0;}
+.lst-table__row{display:flex;flex-wrap:wrap;font-size:14px;}
+.lst-table__row .helpBox{color:#111;}
+.lst-table__left{flex:0 0 60%;margin-right:auto;padding:5px 5px 5px 1px;color:#111;text-align:left;}
+.lst-table__right{flex:0 0 40%;margin-left:auto;padding:5px 1px 5px 5px;text-align:right;color:#111;}
+.lst-table__right strong{color:inherit;}
+.lst-table__full{flex:0 0 100%}
+/* 연금 조회 테이블 */
+.lst-table.lst-table--large{padding:10px 0 12px;border-top:0;}
+.lst-table--large .lst-table__row{font-size:16px;}
+.lst-table--large .lst-table__left{font-weight:bold;}
+.lst-table--large .lst-table__right{font-weight:bold;}
+/* 체크박스 */
+.input-chk{display:inline-block;position:relative;font-size:14px;color:#111;}
+.input-chk input[type=checkbox] + label, .input-chk input[type=radio] + label {position:relative;padding-left: 36px;min-height: 24px;font-size: 14px;color: #111;;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움';}
+.input-chk input[type=checkbox] + label span{font:inherit;color:inherit;}
+.input-chk input[type="checkbox"] + label:after{overflow:hidden;border-radius:100%;border:1px solid #ddd;top: -3px;width: 24px;height: 24px;transform:none;background-position:50% 50%;background-image:none}
+.input-chk input[type="checkbox"]:checked + label:after { background-color: #00a8ae;}
+
+/*없음 안내 - 레이어 팝업에서도 함께사용*/
+.warning-ment{width:100%;text-align:center;}
+.warning-ment__ico{display:inline-block;width:40px;height:42px;margin-bottom:8px; background: url('../images/lounge/ico_warning.png') no-repeat 0 0 / 38px 41px;}
+.warning-ment__ico.ico-sm-warnig{width:25px;height:27px;margin-bottom:4px;background-size:25px 27px;}
+.warning-ment__txt{font-size:16px;color:#666}
+.warning-ment__txt strong{font-weight:bold;color:#111;}
+/*회원폼*/
+.member-form {padding: 36px 24px 0;}
+.member-form__row{margin-top:28px;}
+.member-form__row:first-child{margin-top:0;}
+.member-form__tit {position:relative;font-size:12px; color:#999;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.member-form__tit:after{content:'';display:block;clear:both;}
+.member-form__tit label{font:inherit;color:inherit;}
+.member-form__input{display:flex;flex-wrap:wrap;align-items:center;}
+.member-form__input .ipt-select{flex: 1 1 48%;border-bottom:1px solid #e2e2e2}
+.member-form__input .sp{flex: 0 0 10px;height:1px;background:#000;}
+.ipt-select input:not([type='checkbox']):not([type='radio']),.ipt-select select{ background:#fff;border-width: 0;border-radius:0;height:48px;padding:0 16px;}
+.member-form__input input:not([type='checkbox']):not([type='radio']),.member-form__input .ipt-select select { width:100%;letter-spacing:0;color:#999;font-size:14px;}
+.member-form__tit .helpBox--right{margin-top:-1px;}
+/*버튼*/
+.content-3rd-type>.btnArea{padding:0 24px;}
+.btnArea .btn-radius-border{letter-spacing:0;}
+.btn-radius-border{min-width: 78px;height: 48px;padding:0 10px;line-height:47px;border-radius:4px;border: 1px solid #00a8ae;color: #00a8ae;font-size:14px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.btn-bg-radius{min-width: 78px;height: 48px;padding:0 10px;line-height:47px;border-radius:4px;background: #00a8ae;color: #fff;font-size:14px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.btn-radius-border span{color: #00a8ae;}
+button.btn-bg-radius,.btn-radius-border{letter-spacing:0;}
+.btn-bg-radius span{color: #fff;}
+.btnMd--full{width:100%;}
+a.btnMd, button.btnMd, input[type="button"].btnMd{height:44px; font-size:14px;}
+.btn-square-full{width:100%;height:64px;background:#00a8ae;line-height:64px;text-align:center;font-size:16px;color:#fff;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.btn-color-type02{color:#fff!important;background:#999;}
+/*업데이트 버튼*/
+.btn-update:after{display:inline-block;content:'';width:20px;height:22px;vertical-align:middle;background: url('../images/lounge/common/bg_btn_upadate.png') no-repeat center center / 12px 12px;}
+.btn-update__txt{color:#999;font-size:12px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+/*셀렉트*/
+select.select-style-reset{border:0;border-radius:0;background: url('../images/lounge/bg_select_arrow.png') no-repeat 96% 50% / 12px 8px;min-width:0;font-size:14px;}
+/*뱃지*/
+.badge-sqare{display:inline-block;min-width:44px;height:18px;padding:0 4px;line-height:15px;border-radius:3px;border:1px solid #00a8ae;vertical-align:middle;text-align:center;font-size: 12px;color:#00a8ae}
+.badge-right{margin-left:4px;}/* 글자 오른쪽에 있는 뱃지*/
+.badge-left{margin-right:4px;}/* 글자 왼쪽에 있는 뱃지*/
+/*툴팁*/
+.btnHelp--right{margin-left:3px}
+.btnHelp--left{margin-right:3px}
+.va-top,.va-top.btnHelp--right{vertical-align:top;}
+/* 약관 대출 조회 */
+.border-botbox{padding:36px 24px 38px;border-bottom:1px solid #dddd;color:#111;}
+.border-botbox__tit{font-size:18px;color:inherit;margin-bottom:8px;}
+.border-botbox__desc{font-size:14px;color:inherit;}
+/*** 약관 대출 조회 안내페이지 ***/
+.toggle-agreement-wrap{display:none;}
+.terms-header{padding:40px 24px 20px;}
+.terms-header.terms-header--type2{border-top:1px solid #f9f9fb;}
+.terms-header__tit{font-size:16px;color:#000;}
+.terms-guide-img{position:relative;padding:0 24px;}
+.terms-guide-img img{width:100%;}
+.termsguide-box{padding:10px 24px 40px;}
+.termsguide-notice{margin-top:40px;padding:10px 24px 32px;border-top:1px solid #e3e4e8;}
+.termsguide-notice .terms-header{padding-left:0;padding-right:0;font-weight:bold;}
+.termsguide-notice .grp_button{margin-top:40px;}
+.termsguide-box__update:first-child{margin-top:20px;}
+.terms-sec__update:first-child{margin-top:-10px;}
+.terms-sec__update{margin-bottom:8px;text-align:right;}
+.btn-update-wrap{margin-top:20px;text-align:right;}
+.termsguide-box__update{margin-bottom:14px;padding-right:18px;text-align:right;}
+.termsguide-box__tit{margin-bottom:20px;font-size:16px;color:#000;}
+.termsguide-box__big-tit{margin-bottom:24px;font-size:26px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;color:#111;line-height:36px;letter-spacing:-1px;}
+.termsguide-box__big-tit strong{color:inherit;}
+.termsguide-spm-lst{position:relative;text-align:center;}
+.termsguide-spm-lst>li{display:inline-block;width:32%;vertical-align:top;text-align:center;}
+.termsguide-spm-lst__img{display:inline-block;width:64px;margin-bottom:10px;}
+.termsguide-spm-lst__img img{width:100%;}
+.termsguide-spm-lst__txt{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;width:100%;height:40px;line-height:20px;font-size:14px;text-overflow:ellipsis;color:#111;}
+.bs-bgbox{padding: 40px 24px 20px;background: #f5f5f5;word-break: keep-all;}
+.terms-sec{padding: 38px 20px 24px;background: #f5f5f5;}
+.terms-sec.terms-sec--type02{border:1px solid #eee; background:#fff;}
+.terms-sec--bg02{background:#fff;}
+.terms-sec__tit{margin-bottom:20px;font-size:22px;color:#111;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.terms-sec--type02{margin-bottom:40px;}
+.terms-sec--type02 .terms-sec__tit{margin-bottom:20px;}
+.terms-sec__tit strong{color:inherit;font-family:'NotoSansM', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.terms-sec__tooltip{margin-top:10px;}
+.terms-sec__tooltip .tooltip_box{color:#999;}
+.bs-bgbox.bs-bgbox--white{background:#fff;}
+.bs-bgbox.bs-bgbox--notice01{background:#fff;padding:24px 12px;font-size:16px;color:#666;}
+.bs-bgbox.bs-bgbox--notice02{padding:22px 24px;}
+.bs-bgbox__txt{font-size:14px;color:#000;}
+.bs-bgbox .txt-color02{color:#666}
+.bs-bgbox--notice02 .bs-bgbox__txt{font-size:14px}
+.bs-bgbox__txt + .bs-bgbox__txt{margin-top:10px;}
+.terms-spot{font-size:22px;color:#111;text-align:center;}
+.terms-spot p{color:inherit;}
+.terms-spot p:first-child{margin-bottom:4px;}
+.terms-spot p:only-child{margin-bottom:0;}
+.terms-spot__won{font-size:18px;}
+.terms-spot__won strong{color:#00a8ae;font-size:26px;letter-spacing:-1px;}
+/* 약관 대출 조회 안내페이지- 하단 버튼영역*/
+.terms-guide-bot-btns{position:relative;transform: translateY(10px);}
+/*단순 text 리스트*/
+.txt-lst>li{padding-bottom:12px;font-size:14px;color:#999;}
+.txt-lst__tit{margin-bottom:6px;color:#000;font-weight:bold;}
+.bulit-circle{position:relative;padding-left:10px;font-size:14px;color:#666;}
+.bulit-circle:after{content:'';position:absolute;overflow:hidden;left:0;top:8px;width:4px;height:4px;border-radius:100%;background:#999;}
+.bulit-sm-lst>li{position:relative;padding-left:8px;font-size:11px;color:#999;}
+.bulit-sm-lst>li:after{position:absolute;content:'';left:0;top:8px;height:1px;width:4px;background:#999;}
+.btn-full-oval,a.btn-full-oval{overflow:hidden;display:inline-block;width:100%;border-radius:26px;text-align:center;height:52px;line-height:51px;background:#009591;color:#fff;font-size:18px;box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움';}
+/** 가격테이블 **/
+.lst-table__row.align-center{align-items:center;}
+.lst-table__left strong{color:inherit;}
+.lst-table__money{font-size:16px;}
+.lst-table__money strong{padding-right:3px;font-size:26px;color:#00a8ae;letter-spacing:-1px;}
+
+/** range 슬라이더 **/
+.lst-table + .range-slider{margin-top:6px;}
+.range-slider{margin-bottom:30px;padding:34px 15px 22px;background:#fff;border-radius:4px;box-shadow:3px 3px 6px 0 rgba(0, 0, 0, 0.1);}
+.range-slider__header{margin-bottom:26px;}
+.range-top-txt{font-size:18px;color:#111;}
+.range-bot-txt{font-size:16px;color:#00a8ae;}
+.range-bot-txt strong{padding-left:3px;color:inherit;font-size:22px;letter-spacing:-1px;}
+.range-slider__num{position:relative;margin-top:14px;padding:0 8px;font-size:0;}
+.range-slider__num:after{clear:both;content:'';display:block;}
+.range-slider__num span{float:left;display:block;font-size:12px;color:#666;text-align:left;font-family:'맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.range-slider__num.range-col05 span{width:calc(100% / 4);}
+.range-slider__num .rang-end-num{position:absolute;top:0;right:4px;width:auto!important;text-align:right;}
+
+/*rangeslider 커스텀 시작*/
+.input-range-wrap{position:relative;}
+/*
+.rangeslider,.rangeslider__fill {display: block;  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);  -moz-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;}
+*/
+.rangeslider,.rangeslider__fill {display: block; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.rangeslider {background: #e6e6e6;  position: relative;}
+.rangeslider--horizontal {height: 6px;  width: 100%;}
+.rangeslider--vertical {width: 6px;  min-height: 150px;  max-height: 100%;}
+.rangeslider--disabled {filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);  opacity: 0.4;}
+.rangeslider__fill {background: #00a8ae;  position: absolute;}
+.rangeslider--horizontal .rangeslider__fill {top: 0;  height: 100%;}
+.rangeslider--vertical .rangeslider__fill {bottom: 0;  width: 100%;}
+.rangeslider__handle {background: #fdfdfd; cursor: pointer;  display: inline-block;  width: 26px;  height: 26px;  position: absolute;  background-size: 100%;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));  -moz-box-shadow: 3px 2px 3px 0 rgb(0 0 0 / 23%);  -webkit-box-shadow: 3px 2px 3px 0 rgb(0 0 0 / 23%);  box-shadow: 3px 2px 3px 0 rgb(0 0 0 / 23%);  -moz-border-radius: 50%;  -webkit-border-radius: 50%;  border-radius: 50%;}
+.rangeslider__handle:after {content: "";  display: block;  width: 12px;  height: 12px;  margin: auto;  position: absolute;  top: 0;  right: 0;  bottom: 0;  left: 0;  background-size: 100%;  background-color:#00a8ae;  -moz-border-radius: 50%;  -webkit-border-radius: 50%;  border-radius: 50%;}
+
+.rangeslider__handle:active, .rangeslider--active .rangeslider__handle {background-size: 100%;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.12)));  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));}
+.rangeslider--horizontal .rangeslider__handle {top: -10px;  touch-action: pan-y;  -ms-touch-action: pan-y;}
+.rangeslider--vertical .rangeslider__handle {left: -10px;  touch-action: pan-x;  -ms-touch-action: pan-x;}
+.range-slider__range:focus + .rangeslider .rangeslider__handle {-moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);  -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);  box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);}
+/*rangeslider 커스텀 끝*/
+
+/** 상품 추천 영역 **/
+.prds-lst{overflow:hidden;border-radius:8px;border:1px solid #e3e4eb;background:#f5f5f5;}
+.prds-lst .prds-lst__item:first-child{border-top:0;}
+.prds-lst__item{border-top:1px solid #e3e4eb}
+.prds-lst__item>a{position:relative;display:block;height:100%;width:100%;padding:20px 44px 20px 20px;}
+.prds-lst__item>a:after{content: "";position: absolute;right: 28px;top: 50%;width: 7px;height: 7px;border-top: 1px solid #111;border-right: 1px solid #111;transform: rotate(45deg) translateY(-50%);vertical-align: middle;border-left: 0;}
+.prds-lst__tit{font-size:16px;color:#111;}
+.prds-lst__item .insu_state {margin-bottom:10px;}
+/* 보험보장 상태 */
+.insu_state {display: block;}
+.insu_state:after {content: '';display: block;clear: both;}
+.insu_state strong {display: inline-block;float: left;min-width: 44px;margin-right: 3px;padding: 0 10px;background: #fff;border-radius: 3px;font-family: 'NotoSansR';font-size: 12px;text-align: center;}
+.insu_state strong.state_01 {color: #ffc000;border: 1px solid #ffc000;}
+.insu_state strong.state_02 {color: #00a8ae;border: 1px solid #00a8ae;}
+.insu_state strong.state_03 {color: #e5005a;border: 1px solid #e5005a;}
+.insu_state strong.state_04 {color: #3134c0;border: 1px solid #3134c0;}
+.insu_state strong.state_05 {color: #b91285;border: 1px solid #b91285;}
+.insu_state strong.state_06 {color: #70affa;border: 1px solid #70affa;}
+.insu_state strong.state_07 {color: #6aad39;border: 1px solid #6aad39;}
+/** 통합조회 아코디언 **/
+.total-accordion{border-top:12px solid #f5f5f5;}
+.grp_togglelist.st_3rdtype > .item > .title > .tg_btn{display:block;width:100%;height:100%;padding:20px 18px 20px 24px;text-indent:0;text-align:left;font-size:18px;color:#111;}
+.grp_togglelist.st_3rdtype > .item > .title > .tg_btn:after{top:50%;transform:translateY(-50%);background: #fff url(../images/lounge/common/bg_btn_accr_up.png) no-repeat center center / 18px 12px;}
+.toggleCont.bd_solid{border-bottom-style:solid;} 
+.toggleCont > ul.new-toggle > li:not(:first-child) {border-style:solid;}
+.toggleCont > ul.new-toggle > li > dl > dt{padding:20px 18px 20px 24px;}
+.toggleCont > ul.new-toggle > li dt a{font-size:18px;color:#111;}
+.toggleCont > ul.new-toggle > li.on dt a{color:#111;}
+.toggleCont > ul.new-toggle > li dt button{right:30px;background: #fff url(../images/lounge/common/bg_btn_accr_down.png) no-repeat center center / 12px 8px;}
+.toggleCont > ul.new-toggle > li.on dt button{background-image:url(../images/lounge/common/bg_btn_accr_up.png);}
+.toggleCont > ul.new-toggle > li > dl > dd{border-style:solid;}
+.toggleCont .new-toggle__cont{padding:20px 24px 40px;}
+.toggleCont > ul.new-toggle > li dd > div{padding:0;line-height:normal;}
+/*money-box*/
+.pay-result-box{}
+.pay-result-box__tit{font-size:14px;color:#111;}
+.pay-result-box__won{font-size:16px;color:#111;letter-spacing:-1px;}
+.pay-result-box__won strong{font-size:24px;color:#00a8ae;padding-right:4px;}
+/*카드형 리스트*/
+.pay-result-box + .cardtype-lst{margin-top:28px;}
+.cardtype-lst .cardtype-lst__item:not(:first-child){margin-top:12px;}
+.cardtype-lst__header{padding:20px;}
+.cardtype-lst__tit{font-size:16px;color:#111;}
+.cardtype-lst__item{position:relative;border-radius:8px;padding-bottom:8px;background:#fff;border:1px solid #e3e4eb;}
+.cardtype-lst__table .lst-table__row,.cardtype-lst__table .lst-table__full{padding-left:20px;padding-right:20px;}
+.cardtype-lst__table .lst-table__left{color:#999;}
+.lst-table .flex-col-01{flex: 0 0 8.33%}
+.lst-table .flex-col-02{flex: 0 0 16.66%}
+.lst-table .flex-col-03{flex: 0 0 25%}
+.lst-table .flex-col-04{flex: 0 0 33.33%}
+.lst-table .flex-col-05{flex: 0 0 41.66%}
+.lst-table .flex-col-06{flex: 0 0 50%}
+.lst-table .flex-col-07{flex: 0 0 58.33%}
+.lst-table .flex-col-08{flex: 0 0 66.66%}
+.lst-table .flex-col-09{flex: 0 0 75%}
+.lst-table .flex-col-10{flex: 0 0 83.33%}
+.lst-table .flex-col-11{flex: 0 0 91.66%}
+.lst-table .flex-col-12{flex: 0 0 100%}
+
+/*카드형 리스트내 버튼grp*/
+.grp_button.grp_button_flex{display:flex;flex-wrap:wrap;justify-content: space-between;}
+.grp_button_flex .flex-btn-p62{flex: 0 0 62%}
+.grp_button_flex .flex-btn-p34{flex: 0 0 34%}
+.lst-table + .grp_button{margin-top:5px;}
+/*없음 안내*/
+.toggleCont > ul.new-toggle > li dd > .warning-ment{padding:22px 18px 40px;}
+.toggleCont > ul.new-toggle > li dd > .warning-ment:only-child{padding-bottom:0;}
+/*툴팁 영역*/
+.tooltip_box span{color:inherit;vertical-align:middle;}
+.terms-sec__tooltip{font-size:12px;color:#999;}
+.terms-sec__tooltip .tooltip_box .btn_tooltip{margin-left:2px;}
+.terms-notice-sec03 .tooltip-btn-wrap{margin:10px 0 30px;}
+/*.wrong-box*/
+.grp_button + .wrong-box {margin-top:20px;}
+.wrong-box{background: #fff;padding:24px;font-size: 16px;color: #666;word-break: keep-all;}
+/*느낌표 텍스트*/
+.bg-exclam-txt{position:relative;text-align:left;padding-left:22px;color:#666;font-size:14px;}
+.bg-exclam-txt:after{position:absolute;top:1px;left:0;content:'';width:17px;height:17px;background: url('../images/lounge/common/ico-exclam.png') no-repeat 0 0  / 17px 17px;}
+@media only screen and (max-width:374px) {
+	/*flex-table*/
+	.lst-table__left{flex-basis:50%;}
+	.lst-table__right{flex-basis:50%;}
+	.lst-table__money{font-size:14px;}
+	.lst-table__money strong{font-size:24px;}
+	/*bs-bgbox*/
+	.bs-bgbox.bs-bgbox--notice01{padding:24px 16px;}
+	/*컨텐츠박스 제목*/
+	.termsguide-box__big-tit{font-size:24px;}
+	.terms-sec__tit{font-size:18px;}
+	/*컨텐츠 박스*/
+	.border-botbox {padding: 36px 22px 38px;}
+}
+@media only screen and (max-width:330px) {
+	.ask-result__ment{font-size:16px;}
+	.cont-spot{padding:12px 18px;font-size:16px;}
+	.contents-wrap .contents-box__txt{font-size:12px;}
+	.sub-notic-txt{padding:4px 10px 16px;font-size:13px;}
+	.btn-full-arow{padding:13px 0;font-size:14px;}
+	.btn-full-arow:after{right:10px;}
+	.lst-group__header {padding: 16px 24px 11px;}
+	.lst-group__item + .lst-group__item{margin-top:10px;}
+	.lst-table{padding-top:10px;}
+	.lst-table__left,.lst-table__right{padding:3px 3px;}
+	.lst-table__left{flex-basis:60%;}
+	.lst-table__right{flex-basis:40%;}
+	.lst-table__row {font-size:12px;}
+	.badge-sqare{min-width:38px;font-size:11px}
+	/** 연금 조회 화면 **/
+	.lst-table--large .lst-table__row{font-size:14px;}
+	.btn-ask-annuity{font-size: 18px;padding:0;}
+	.ask-result__price{font-size:18px;}
+	.ask-result__price strong{font-size:18px;}
+	.lst-table__left .ins-comp-name{max-width:148px;}
+	.lst-table .btn-lst-arrow {font-size:12px;}
+	.lst-table .btn-lst-arrow:after{width:5px;height:5px;}
+	/*약관 대출 조회 안내페이지*/
+	.termsguide-box {padding: 20px 24px 24px;}
+	.termsguide-box__update{margin-bottom:10px;}
+	.termsguide-box__big-tit{margin-bottom:18px;font-size:20px;line-height:30px;}
+	.termsguide-spm-lst__txt{height:36px;line-height:18px;font-size:12px;}
+	.bs-bgbox.bs-bgbox--notice01{font-size:12px;}
+	/** 가격테이블 **/
+	.lst-table__money strong {font-size: 20px;}
+	/** range 슬라이더 **/
+	.range-slider{margin-bottom:20px;}
+	.range-top-txt{font-size:14px;}
+	/*money-box*/
+	.pay-result-box__won strong{font-size:20px;}
+	/*카드형 리스트*/
+	.pay-result-box + .cardtype-lst{margin-top:20px;}
+	/*full 버튼*/
+	.termsguide-notice .grp_button{margin-top:30px;}
+	.btn-full-oval, a.btn-full-oval{height:48px;font-size:14px;}
+	/*버튼 */
+	.btn-layerbottom-full{height:54px;line-height:54px;font-size:14px;}
+	/*.wrong-box*/
+	.wrong-box{padding:20px 18px;}
+	/*느낌표 텍스트*/
+	.bg-exclam-txt {font-size:12px;}
+
+}
+
+
+/************** 레이어 팝업 에서 사용 중인 화면  ****************/
+.popHead.popHead-border-none{border-bottom:0;}
+.popHead-border-none + .popCont{padding-top:0;}
+/***** warning 팝업(헤더가 없는 레이어 팝업) *****/
+.layerWrap.layerWrap--warning {background-color: rgb(21 21 21 / 40%);}
+.layerWrap.layerWrap--warning .popupLayer{top:91px;height:calc(100% - 91px);min-height:0;}
+.layerWrap--warning .popHead, .layerWrap--warning button.close{display:none;}
+.layerWrap--warning .popCont{position:relative;height:calc(100% - 155px);overflow-y:auto;background:#f5f5f5;}
+.layerWrap--warning .warning-ment{position:absolute;top:50%;transform: translateY(-50%);left:0;width:100%;text-align: center;}
+/** 건강검진 레이어 팝업 리스트 시작 **/
+.popCont .health-exalist{margin:0 -24px;}
+.health-exalist>li{position:relative;padding:18px 24px;border-bottom:1px solid #e6e6e6;}
+.health-exalist>li:first-child{padding-top:0;}
+.health-exalist__tit{margin-bottom:4px;font-size:16px;color:#111;}
+.health-exalist__place{margin-top:4px;font-size:14px;color:#111;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.health-exalist__tit,.health-exalist__place{overflow:hidden;width:79%; white-space: nowrap;text-overflow: ellipsis; }
+.health-exalist__date{position:absolute;top:18px;right:24px;font-size:14px;color:#999;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.health-exalist>li:first-child .health-exalist__date{top:0;}
+/** 건강검진 레이어 팝업 리스트 끝 **/
+/*** 연금상세 팝업 ***/
+.annuity-detail-box{padding:30px 34px 32px;margin-bottom:12px;background:#fff;border-radius:4px;border:1px solid #ddd;box-shadow:3px 3px 6px 0 rgba(0, 0, 0, 0.1);}
+.bg-cont-box + .annuity-detail-box{margin-top:30px;}
+.annuity-table {display:flex;margin-bottom:12px;align-items:center;justify-content:center;}
+.annuity-table__left,.annuity-table__right{flex:0 0 50%;width:50%;}
+.annuity-table__left{font-size:16px;color:#111;font-weight:bold;}
+.annuity-table__right{text-align:right;}
+.annuity-table__txt{font-size:12px;color:#111;font-weight:bold;}
+.annuity-table__won{font-size:14px;color:#00a8ae;}
+.annuity-table__won strong{font-size:18px;color:inherit;letter-spacing:-1px;}
+.annuity-graph{position:relative;background:#f5f5f5;}
+.annuity-graph:after{content:"";display:block;padding-bottom:100%;}
+.annuity-graph.annuity-graph--type2:after{padding-bottom:60%;}/*국민연금상세에서 사용*/
+.annuity-graph__header{position:absolute;top:0;left:20px;right:20px;height:46px;padding-top:18px;border-bottom:1px solid #ddd;text-align:center;font-size:13px;color:#111;}
+.graph-bar-warp{position:absolute;top:46px;bottom:20px;left:20px;right:20px;padding-top:14%;}
+.graph-bar-inner{position:relative;height:100%;}
+.graph-bar{position:absolute;bottom:0;width:29%;height:1px;background:#ddd; transition:height 0.3s;}
+.graph-bar--me{left:11%;background:#cde6e7;}
+.graph-bar--aver{right:11%;background:#ddd;}
+.graph-bar__inner{position:relative;height:100%;}
+.graph-bar__toptxt,.graph-bar__bottxt{position:absolute;left: 50%;transform: translateX(-50%);text-align:center;font-size:12px;white-space: nowrap;}
+.graph-bar__toptxt{top:-22px;color:#000;font-family:'NotoSansM', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.graph-bar__bottxt{bottom:5px;}
+.graph-bar--me .graph-bar__toptxt, .graph-bar--me .graph-bar__bottxt{color:#00a8ae;}
+.graph-bar--aver .graph-bar__toptxt{color:#111;}
+.graph-bar--aver .graph-bar__bottxt{color:#666;}
+/*국민연금 그래프*/
+.lst-table__row>.annuity-graph{width:100%;}
+.lst-table__row>.annuity-graph:first-child{margin-top:30px;}
+.annuity-graph--type2 .graph-bar-warp{padding-top:40px;}
+.annuity-graph__desc{position:absolute;top:20px;right:22px;text-align:right; font-size:10px;color:#999;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.graph-num-04 .graph-bar {width: 16%;}
+.graph-num-04 .graph-bar--01{left: 3%;}
+.graph-num-04 .graph-bar--02{left: 29%;}
+.graph-num-04 .graph-bar--03{right: 29%;}
+.graph-num-04 .graph-bar--04{right:3%}
+.graph-bar.bar-color02{background:#cde6e7;}
+.bar-color02 .graph-bar__toptxt{color:#00a8ae;}
+.annuity-result{padding-top:18px;font-size: 16px;text-align:center;letter-spacing:-1px;}
+.annuity-result p{color:#111;}
+.annuity-result em{color:#00a8ae;font-weight:bold;}
+.pop-prd-tit,.popup h2.pop-prd-tit{font-size:16px;}
+.annuity-detail-box + .pop-prd-tit,.annuity-detail-box + h2.pop-prd-tit{margin-top:26px;margin-bottom:14px;}
+.bg-cont-box{position:relative;padding:20px 24px;background:#00a8ae;}
+.bg-cont-box__left{width:64%;color:#fff;font-size:14px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.bg-cont-box__left *{color:inherit;}
+.bg-cont-box__btn{position:absolute;bottom:20px;right:20px;width:34%;text-align:right;color:#fff;font-size:12px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.bg-cont-box__btn .btn-join-go{width:90%;padding-right:0;}
+/*** 연금상세 팝업 ***/
+.pop-full-bgbox{margin:0 -24px 30px;padding: 24px;background: #00a8ae;color:#fff;}
+.pop-full-bgbox *{color:inherit;}
+.pop-contents-tit{font-size: 20px;margin-bottom: 10px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.pop-contents-wrap .contents-box{border-width:1px;border-style:solid;padding:20px 24px;}
+.pop-full-bgbox__inner{padding:24px 30px;background:#fff;color:#111;}
+.pop-full-bgbox__inner .lst-table__left,
+.pop-full-bgbox__inner .lst-table__right{padding:4px 0;}
+.pop-full-bgbox select{height:auto;margin-bottom:4px;padding:0 25px 3px 5px;margin-right:2px;line-height:22px;font-size:inherit;color:inherit;font:inherit;vertical-align:middle;border-bottom:1px solid #fff;background-image:url('../images/lounge/bg_select_arrow_white.png');background-position-x:94%;background-position-y:46%;}
+.lst-table.lst-table--top{padding-top:16px;border-top:0;}
+.lst-table__won{font-size:20px;color:#00a8ae;letter-spacing:-1px;}
+.pop-bgbox{padding:24px 20px;background:#f5f5f5}
+.pop-bgbox__spot{font-size:16px;color:#111;font-family:'NotoSansM', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
+.no-line-box {padding:22px 20px;}
+.no-line-box__txt{color:#666;font-size:16px;}
+.no-line-box__txt em{color:#00a8ae;}
+.no-line-box__txt strong{color:#111;}
+.pop-bgbox select{height:auto;margin-bottom:4px;padding:0 25px 3px 5px;line-height:22px;font-size:inherit;color:inherit;font-family: 'NotoSansM', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;vertical-align:middle;border-bottom:1px solid #000;background-position-y:46%;}
+/*** 연금 조회 하기 팝업 ***/
+.lst-group-item-header{position:relative;padding-bottom:16px;background:#fff;}
+.lst-group-item-tit{font-size:16px;color:#000;font-weight:bold;}
+.popCont .pop-thic-box{margin:0 -24px;padding:24px;background:#f5f5f5;}
+.pop-thic-box .ask-result{padding:21px 20px;background:#fff;}
+.pop-thic-box .btn-full-arow{padding:2px 0;font-size:16px;}
+.pop-thic-box .ask-result__top-right{top: 20px;}
+.btn-full-arow.btn-arow-width-type2{width:60%}
+/*약관대출조회 약관*/
+.agree-notice-box{background:#fff;padding:22px 24px;}
+.agree-notice-tit{margin-bottom:4px;font-size:12px;color:#111;}
+.agree-notice-txt{font-size:10px;color:#999;}
+@media only screen and (max-width:330px) {
+	.warning-ment__txt{font-size:14px;}
+	/*** 연금상세 팝업 ***/ 
+	.annuity-detail-box {padding: 24px 28px 22px;}
+	.annuity-table__left {font-size:14px;}
+	.annuity-table__won{font-size:12px;}
+	.annuity-table__won strong{font-size:14px;}
+	.graph-bar-warp{top:54px;bottom:14px;}
+	.graph-bar{width:34%}
+	.graph-bar--me{left:7%;}
+	.graph-bar--aver{right:7%;}
+	.graph-bar__toptxt, .graph-bar__bottxt {font-size:10px;}
+	.bg-cont-box__left{width:68%;font-size:12px;}
+	/*** 국민연금 조회 하기 팝업 ***/
+	.lst-table__row>.annuity-graph:first-child{margin-top:15px;}
+	.pop-bgbox__spot,.no-line-box__txt{font-size:15px;}	
+	.annuity-graph__desc{top:10px;right:10px;}
+	.annuity-graph--type2 .graph-bar-warp{top:18px;}
+	.graph-num-04 .graph-bar{width:16%;}
+	.graph-num-04 .graph-bar--01{left: 0;}
+	.graph-num-04 .graph-bar--02{left: 28%;}
+	.graph-num-04 .graph-bar--03{right: 28%;}
+	.graph-num-04 .graph-bar--04{right:0} 
+}
+
+/* 레이어 팝업 alert 스타일 */
+.popStyle03 .popCont.popCont-alert{padding:40px 12px 12px;}
+.popCont-alert__txt{font-size:14px;color:#111;letter-spacing:0;}
+.popCont-alert__txt + .btnArea {margin-top:40px;}
+.popCont-alert a.btnMd, .popCont-alert button.btnMd{height:44px;border-radius:4px;font-size:14px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif}
+
+
+

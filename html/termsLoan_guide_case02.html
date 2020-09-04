@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="ko">
+<title>메인</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="copyright" content="[하나 1Q 다이렉트 보험]" />
+<meta name="keywords" content="[하나 1Q 다이렉트 보험]" />
+<meta name="description" content="[하나 1Q 다이렉트 보험]" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../css/3rd_open.css" /><!-- 3차 open용 -->
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/onlypub.js"></script>
+<script type="text/javascript" src="../js/3rd_open.js"></script><!-- 3차 open용 (pistmw 에서 사용하는 js 가져옴)  -->
+<script type="text/javascript" src="../js/rangeslider.js"></script> <!-- 3차 open용 rangeslider 플러그인 추가 -->
+<script type="text/javascript" src="../js/swiper.js"></script>
+	<!-- 3차 open용 rangeslider 플러그인 실행 시작 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('input[type="range"]').rangeslider({
+			    polyfill : false,	
+			});
+			
+		});
+	</script>
+	<!-- //3차 open용 rangeslider 플러그인 실행 끝 -->
+</head>
+<body>
+<!-- skipToContent -->
+<div id="skipToContent">
+   <a href="#container">본문 바로가기</a>
+</div>
+<!-- //skipToContent -->
+<!-- wrapper -->
+<div id="wrapper">
+    
+    <header id="header" class="header-3rd-type">  <!-- // 3차 오픈 페이지  .header-3rd-type 추가  -->  <!-- //.header-fixed-type2 추가  -->
+    	<div class="header-inner">
+            <h1 class="page-tit">보험계약대출조회</h1>
+            <!-- <p class="page-tit-desc">나의 건강에 도움이 되는 추천 보험을 확인하세요!</p> -->  <!--  .page-tit-desc 내용이 있으면 header,#container에  .header-fixed-type2 추가   -->
+        </div>   
+        <button type="button" class="btnAllMenu" title="메뉴 열기">메뉴 열기</button>
+        <button type="button" class="btn_go_prev" title="이전페이지로 이동">이전페이지로 이동</button>
+    </header>
+   
+	<!-- 전체메뉴 popup -->
+	<article id="menuAll" class="layer_popup menuAll"><!-- 20200420 -->
+	    <div class="wrapper_popup">
+	        <!-- header -->
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1 class="logo"><a href="javascript:;">하나생명</a></h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <!-- //header -->
+	        <!-- container -->
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content fix_btn_menuall">
+	                <!-- menu list -->
+                    <ul class="list_menu_all">
+                        <li>
+                            <a href="javascript:;" title="상품">상품</a>
+                            <ul>
+                                <li>
+                                    <!-- toggle 버튼 클릭시 상위 li에 'active' class 자동 토글 -->
+                                    <a href="javascript:;" class="link_toggle" title="하나1Q다이렉트보험">하나1Q다이렉트보험</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" title="My보험설계">My보험설계</a><!-- 20200302 -->
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="new" title="건강보장">건강보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="사망보장">사망보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="암보장">암보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="연금저축">연금저축</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="어린이보장">어린이보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="교통사고보장">교통사고보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="상해보장">상해보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="목회자복지연금">목회자복지연금</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="다이렉트 이벤트">다이렉트 이벤트</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="보험검진">보험검진</a><!-- 20200514 -->
+                            <ul>
+                                <li>
+                                    <a href="javscript:;" class="link_toggle" title="보험검진 서비스">보험검진 서비스</a><!-- 20200514 -->
+                                    <ul>
+                                        <li>
+                                            <a href="javscript:;" title="보유계약분석">보유계약분석</a>
+                                        </li>
+                                        <li>
+                                            <a href="javscript:;" title="보장내용분석">보장내용분석</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="모바일창구">모바일창구</a>
+                            <ul>
+								<li>
+									<a href="javascript:;" title="메인화면">메인화면</a>
+								</li> 
+								<li>
+									<a href="javascript:;" class="link_toggle" title="보험계약조회">보험계약조회</a>
+									<ul>
+										<li><a href="javascript:;" title="계약조회">계약조회</a></li>
+										<li><a href="javascript:;" title="내 안내장">내 안내장</a></li>
+									</ul>
+								</li>                             
+								<li>                              
+									<a href="javascript:;" class="link_toggle" title="보험계약대출">보험계약대출</a>
+									<ul>
+										<li><a href="javascript:;" title="대출안내">대출안내</a></li>
+										<li><a href="javascript:;" title="대출 조회/신청">대출 조회/신청</a></li>
+										<li><a href="javascript:;" title="변액보험 예약 조회/취소">변액보험 예약 조회/취소</a></li>
+										<li><a href="javascript:;" title="이자납입/원리금상환">이자납입/원리금상환</a></li>
+									</ul>
+								</li>                             
+								<li>                              
+									<a href="javascript:;" class="link_toggle" title="입출금서비스">입출금서비스</a>
+									<ul>
+										<li><a href="javascript:;" title="보험료 납입">보험료 납입</a></li>
+										<li><a href="javascript:;" title="자동이체 계좌변경">자동이체 계좌변경</a></li>
+										<li><a href="javascript:;" title="납입일시중지 신청/해지">납입일시중지 신청/해지</a></li>
+										<li><a href="javascript:;" title="해지환급금">해지환급금</a></li>
+										<li><a href="javascript:;" title="중도인출금">중도인출금</a></li>
+										<li><a href="javascript:;" title="중도급부금">중도급부금</a></li>
+										<li><a href="javascript:;" title="미지급연금">미지급연금</a></li>
+										<li><a href="javascript:;" title="만기보험금">만기보험금</a></li>
+										<li><a href="javascript:;" title="(자동)송금 계좌변경">(자동)송금 계좌변경</a></li>
+										<li><a href="javascript:;" title="자동송금 신청/해지">자동송금 신청/해지</a></li>
+										<li><a href="javascript:;" title="청약철회">청약철회</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="연금/변액보험">연금/변액보험</a>
+									<ul>
+										<li><a href="javascript:;" title="예상연금액 조회">예상연금액 조회</a></li>
+										<li><a href="javascript:;" title="연금신청">연금신청</a></li>
+										<li><a href="javascript:;" title="펀드 변경">펀드 변경</a></li>
+										<li><a href="javascript:;" title="채권형펀드/일반계정 자동전환">채권형펀드/일반계정 자동전환</a></li>
+										<li><a href="javascript:;" title="계약자적립금">계약자적립금</a></li>
+										<li><a href="javascript:;" title="수수료 안내표">수수료 안내표</a></li>
+										<li><a href="javascript:;" title="변액보험 상담센터">변액보험 상담센터</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="사고보험금">사고보험금</a>
+									<ul>
+										<li><a href="javascript:;" title="보험금 안내">보험금 안내</a></li>
+										<li><a href="javascript:;" title="보험금접수">보험금접수</a></li>
+										<li><a href="javascript:;" title="보험금진행현황">보험금진행현황</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="계약변경">계약변경</a>
+									<ul>
+										<li><a href="javascript:;" title="계약내용 변경">계약내용 변경</a></li>
+										<li><a href="javascript:;" title="계약관계자 변경">계약관계자 변경</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="고객서비스">고객 정보 변경</a>
+									<ul>
+										<li><a href="javascript:;" title="연락처">연락처</a></li>
+										<li><a href="javascript:;" title="성명 정정">z성명 정정</a></li>
+										<li><a href="javascript:;" title="e-안내장 수신 동의">e-안내장 수신 동의</a></li>
+									</ul>
+								</li>    
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="고객서비스">고객서비스</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" title="구비서류 안내">구비서류 안내</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="모바일 창구 이용 안내">모바일 창구 이용 안내</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="push 수신동의">push 수신동의</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="하나서비스">하나서비스</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" title="변액자산관리">변액자산관리</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="하나멤버스">하나멤버스</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="공시실" class="link_direct">공시실</a>
+                        </li>
+                    </ul>
+	                <!-- //menu list -->
+	            </div>
+	            <!-- //content -->
+		        <!-- bottom button -->
+				<div class="grp_button_menuall customerMenu">
+					<span><a href="tel:1577-1112" title="고객센터 전화걸기">고객센터</a></span>
+					<span><a href="javascript:;">전화상담예약</a></span>
+					<span><a href="javascript:;">인증센터</a></span>
+				</div>
+		        <!-- //bottom button -->
+	        </div>
+	        <!-- //container -->
+	    </div>
+	</article>
+	<!-- //전체메뉴 popup -->
+	
+	<!-- container -->
+    <section id="container" class="container-3rd-type"> <!-- // 3차 오픈 페이지  .container-3rd-type 추가  --> <!-- // .header-fixed-type2 추가  -->
+        <!-- content -->
+        <div id="content" class="content-3rd-type">  <!-- // 3차 오픈 페이지  .content-3rd-type 추가  --> 
+
+			<div class="termsguide-box">
+				<div class="termsguide-box__update">
+					<button class="btn-update">
+						<span class="btn-update__txt">20200616 기준</span>
+					</button>
+				</div>
+				<p class="termsguide-box__big-tit tc">혹시 <strong>3%이상 고금리 대출</strong>을 <br/>갖고 계시진 않나요?</p>
+				<p class="termsguide-box__txt tc"><strong>이자 기준일 2020.07 현재</strong> <br/>위 이율은 보험계약대출이 가능한 하나생명 상품의 최저이율입니다. 가입하신 보험과 이율이 상이할 수 있습니다.</p> <!-- // 2020-08-26 추가  --> 				
+				<ul class="termsguide-spm-lst tc">
+					<li>
+						<span class="termsguide-spm-lst__img"><img src="../images/lifecheck/thum/terms_guide_box_img01.jpg"/></span>
+						<p class="termsguide-spm-lst__txt">이자 비교로<br/>월 절감액 확인</p>
+					</li>
+					<li>
+						<span class="termsguide-spm-lst__img"><img src="../images/lifecheck/thum/terms_guide_box_img02.jpg"/></span>
+						<p class="termsguide-spm-lst__txt">보험계약대축<br/>한도 조회/신청</p>
+					</li>
+					<li>
+						<span class="termsguide-spm-lst__img"><img src="../images/lifecheck/thum/terms_guide_box_img03.jpg"/></span>
+						<p class="termsguide-spm-lst__txt">가장 낮은 이자로<br/>빠른 일괄 대출</p>
+					</li>
+				</ul>
+			</div>
+			<!-- .terms-sec -->
+			<div class="terms-sec">
+				<p class="terms-sec__tit tc">보험계약대출 갈아타고,<br/><strong>이자 절감 받기!</strong></p>
+				
+
+				<!-- 2020-09-01 .lst-table 제거 
+				<div class="lst-table">				
+					<div class="lst-table__row align-center">
+						<div class="lst-table__left"><strong>나의 보험계약대출 총 금액</strong></div>
+						<div class="lst-table__right lst-table__money"><strong>8,000,000</strong>원</div>
+					</div>
+				</div>
+				기존 테이블 제거 -->
+				
+				<!-- 2020-09-01 .terms-money-result 추가 시작 -->
+				<div class="terms-money-result">
+					<p class="terms-money-result__tit">나의 보험계약대출 총 금액</p>
+					<p class="terms-money-result__won"><strong>200,000</strong>원</p>
+				</div>
+				<!-- //2020-09-01 .terms-money-result 추가 끝 -->
+				
+				<!-- .range-slider -->
+				<div class="range-slider">
+					<div class="range-slider__header tc">
+						<p class="range-top-txt">나의 평균 이자율은?</p>
+						<p class="range-bot-txt">연 <strong>5.0</strong> %</p>
+					</div>
+					<div class="input-range-wrap">
+						<input type="range" min="30" max="70" step="1" value="30"  class="range-slider__range">
+					</div>
+					<div class="range-slider__num range-col05" >
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6</span>
+						<span class="rang-end-num">7</span>
+					</div>
+				</div>
+				<!-- //.range-slider -->
+
+				<div class="grp_button">
+                    <button type="button" class="btnLg bt01">이자 비교하기</button>
+                </div>
+                <!-- 보험상품 없을 경우  -->
+                <div class="wrong-box">
+                	<p class="bg-exclam-txt">비교할 수 있는 하나생명 보험 상품이 없습니다.</p>
+                </div>
+			</div>
+			<!-- //.terms-sec -->
+			
+	
+			<!-- .terms-sec.terms-sec--type02 -->
+			<div class="terms-sec terms-sec--bg02">
+				<div class="terms-spot">
+					<p>나의 하나생명 보험계약대출 가능 한도</p> <!-- 2020-09-01 텍스트 수정 -->
+					<p class="terms-spot__won"><strong>3,430,000</strong> 원</p>
+				</div>
+			</div>
+			<!-- //.terms-sec.terms-sec--type02 -->
+			
+			
+			
+			<!-- 2020-08-31 terms-addbox 추가 시작 -->
+			<div class="terms-addbox">
+				<div class="terms-addbox__top">
+					<p class="terms-addbox__txt">이용하고 게시는 보험계약대출보다<br>낮은 이율의 대출이 있는지<br>꼭 확인해 보세요!
+					</p>
+				</div>
+				<span class="terms-addbox__img"><img src="../images/lifecheck/thum/img_termsloan_notice.png"></span>
+			</div>
+			<!-- //2020-08-31 terms-addbox 추가 끝 -->
+			
+			<!-- 2020-09-01 추가 .terms-video-img -->
+			<div class="terms-video-img">
+				<img src="../images/lifecheck/thum/termsLoan_video_thumb.jpg" alt="이용하고 계시는 보험계약대출 1억원을 금리연동형으로 갈아탈 경우 연간 130만원 절감">
+				<button class="btn-go-video" onclick="layerPop('videoPop');"><span>영상보기</span></button>
+			</div>
+			<!-- //2020-09-01 추가 .terms-video-img -->
+			
+			<div class="total-accordion">
+				<div class="toggleCont bd_solid bd_none">
+					<ul class="new-toggle">
+						<li class="on">
+							<dl>
+								<dt>
+									<a href="#none">나의 보험계약대출 현황</a>									
+									<button type="button">열기</button>
+								</dt>
+								<dd class="new-toggle__cont">
+									<!-- .pay-result-box -->
+									<div class="pay-result-box">
+										<p class="pay-result-box__tit">총 대출 금액</p>
+										<p class="pay-result-box__won"><strong>3,000,000,000</strong> 원</p>
+									</div>
+									<!-- //.pay-result-box -->
+									
+									<!-- 카드형 리스트 시작 -->
+									<div class="cardtype-lst">
+										<!-- 카드 리스트 아이템 --> <!-- //Case1. 타사대출일 경우: 신정원 데이터로 노출  -->
+										<div class="cardtype-lst__item">
+											<!-- 카드 리스트 헤더 -->
+											<div class="cardtype-lst__header">
+												<p class="cardtype-lst__tit">하나생명</p>
+											</div>
+											<!-- //카드 리스트 헤더 -->
+											<!-- 카드 테이블 -->
+											<div class="lst-table cardtype-lst__table">
+												<!-- lst-table__row -->
+												<div class="lst-table__row">
+													<!-- 테이블 컬럼 width 조절 필요 시 .flex-col-숫자로 조절 가능(01 ~ 12까지 사용) 컬럼 합이 12가 되도록 사용  -->
+													<div class="lst-table__left">시작일</div>
+													<div class="lst-table__right">2020-04-03</div>
+												</div>
+												<!-- //lst-table__row -->
+												
+												<!-- lst-table__row -->
+												<div class="lst-table__row">
+													<div class="lst-table__left">대출금액</div>
+													<div class="lst-table__right">30,000,000원</div>
+												</div>
+												<!-- //lst-table__row -->
+
+											</div>
+											<!-- //카드 테이블 -->
+										</div>
+										<!-- //카드 리스트 아이템 -->
+										
+										<!-- 카드 리스트 아이템 --> <!-- //Case2. 자사대출일 경우: 신정원 데이터 아닌 하나생명 데이터로 노출(이율 표기)  -->
+										<div class="cardtype-lst__item">
+											<!-- 카드 리스트 헤더 -->
+											<div class="cardtype-lst__header">
+												<p class="cardtype-lst__tit">하나생명</p>
+											</div>
+											<!-- //카드 리스트 헤더 -->
+											<!-- 카드 테이블 -->
+											<div class="lst-table cardtype-lst__table">
+												<!-- lst-table__row -->
+												<div class="lst-table__row">
+													<!-- 테이블 컬럼 width 조절 필요 시 .flex-col-숫자로 조절 가능(01 ~ 12까지 사용) 컬럼 합이 12가 되도록 사용  -->
+													<div class="lst-table__left">시작일</div>
+													<div class="lst-table__right">2020-04-03</div>
+												</div>
+												<!-- //lst-table__row -->
+												
+												<!-- lst-table__row -->
+												<div class="lst-table__row">
+													<div class="lst-table__left">대출금액</div>
+													<div class="lst-table__right">30,000,000원</div>
+												</div>
+												<!-- //lst-table__row -->
+
+											</div>
+											<!-- //카드 테이블 -->
+										</div>
+										<!-- //카드 리스트 아이템 -->
+									</div>
+									<!-- //카드형 리스트 끝 -->
+									
+									<div class="grp_button full">
+						            	<button type="button" class="btn-bd">더보기</button>
+						            </div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="#none">약관대출 신청</a><button type="button">열기</button></dt>
+								<dd class="new-toggle__cont">
+									<!-- 보험 상품 없을  때 노출  -->
+									<div class="warning-ment">
+										<span class="warning-ment__ico ico-sm-warnig"></span>
+										<p class="warning-ment__txt"><strong>김하나</strong>님의<br>보험 상품이 없습니다.</p>
+									</div>
+									<!-- //보험 상품 없을  때 노출  -->
+							
+								</dd>
+							</dl>
+						</li>		
+					</ul>
+				</div>
+			</div>
+
+        </div>
+        <!-- //content -->
+        
+	    <!-- 하단 fixed 버튼 -->
+	    <div class="bot-gnb">
+	    	<div id="gnb">
+		        <!-- 버튼 활성화 : 'active' class 추가 -->
+		        <button type="button" class="btn_main active" title="메인"><span>메인</span></button>
+		        <button type="button" class="btn_product" title="상품"><span>상품</span></button>
+		        <button type="button" class="btn_mobile_counter" title="모바일 창구"><span>모바일 창구</span></button>
+	            <button type="button" class="btn_diagnosis" title="보험검진"><span>보험검진</span></button><!-- 20200514 -->
+		    </div>
+	    </div>   
+	    <!-- //하단 fixed 버튼 -->
+    </section>
+    <!-- //container -->
+    
+	<!-- 2020-09-01 비디오 popup -->
+	<article id="videoPop" class="layer_popup full">
+	    <div class="wrapper_popup">
+	        <!-- header -->
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>예시 영상보기</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <!-- //header -->
+	        <!-- container -->
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content pop-bgcolor02">
+	            
+	                <!-- popup_content_inner -->
+		            <div class="popup_content_inner" >
+		            	
+		            	<div class="video-wrap">
+		            		<!-- 비디요 영역 시작 -->
+		            		<div class="video-area">
+			            		<!-- <video tabindex="0" x-webkit-airplay="allow" controlslist="nodownload" title="하나생명+유비케어.mp4" controls="" src=""></video>  -->
+			            	</div>
+			            	<!-- //비디요 영역 시작 -->
+		            		<button type="button" class="btn-video-play"></button>
+		            	</div>
+
+		    			<div class="video-notice-box tc">
+		    				<p>이용하고 계시는 보험계약대출 <span class="pt-color01">1억원</span>을 <br/>금리확정형(5.1%)에서 금리연동형(3.8%)으로<br/>갈아탈 시 <span class="pt-color01">연간 130만원</span>이 절감됩니다.</p>
+		    			</div>
+		    			
+		    			<div class="link-box">
+		    				<p class="link-box__txt">본인이 가입한 보험 확인하시고 <br/>보험계약대출 갈아타세요!</p>
+		    				<p class="link-box__right-bot">
+		    					<a class="btn-go" href="#">보험진단</a>
+		    				</p>
+		    			</div>
+		            </div>		     
+	                <!-- //popup_content_inner -->
+	                
+	            </div>
+	            <!-- //content -->
+		        
+	        </div>
+	        <!-- //container -->
+	    </div>
+	</article>
+	<!-- //2020-09-01 비디오 popup -->
+	
+</div>
+<!-- //wrapper -->
+	
+</body>
+</html>

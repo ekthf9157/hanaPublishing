@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="ko">
+<title>검진</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="mobile-web-app-capable" content="no">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="copyright" content="[하나 1Q 다이렉트 보험]" />
+<meta name="keywords" content="[하나 1Q 다이렉트 보험]" />
+<meta name="description" content="[하나 1Q 다이렉트 보험]" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/swiper.css" />
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/swiper.js"></script>
+<script type="text/javascript" src="../js/ui.js"></script>
+<script type="text/javascript" src="../js/Chart.js"></script>
+<script type="text/javascript" src="../js/utils.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			window.myRadar = new Chart(document.getElementById('jsRadorSample1'), config1);
+		}
+
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var color = Chart.helpers.color;
+		var config1 = {
+			type: 'radar',
+			data: {
+				labels: ['기타실손','후유장해','치아','질병','입원','운전자','암','심장','실손의료비','수술','상해','사망','뇌'],
+				datasets: [{
+					label: 'My First dataset',
+					backgroundColor: color(window.chartColors.purple).alpha(0.2).rgbString(),
+					//backgroundColor: ['rgba(255, 255, 255, 0)'],
+					borderColor: color(window.chartColors.purple).alpha(0.2).rgbString(),
+					//borderColor: ['rgba(255, 255, 255, 0)'],
+					pointBackgroundColor: window.chartColors.purple,
+					data: [100,10,0,30,0,73,99,0,10,30,22,15,0],
+					borderWidth: 1,
+				}, {
+					label: 'My Second dataset',
+					backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+					borderColor: window.chartColors.red,
+					pointBackgroundColor: window.chartColors.red,
+					data: [50,50,50,50,50,50,50,50,50,50,50,50,50],
+					borderWidth: 1,
+				}]
+			},
+			options: {
+				legend: {
+					position: 'top',
+					display: false
+				},
+				title: {
+					display: false,
+					text: 'Chart.js Radar Chart'
+				},
+				scale: {
+					ticks: {
+						beginAtZero: true
+					}
+				}
+			}
+		};
+	</script>
+</head>
+<body>
+<!-- skip to content -->
+<div id="skip_to_content">
+   <a href="#container">본문 바로가기</a>
+</div>
+<!-- //skip to content -->
+<!-- wrapper -->
+<div id="wrapper" class="diagnosis">
+	<!-- header -->
+    <header id="header" class="type_small fixed no_line">
+        <button type="button" class="btn_menu_all" title="메뉴 열기">메뉴 열기</button>
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <section id="container">
+        <!-- content -->
+		<div id="content">
+			<div class="grp_title_diagnosis">
+				<h1>
+					<span>최성호</span>님의<br>
+					가입된 보험은 <span class="amount"><em>4</em>건</span><br>
+					월 보험료는 <span class="amount"><em>135,047</em>원</span><br>입니다.
+					<button type="button" class="btn_alert" title="보험 조회 안내">보험 조회 안내</button>
+				</h1>
+				<button type="button" class="btn_update_info">최신보험정보 업데이트</button><!-- //20200515 버튼 추가 -->
+			</div>
+            <div class="slide_diagnosis">
+                <div class="swiper-container">
+					<!-- pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- //pagination -->
+    				<div class="swiper-wrapper">
+						<!-- slide 1 -->
+    					<div class="swiper-slide">
+                            <div class="grp_cont_diagnosis">
+								<div class="grp_top">
+									<h2>보험 분석 결과</h2>
+								</div>
+								<div class="result">
+	                                <div class="result_status">
+										<!-- <div class="msg type_01"> class 변경 type_01:좋음
+											<p><em>모두 유지</em>의견입니다.<br>자세한 내용을 확인해보세요!</p>
+										</div>
+										<div class="msg type_02">class 변경 type_02:주의 
+											<p>00건의 보험에서 문제를 발견했습니다.</p>
+										</div>
+										<div class="msg type_03">class 변경 type_03: 해지 
+		                                    <p>00건의 보험에서 문제를 발견했습니다.</p>
+		                                </div>
+		                                <div class="msg type_04">class 변경 type_04:보류 
+		                                    <p>가입된 보험에서 발견된 문제가 없습니다.</p>
+		                                </div>
+		                                <div class="msg type_04">class 변경 type_04:없음 
+		                                    <p>검진할 보험이 없습니다.</p>
+		                                </div> -->
+		                               <!-- 2020-08-27 상태 아이콘 신규 클래스명 추가 시작 :  ico-status-num01 ~  ico-status-num05 까지 -->
+		                                <div class="msg ico-status-num01"> 
+											<p><em>2건의</em> 보험에서 문제를 발견했습니다!</p>
+										</div>
+										<!-- //2020-08-27 상태 아이콘 신규 클래스명 추가 끝 -->
+	                                </div>
+	                                <div class="result_each">
+	                                    <div class="item">
+	                                        <p class="text">유지</p>
+	                                        <p class="count"><em>2</em>건</p>
+	                                    </div>
+	                                    <div class="item">
+	                                        <p class="text ">조정</p>
+	                                        <p class="count"><em>1</em>건</p>
+	                                    </div>
+	                                    <div class="item">
+	                                        <p class="text">해지</p>
+	                                        <p class="count"><em>0</em>건</p>
+	                                    </div>
+	                                    <div class="item">
+	                                        <p class="text">보류</p>
+	                                        <p class="count"><em>0</em>건</p>
+	                                    </div>
+	                                </div>
+								</div>
+                                <!-- <div class="grp_button">
+                                    <button type="button" class="btn_rd_submit" title="자세한 내용 확인하기">자세한 내용 확인하기</button>
+                                </div> //조정/해지 상품이 아닌 경우 -->
+                                <!-- 20200424 조정/해지 상품인 경우 -->
+                                <div class="grp_button">
+                                    <button type="button" class="btn_rd_submit" title="조정/해지 상품 확인하고 상품 추천받기">조정/해지 상품 확인하고 상품 추천받기</button>
+                                </div>
+                                <!-- //20200424 조정/해지 상품인 경우 -->
+                            </div>
+    					</div>
+						<!-- //slide 1 -->
+                        <!-- slide 2 -->
+    					<div class="swiper-slide">
+                            <div class="grp_cont_diagnosis">
+								<div class="grp_top">
+	                                <h2>보장 분석 결과</h2>
+								</div>
+								<div class="result">
+						            <ul class="blt_list_01">
+						            	<li><em>40대</em> 남성 평균</li>
+						            	<li>최성호님</li>
+						            </ul>
+						            <div class="canvas_cont">
+										<canvas id="jsRadorSample1"></canvas>
+						            </div>
+	                        		<div class="result_guarantee">
+										<p>
+	                            			<em>40대</em> 남성 평균 대비<br>부족한 보장이 <span class="point"><em class="amount">10</em>건</span> 있습니다.
+										</p>
+	                        		</div>
+								</div>
+                            	<div class="grp_button">
+					                <button type="button" class="btn_rd_submit">부족한 보장 확인하고 상품 추천받기</button><!-- //20200424 텍스트변경 -->
+					            </div>
+                            </div>
+    					</div>
+						<!-- //slide 2 -->
+    				</div>
+    			</div>
+            </div>
+        </div>
+        <!-- //content -->
+	    <!-- bottom button -->
+	    <div id="gnb">
+	        <button type="button" class="btn_main" title="메인"><span>메인</span></button>
+	        <button type="button" class="btn_product" title="상품"><span>상품</span></button>
+	        <button type="button" class="btn_mobile_counter" title="모바일 창구"><span>모바일 창구</span></button>
+	        <!-- 20200417 : 텍스트 변경(진단 -> 검진) -->
+	        <button type="button" class="btn_diagnosis active" title="보험검진"><span>보험검진</span></button><!-- 20200515 명칭변경 -->
+	    </div>
+	    <!-- //bottom button -->
+    </section>
+    <!-- //container -->
+</div>
+<!-- //wrapper -->
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        //width: $(window).width() - 48,/*20200316*/
+        spaceBetween: 12,/*20200521*/
+        hashNavigation: {
+            watchState: true
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
+    });
+</script>
+</body>
+</html>
