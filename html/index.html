@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+        />
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+        <title>하나생명 사이버 창구 - 3차 오픈 관련 퍼블 진행 리스트</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                padding: 20px;
+                font-family: "맑은 고딕", sans-serif;
+                letter-spacing: -1px;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            h1 {
+                margin: 0 0 10px 0;
+                font-weight: normal;
+            }
+            a {
+                text-decoration: none;
+                color: #0a3698;
+                font-size: 16px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .list_w p.tit {
+                padding-bottom: 3px;
+                background: #666;
+                color: #fff;
+                font-size: 18px;
+                border: 0;
+                line-height: 40px;
+                text-align: center;
+            }
+            .codinglist {
+                width: 100%;
+                text-align: center;
+            }
+            .codinglist th {
+                background: #efefef;
+                color: #333;
+            }
+            .codinglist th,
+            .codinglist td {
+                border: 1px solid #ccc;
+                vertical-align: middle;
+                padding: 10px 8px;
+                font-size: 14px;
+            }
+            .codinglist td:last-child {
+                text-align: left;
+            }
+            .codinglist tr:hover,
+            .codinglist tr.bg {
+                background: #efefef;
+            }
+            .border-topline td {
+                border-top: 3px solid #333;
+            }
+            .bgss {
+                background: #222;
+                color: #fff;
+            }
+            .bgss a {
+                color: #fff;
+            }
+            .bgss:hover {
+                background: #efefef;
+                color: #333;
+            }
+            .bgss:hover a {
+                color: #333;
+            }
+            .red-text {
+                color: #c5182d;
+            }
+            .tit-puble {
+                font-size: 24px;
+            }
+            .tbl-num {
+                width: 4%;
+            }
+            .tbl-dep {
+                width: 9%;
+            }
+            .tbl-dep.tbl-dep--02 {
+                width: 25%;
+            }
+            .codinglist .tbl-name {
+                padding-left: 16px;
+            }
+            .puble-notice {
+                display: none;
+                padding: 0 0 6px;
+            }
+            table tbody td {
+                text-align: left;
+            }
+            .tc {
+                text-align: center !important;
+            }
+            td a {
+                display: inline-block;
+                margin-right: 6px;
+                vertical-align: middle;
+                font-size: 14px;
+            }
+            .ico-badge {
+                margin-right: 4px;
+            }
+            .ico-badge.ico-badge--ok {
+                background-color: #27878c;
+            }
+            .ico-badge.ico-badge--v2 {
+                background-color: tan;
+            }
+            .ico-badge.ico-badge--ing {
+                background-color: #ffc000;
+            }
+            .ico-badge.ico-badge--v3 {
+                background-color: brown;
+            }
+            .ico-badge.ico-badge--v4 {
+                background-color: blueviolet;
+            }
+            td .ico-badge {
+                display: inline-block;
+                padding: 3px 5px;
+                letter-spacing: 0;
+                font-size: 13px;
+                border-radius: 3px;
+                vertical-align: middle;
+                text-align: center;
+                color: #fff;
+                background: #f32e7c;
+            }
+            .td-dep02 {
+                text-align: left;
+            }
+            .one-q td {
+                background-color: #fff7f8;
+            }
+            .list_w + .list_w {
+                margin-top: 40px;
+            }
+            .top-line td {
+                border-top: 3px solid #222;
+            }
+            @media only screen and (max-width: 640px) {
+                body {
+                    padding: 10px;
+                }
+                .list_w p.tit {
+                    font-size: 14px;
+                    padding: 13px 0;
+                }
+                .tbl-num {
+                    width: 7%;
+                }
+                .tbl-dep {
+                    width: 17%;
+                }
+                .tbl-dep.tbl-dep--02 {
+                    width: 16%;
+                }
+                .tit-puble {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .table-wrap {
+                    width: 100%;
+                    overflow-x: auto;
+                }
+                .table-wrap table.codinglist {
+                    width: 640px;
+                }
+                .puble-notice {
+                    display: block;
+                }
+                td a {
+                    font-size: 14px;
+                }
+                .codinglist body td {
+                    text-align: left;
+                }
+                td .ico-badge {
+                    font-size: 12px;
+                    text-align: left;
+                }
+                .ico-badge {
+                    margin-top: 1px;
+                    margin-bottom: 1px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1 class="tit-puble">3차 오픈 관련 puble List</h1> -->
+        <p class="puble-notice">테이블 스크롤 하여 확인 하실 수 있습니다.</p>
+        <div class="list_w">
+            <p class="tit">3차 오픈 관련 puble List</p>
+            <div class="table-wrap">
+                <table class="codinglist">
+                    <colgroup>
+                        <!-- <col class="tbl-num"/> -->
+                        <col class="tbl-dep" />
+                        <col class="tbl-dep" />
+                        <col class="tbl-dep tbl-dep--02" />
+                        <col />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <!-- <th rowspan="2">no.</th> -->
+                            <th colspan="3">navi</th>
+                            <th rowspan="2">filename</th>
+                        </tr>
+                        <tr>
+                            <th>depth1</th>
+                            <th>depth2</th>
+                            <th>depth3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tc">app 메인</td>
+                            <td colspan="2"></td>
+                            <td class="tbl-name">
+                                <a href="html/Main-mn-00.html" target="_blank">
+                                    Main-mn-00.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-09-04-슬라이드 추가</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" rowspan="18">통합연금조회</td>
+                            <td colspan="2">lifecheck - App LNB</td>
+                            <td class="tbl-name">
+                                <a href="html/lifecheck_app_lnb.html" target="_blank">
+                                    lifecheck_app_lnb.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 - 수정사항 적용</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" rowspan="2">원큐라이프 - 통합 화면</td>
+                            <td>기존 조회 정보 없을 때</td>
+                            <td class="tbl-name">
+                                <a href="html/lifecheck_main.html" target="_blank">
+                                    lifecheck_main.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 - 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok"
+                                    >2020-08-24 - 수정사항 적용</span
+                                >
+                                <span class="ico-badge ico-badge--ok">2020-08-23 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>기존 조회 정보 있을 때</td>
+                            <td class="tbl-name">
+                                <a href="html/lifecheck_main02.html" target="_blank">
+                                    lifecheck_main02.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 - 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-23 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">메인</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_main.html" target="_blank">
+                                    annuity_guide_main.html
+                                </a>
+                                <span class="ico-badge ico-badge--v3">2020-09-03 - 연금수련 안내 팝업 관련건 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 - 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 - 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">차트 화면(개인연금)</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_main_chart.html" target="_blank">
+                                    annuity_guide_main_chart.html
+                                </a>
+                                <span class="ico-badge ico-badge--v3">2020-09-03 - 연금수련 안내 팝업 관련건 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">차트 화면(퇴직연금)</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_main_chart02.html" target="_blank">
+                                    annuity_guide_main_chart02.html
+                                </a>
+                                <span class="ico-badge ico-badge--v3">2020-09-03 - 연금수련 안내 팝업 관련건 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">
+                                안내화면 / 통합연금조회 필순 선택사항 동의 팝업
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide.html" target="_blank">
+                                    annuity_guide.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-31 : 이용약관 상단 박스 추가 일부내용 제거 및 수정</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok"
+                                    >2020-08-24 약관 내용 보이게 수정</span
+                                >
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">
+                                통합연금조회 - 본인인증 화면(공인인증서 가져오기O,등록O)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_confirm.html" target="_blank">
+                                    annuity_guide_confirm.html
+                                </a>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" rowspan="2">
+                                통합연금조회 <br/> 휴대폰 인증
+                            </td>
+                            <td class="tc">
+                                로그인 상태일 시 (휴대폰 인증x)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_confirm_new.html" target="_blank">
+                                    annuity_guide_confirm_new.html
+                                </a>
+                                <span class="ico-badge ico-badge--v4">2020-09-03-인증약관 변경 관련</span>
+                                <span class="ico-badge ico-badge--v2">2020-09-02-v2 추가 수정사항 적용</span>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc">
+                                로그인 상태일 시 (휴대폰 인증o)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_confirm_new02.html" target="_blank">
+                                    annuity_guide_confirm_new02.html
+                                </a>
+                                <span class="ico-badge ico-badge--v4">2020-09-03-인증약관 변경 관련</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">
+                                통합연금조회 - 본인인증 화면(공인인증서 가져오기x,등록x)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_confirm02.html" target="_blank">
+                                    annuity_guide_confirm02.html
+                                </a>
+                                <span class="ico-badge ico-badge--v2">2020-09-02-v2 추가 수정사항 적용</span>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span><span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">통합연금조회 - 본인인증 화면 오류 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_confirm_pop.html" target="_blank">
+                                    annuity_guide_confirm_pop.html
+                                </a>
+                                <span class="ico-badge ico-badge--v2">2020-09-02-v2 추가 수정사항 적용</span>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span><span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tc" colspan="2">확정급여형(DB)상세 - 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_detail_pop01.html" target="_blank">
+                                    annuity_guide_detail_pop01.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 - 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tc" colspan="2">
+                                퇴직연금(DC/개인형IRP/기업형IRP) 상세 - 팝업
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_detail_pop02.html" target="_blank">
+                                    annuity_guide_detail_pop02.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tc" colspan="2">국민연금 상세 - 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_detail_pop04.html" target="_blank">
+                                    annuity_guide_detail_pop04.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tc" colspan="2">개인연금(연금저축상세) - 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_detail_pop05.html" target="_blank">
+                                    annuity_guide_detail_pop05.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 - 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tc" colspan="2">연금수령방법 안내 - 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_detail_pop03.html" target="_blank">
+                                    annuity_guide_detail_pop03.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tc" colspan="2">연금정보 미보유 화면</td>
+                            <td class="tbl-name">
+                                <a href="html/annuity_guide_none.html" target="_blank">
+                                    annuity_guide_none.html
+                                </a>
+                                <span class="ico-badge ico-badge--v2">2020-09-02-v2 추가 수정사항 적용</span>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr class="top-line">
+                            <td class="tc" rowspan="10">건강검진</td>
+                            <td class="tc" colspan="2">건강검진 안내 - 약관 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide.html" target="_blank">
+                                    health_guide.html
+                                </a>
+                                <span class="ico-badge ico-badge--v3">2020-09-07 : 건강검진 안내 > 건강검진조회 텍스트 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-31 : 이용약관 상단 박스 추가 일부내용 제거 및 수정</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">
+                                건강검진 메인 - 약관 팝업 / 검진리스트 팝업 / 검강검진 신체검사 툴팁
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_main.html" target="_blank">
+                                    health_guide_main.html
+                                </a>
+                                <span class="ico-badge ico-badge--v3">2020-09-07 - 내 건강검진 리스트 내 동의박스 추가</span>
+                                <span class="ico-badge ico-badge--v3">2020-09-03 - 연금수련 안내 팝업 관련건 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-31 : 이용약관 상단 박스 추가 일부내용 제거 및 수정</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">
+                                건강검진 - 본인인증 화면(공인인증서 가져오기O,등록O)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_confirm.html" target="_blank">
+                                    health_guide_confirm.html
+                                </a>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" rowspan="2">
+                                건강검진 - 휴대폰 인증
+                            </td>
+                            <td class="tc">
+                                로그인 상태일 시 (휴대폰 인증x)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_confirm_new.html" target="_blank">
+                                    health_guide_confirm_new.html
+                                </a>
+                                <span class="ico-badge ico-badge--v4">2020-09-03-인증약관 변경 관련</span>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc">
+                                비로그인 상태일 시 (휴대폰 인증o)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_confirm_new02.html" target="_blank">
+                                    health_guide_confirm_new02.html
+                                </a>
+                                <span class="ico-badge ico-badge--v4">2020-09-03-인증약관 변경 관련</span>
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">
+                                건강검진 - 본인인증 화면(공인인증서 가져오기x,등록x)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_confirm02.html" target="_blank">
+                                    health_guide_confirm02.html
+                                </a>
+                                <span class="ico-badge ico-badge--v2">2020-09-02-v2 추가 수정사항 적용</span> 
+                                <span class="ico-badge">2020-09-02 휴대폰 인증 추가 관련 적용</span> 
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">본인인증 화면 오류 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_confirm_pop.html" target="_blank">
+                                    health_guide_confirm_pop.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">
+                                건강검진 항목 상세 팝업(그래프형, 테이블형)
+                            </td>
+                            <td class="tbl-name">
+                                <a href="html/health_medical_pop.html" target="_blank">
+                                    health_medical_pop.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tc" colspan="2">건강검진 정보 미보유</td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_none.html" target="_blank">
+                                    health_guide_none.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" colspan="2">건강검진 메인 프로그래스바 상태</td>
+                            <td class="tbl-name">
+                                <a href="html/health_guide_main_progress.html" target="_blank">
+                                    health_guide_main_progress.html
+                                </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-19 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr class="top-line">
+                            <td rowspan="9" class="tc">보험계약대출조회</td>
+                            <td class="tc" rowspan="3">인증 화면</td>
+                            <td class="">동의 및 휴대폰 인증 화면</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_confirm.html" target="_blank"
+                                    >동의 및 휴대폰 인증 화면</a
+                                >
+                                <span class="ico-badge ico-badge--v4">2020-09-03-인증약관 변경 관련</span>
+                                <span class="ico-badge ico-badge--ok"
+                                    >2020-08-05 - 약관 내용 추가</span
+                                ><span class="ico-badge ico-badge--ok">2020-07-29 완료</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="td-dep02">보험계약대출조회 약관 팝업</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_serchTerms_pop.html" target="_blank"
+                                    >보험계약대출조회 약관 팝업</a
+                                >
+                                <span class="ico-badge ico-badge--v4">2020-09-03-인증약관 변경 관련</span>
+                                <span class="ico-badge ico-badge--ok"
+                                    >2020-08-05 - 약관 내용 추가</span
+                                ><span class="ico-badge ico-badge--ok">2020-07-29 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-dep02">인증 팝업 ( 알럿 팝업들 )</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_search_confirm_pops.html" target="_blank"
+                                    >알럿 팝업들</a
+                                ><span class="ico-badge ico-badge--ok">2020-07-29 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-dep02" colspan="2">보험계약대출조회 &gt; 안내 화면</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide.html" target="_blank"
+                                    >termsLoan_guide.html</a
+                                >
+                                <span class="ico-badge ico-badge--ok">2020-09-01 캡쳐이미지 변경</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-07-28 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc" rowspan="2">메인 화면 Case01</td>
+                            <td class="">Case 1-1 : 대출 보유(자사) / 보험 보유</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_case01_1.html" target="_blank"
+                                    >termsLoan_guide_case01_1.html </a
+                                >
+                                <span class="ico-badge ico-badge--v3">2020-09-03 - 연금수련 안내 팝업 관련건 적용</span>
+                                <span class="ico-badge ico-badge--ing">2020-09-02 변액보험 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-09-01 비디오 영상영역 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 수정사항적용</span>
+                                <span class="ico-badge ico-badge--ok"
+                                    >2020-08-04 - 문구수정 적용 ("하나생명 보험계약대출로 ")</span
+                                ><span class="ico-badge ico-badge--ok">2020-07-29 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-dep02">Case 1-2 : 대출 보유(타사) / 보험 보유</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_case01_2.html" target="_blank"
+                                    >termsLoan_guide_case01_2.html </a
+                                >
+                                <span class="ico-badge ico-badge--ing">2020-09-02 변액보험 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-09-01 비디오 영상영역 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 수정사항적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-07-29 완료</span>
+                            </td>
+                        </tr>
+                          <!-- 
+                        <tr>
+                            <td class="td-dep02">Case 1-1/1-2 : 대출 보유 / 보험 보유</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_case01_3.html" target="_blank">
+                                    termsLoan_guide_case01_3.html </a
+                                >
+                                <span class="ico-badge ico-badge--ing">2020-09-02 변액보험 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 수정사항적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-07-29 완료</span>
+                            </td>
+                        </tr>
+                      <tr>
+                            <td class="td-dep02">Case 1-1/1-2 : 대출보유(자사) / 보험 보유_video <span class="ico-badge ico-badge--ing">2020-08-31 new</span></td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_case01_video.html" target="_blank">
+                                    termsLoan_guide_case01_video.html </a
+                                >
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td class="tc">메인 화면 Case02</td>
+                            <td class="td-dep02">대출 보유 / 보험 미보유</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_case02.html" target="_blank"
+                                    >termsLoan_guide_case02.html</a
+                                >
+                                <span class="ico-badge ico-badge--ok">2020-09-01 비디오 영상영역 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-26 수정사항적용</span>
+                                <span class="ico-badge ico-badge--ok"
+                                    >2020-08-04 - 문구 추가 "비교할 수 있는 하나생명 보험 상품이
+                                    없습니다."</span
+                                ><span class="ico-badge ico-badge--ok">2020-07-30 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc">메인 화면 Case03</td>
+                            <td class="td-dep02">대출 미보유 / 보험 보유</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_case03.html" target="_blank"
+                                    >termsLoan_guide_case03.html</a
+                                >
+                                <span class="ico-badge ico-badge--ing">2020-09-02 변액보험 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-09-01 비디오 영상영역 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-07-30 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tc">메인 화면 Case04</td>
+                            <td class="td-dep02">대출 미보유 / 보험 미보유</td>
+                            <td class="tbl-name">
+                                <a href="html/termsLoan_guide_case04.html" target="_blank"
+                                    >termsLoan_guide_case04.html</a
+                                >
+                                <span class="ico-badge ico-badge--ok">2020-09-01 비디오 영상영역 추가</span>
+                                <span class="ico-badge ico-badge--ok">2020-08-24 수정사항 적용</span>
+                                <span class="ico-badge ico-badge--ok">2020-07-30 완료</span>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+            <td class="td-dep02" colspan="2">RangeTest</td>
+            <td class="tbl-name"><a href="#" target="_blank">test</a><span class="ico-badge">진행 예정</span></td>
+          </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="list_w">
+            <p class="tit">원큐플러스</p>
+            <div class="table-wrap">
+                <table class="codinglist">
+                    <colgroup>
+                        <!-- <col class="tbl-num"/> -->
+                        <col class="tbl-dep" />
+                        <col class="tbl-dep" />
+                        <col class="tbl-dep tbl-dep--02" />
+                        <col />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <!-- <th rowspan="2">no.</th> -->
+                            <th colspan="3">navi</th>
+                            <th rowspan="2">filename</th>
+                        </tr>
+                        <tr>
+                            <th>depth1</th>
+                            <th>depth2</th>
+                            <th>depth3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="one-q">
+                            <td rowspan="5" class="tc">하나원큐플러스</td>
+                            <td class="tc" rowspan="3">Gate 메인</td>
+                            <td class="">미보유시</td>
+                            <td class="tbl-name">
+                                <a href="oneQ/html/gate_main01.html" target="_blank"
+                                    >미보유시 - gate_main01.html</a
+                                ><span class="ico-badge ico-badge--ok">2020-08-25 수정</span>
+                            </td>
+                        </tr>
+
+                        <tr class="one-q">
+                            <td class="td-dep02">보험보유</td>
+                            <td class="tbl-name">
+                                <a href="oneQ/html/gate_main02.html" target="_blank"
+                                    >보험보유 - gate_main02.html</a
+                                ><span class="ico-badge ico-badge--ok">2020-08-25 수정</span>
+                            </td>
+                        </tr>
+
+                        <tr class="one-q">
+                            <td class="td-dep02">느낌표 추가</td>
+                            <td class="tbl-name">
+                                <a href="oneQ/html/mo_rec_101.html" target="_blank"> mo_rec_101 </a>
+                                <span class="ico-badge ico-badge--ok">2020-08-13 완료</span>
+                            </td>
+                        </tr>
+                        <tr class="one-q">
+                            <td class="td-dep02" colspan="2">스프레시</td>
+                            <td class="tbl-name">
+                                <a href="oneQ/html/mo_sys_move.html" target="_blank">
+                                    mo_sys_move.html</a
+                                ><span class="ico-badge ico-badge--ok">2020-08-25 수정</span>
+                            </td>
+                        </tr>
+                        <tr class="one-q">
+                            <td class="td-dep02" colspan="2">폼 화면</td>
+                            <td class="tbl-name">
+                                <a href="oneQ/html/mo_ana_101.html" target="_blank">
+                                    mo_ana_101.html</a
+                                ><span class="ico-badge ico-badge--ok">2020-08-25 수정</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="list_w">
+            <p class="tit">pistmw</p>
+            <div class="table-wrap">
+                <table class="codinglist">
+                    <colgroup>
+                        <!-- <col class="tbl-num"/> -->
+                        <col class="tbl-dep" />
+                        <col class="tbl-dep" />
+                        <col class="tbl-dep tbl-dep--02" />
+                        <col />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <!-- <th rowspan="2">no.</th> -->
+                            <th colspan="3">navi</th>
+                            <th rowspan="2">filename</th>
+                        </tr>
+                        <tr>
+                            <th>depth1</th>
+                            <th>depth2</th>
+                            <th>depth3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="one-q">
+                            <td  class="tc">하나원큐플러스</td>
+                            <td class="tc"></td>상태 숫자 아이콘 변경</td>
+                            <td class="">미보유시</td>
+                            <td class="tbl-name">
+                                <a href="pistmw/html/Ca-mn-03-01.html" target="_blank"
+                                    >Ca-mn-03-01.html</a
+                                ><span class="ico-badge ico-badge--ok">2020-08-25 수정</span>
+                            </td>
+                        </tr>
+                        <tr class="one-q">
+                            <td  class="tc">하나원큐플러스</td>
+                            <td class="tc">상태 숫자 아이콘 변경</td>
+                            <td class="">미보유시</td>
+                            <td class="tbl-name">
+                                <a href="pistmw/html/Ca-mn-03.html" target="_blank"
+                                    >Ca-mn-03.html</a
+                                ><span class="ico-badge ico-badge--ok">2020-08-25 수정</span>
+                            </td>
+                        </tr>
+                        <tr class="one-q">
+                            <td  class="tc">하나원큐플러스</td>
+                            <td class="tc">gnb아이콘 변경 확인</td>
+                            <td class="">미보유시</td>
+                            <td class="tbl-name">
+                                <a href="pistmw/html/Pro-mn-00.html" target="_blank"
+                                    >Pro-mn-00.html</a
+                                ><span class="ico-badge ico-badge--ok">2020-08-25 수정</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $(".codinglist tr").each(function () {
+                    var index = $(".codinglist tbody tr").index(this) + 1
+                    $(this).children("td:first-child").text(index)
+                    $(this).children("td").find("a").attr("target", "_blank")
+                })
+                $(".codinglist tr").on("click", function () {
+                    $(".codinglist tr").removeClass("bg")
+                    $(this).addClass("bg")
+                })
+            })
+        </script>
+    </body>
+</html>
