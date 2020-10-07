@@ -1051,8 +1051,8 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
 /* .progress-bot-notice */
 .progress-bot-notice{position:relative;z-index:10;margin:30px -2px 0;color:#666;font-size:10px;letter-spacing:-1px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;}
 /* 10.07 추가 .disease-box */
-.disease-box{width:100%;  margin-top:25px; border-top:1px solid #ddd; display:flex; display:-webkit-box; display:-ms-flexbox; flex-wrap:wrap;}
-.disease-box>div{display:flex; display:-webkit-box; display:-ms-flexbox; justify-content: space-between; width:100%;}
+.disease-box{width:100%;  margin-top:25px; border-top:1px solid #ddd; display:flex; flex-wrap:wrap;}
+.disease-box>div{display:flex; justify-content: space-between; width:100%;}
 .disease-box>div:first-child{padding-top:20px;}
 .disease-box>div:not(:first-child){padding-top:12px;}
 .disease-box__item{flex:0 0 47%;}
