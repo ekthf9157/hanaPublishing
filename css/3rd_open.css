@@ -1055,7 +1055,7 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
 .disease-box>div{display:flex; display:-webkit-box; display:-ms-flexbox; justify-content: space-between; width:100%;}
 .disease-box>div:first-child{padding-top:20px;}
 .disease-box>div:not(:first-child){padding-top:12px;}
-.disease-box__item{flex:0 0 47%; -webkit-box-flex: 0 0 47%; -ms-flex: 0 0 47%;}
+.disease-box__item{flex:0 0 47%;}
 .disease-box__item>div{ vertical-align:top;}
 .disease-box__icon{float:left;}  
 .disease-box__icon:after{content:'';clear:both;display:block;}
