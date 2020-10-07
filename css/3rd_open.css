@@ -10,7 +10,7 @@ header.header-3rd-type {z-index: 300;position: fixed;top: 0;left: 0;width:100%;r
 .header-3rd-type .header-inner {padding-top: 42px;}
 .header-3rd-type .page-tit {font-size: 22px;color: #111;}
 .header-3rd-type .page-tit-desc {overflow: hidden;padding-top:8px;font-size:14px;color:#999;text-overflow: ellipsis;white-space: nowrap;width:99%;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
-.btn_go_prev{ z-index: 301;position: fixed;top: 10px;width: 32px;height: 32px;background-repeat: no-repeat;background-size: 100%;background-position: center;text-indent: -9999px;left: 20px;background-image: url(/images/common/btn/btn_prev.png);}
+.btn_go_prev{ z-index: 301;position: fixed;top: 10px;width: 32px;height: 32px;background-repeat: no-repeat;background-size: 100%;background-position: center;text-indent: -9999px;left: 20px;background-image: url(../images/common/btn/btn_prev.png);}
 /* container */
 #container.container-3rd-type{position:relative;min-height:100%;padding:91px 0 0;}
 #container.container-3rd-type.header-fixed-type2{padding-top:132px;}
