@@ -10,7 +10,7 @@ header.header-3rd-type {z-index: 300;position: fixed;top: 0;left: 0;width:100%;r
 .header-3rd-type .header-inner {padding-top: 42px;}
 .header-3rd-type .page-tit {font-size: 22px;color: #111;}
 .header-3rd-type .page-tit-desc {overflow: hidden;padding-top:8px;font-size:14px;color:#999;text-overflow: ellipsis;white-space: nowrap;width:99%;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
-.btn_go_prev{ z-index: 301;position: fixed;top: 10px;width: 32px;height: 32px;background-repeat: no-repeat;background-size: 100%;background-position: center;text-indent: -9999px;left: 20px;background-image: url(/images/common/btn/btn_prev.png);}
+.btn_go_prev{ z-index: 301;position: fixed;top: 10px;width: 32px;height: 32px;background-repeat: no-repeat;background-size: 100%;background-position: center;text-indent: -9999px;left: 20px;background-image: url(../images/common/btn/btn_prev.png);}
 /* container */
 #container.container-3rd-type{position:relative;min-height:100%;padding:91px 0 0;}
 #container.container-3rd-type.header-fixed-type2{padding-top:132px;}
@@ -22,14 +22,14 @@ header.header-3rd-type {z-index: 300;position: fixed;top: 0;left: 0;width:100%;r
 #gnb:after {content: '';display: block;clear: both;}
 #gnb > button {flex: 1 1 25%;padding: 3px 0;height: inherit;}
 #gnb > button:before {content: '';display: block;margin: 0 auto;width: 32px;height: 32px;background-repeat: no-repeat;background-size: 100%;background-position: center;}
-#gnb > button.btn_main:before {background-image: url('/pist/images/myPage/btn_gnb_home.png');}
-#gnb > button.btn_product:before {background-image: url('/pist/images/myPage/btn_gnb_product.png');}
-#gnb > button.btn_mobile_counter:before {background-image: url('/pist/images/myPage/btn_gnb_mobile_counter.png');}
-#gnb > button.btn_diagnosis:before { background-image: url('/pist/images/myPage/btn_gnb_diagnosis.png');}
-#gnb > button.btn_main.active:before {background-image: url('/pist/images/myPage/btn_gnb_home_on.png');}
-#gnb > button.btn_product.active:before {background-image: url('/pist/images/myPage/btn_gnb_product_on.png');}
-#gnb > button.btn_mobile_counter.active:before {background-image: url('/pist/images/myPage/btn_gnb_mobile_counter_on.png');}
-#gnb > button.btn_diagnosis.active:before {background-image: url('/pist/images/myPage/btn_gnb_diagnosis_on.png');}
+#gnb > button.btn_main:before {background-image: url('../images/myPage/btn_gnb_home.png');}
+#gnb > button.btn_product:before {background-image: url('../images/myPage/btn_gnb_product.png');}
+#gnb > button.btn_mobile_counter:before {background-image: url('../images/myPage/btn_gnb_mobile_counter.png');}
+#gnb > button.btn_diagnosis:before { background-image: url('../images/myPage/btn_gnb_diagnosis.png');}
+#gnb > button.btn_main.active:before {background-image: url('../images/myPage/btn_gnb_home_on.png');}
+#gnb > button.btn_product.active:before {background-image: url('../images/myPage/btn_gnb_product_on.png');}
+#gnb > button.btn_mobile_counter.active:before {background-image: url('../images/myPage/btn_gnb_mobile_counter_on.png');}
+#gnb > button.btn_diagnosis.active:before {background-image: url('../images/myPage/btn_gnb_diagnosis_on.png');}
 #gnb > button > span {position: relative;top: -2px;font-size: 11px;font-family: 'NotoSansR';color: #111;}
 
 
@@ -55,7 +55,7 @@ header.header-3rd-type {z-index: 300;position: fixed;top: 0;left: 0;width:100%;r
 .short-menu--annuity{bottom:0;left:0;height:52%}
 .short-menu--loans{bottom:0;right:0;height:44.5%}
 .short-menu__tit{font-size:20px;color:#111;letter-spacing: -1px;width: calc(100% + 10px);}
-.short-menu__desc{position:absolute;overflow:hidden;bottom:18px;left:18px;right:2px;height:39px;padding-right:14px;font-size:12px;letter-spacing:-1px;color:#111;word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;background: url('/pist/images/lifecheck/common/bg_go_arrow.png') no-repeat  92% 91% / 21px 4px;}
+.short-menu__desc{position:absolute;overflow:hidden;bottom:18px;left:18px;right:2px;height:39px;padding-right:14px;font-size:12px;letter-spacing:-1px;color:#111;word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;background: url('../images/lifecheck/common/bg_go_arrow.png') no-repeat  92% 91% / 21px 4px;}
 .short-menu__ico{display:block;overflow:hidden;width:30px;height:30px;margin-bottom:3px;}
 .short-menu__ico img{width:100%;}
 .short-menu__desc02{position:absolute;bottom:18px;left:20px;right:20px;text-align:right;}
@@ -115,7 +115,7 @@ input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-calendar-picker-indicator {display: none; -webkit-appearance: none;} /* 화살표 제거 */
 input[type="password"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"],input[type="text"]{border-radius:0;border-width: 0 0 1px 0;background:#fff;}
 /* ie 화살표 제거 */
-select {padding: 0 36px 0 16px; background:url('/pist/images/lifecheck/common/bg_select_arrow.png') no-repeat right 17px top 20px / 12px 8px;border-width:0 0 1px 0}
+select {padding: 0 36px 0 16px; background:url('../images/lifecheck/common/bg_select_arrow.png') no-repeat right 17px top 20px / 12px 8px;border-width:0 0 1px 0}
 select::-ms-expand {display:none;}
 input::-ms-clear,
 input::-me-reveal {display:none; width:0; height:0;}
@@ -160,14 +160,14 @@ input[type=checkbox]:disabled + label,
 input[type=radio]:disabled + label {color: #999;}
 input[type=checkbox] + label:after,
 input[type=radio] + label:after {content: '';position: absolute;left: 0;top: 3px;width: 16px;height: 16px;vertical-align: top;background-repeat: no-repeat;background-size: 100% 100%;}
-input[type=checkbox] + label:after {background-image: url('/pist/images/lifecheck/common/bg_checkbox.png');}
-input[type=radio] + label:after {background-image: url('/pist/images/lifecheck/common/bg_radio.png');}
-input[type=checkbox]:checked + label:after {background-image: url('/pist/images/lifecheck/common/bg_checkbox_on.png');}
-input[type=radio]:checked + label:after {background-image: url('/pist/images/lifecheck/common/bg_radio_on.png');}
-input[type=checkbox]:disabled + label:after {background-image: url('/pist/images/lifecheck/common/bg_checkbox_disabled.png');}
-input[type=radio]:disabled + label:after {background-image: url('/pist/images/lifecheck/common/bg_radio_disabled.png');}
-input[type=checkbox]:disabled:checked + label:after {background-image: url('/pist/images/lifecheck/common/bg_checkbox_disabled_on.png');}
-input[type=radio]:disabled:checked + label:after {background-image: url('/pist/images/lifecheck/common/bg_radio_disabled_on.png');}
+input[type=checkbox] + label:after {background-image: url('../images/lifecheck/common/bg_checkbox.png');}
+input[type=radio] + label:after {background-image: url('../images/lifecheck/common/bg_radio.png');}
+input[type=checkbox]:checked + label:after {background-image: url('../images/lifecheck/common/bg_checkbox_on.png');}
+input[type=radio]:checked + label:after {background-image: url('../images/lifecheck/common/bg_radio_on.png');}
+input[type=checkbox]:disabled + label:after {background-image: url('../images/lifecheck/common/bg_checkbox_disabled.png');}
+input[type=radio]:disabled + label:after {background-image: url('../images/lifecheck/common/bg_radio_disabled.png');}
+input[type=checkbox]:disabled:checked + label:after {background-image: url('../images/lifecheck/common/bg_checkbox_disabled_on.png');}
+input[type=radio]:disabled:checked + label:after {background-image: url('../images/lifecheck/common/bg_radio_disabled_on.png');}
 /* placeholder */
 input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {text-align:left;color:#999;}
 input:-moz-placeholder,textarea:-moz-placeholder {text-align:left;color:#999;opacity:1;}
@@ -205,7 +205,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {color:#9
 /* 서브페이지 하단 버튼 */
 .grp_button_bottom {overflow: hidden;height: 64px;}
 .grp_button_bottom > button {width: 100%;height: inherit !important;font-size: 16px;color: #fff;text-align: center;}
-.grp_button_bottom > button.cancel {background: #333 url('/pist/images/lifecheck/common/bg_btn_cancel.png') no-repeat center / 26px 16px;text-indent: -9999px;}
+.grp_button_bottom > button.cancel {background: #333 url('../images/lifecheck/common/bg_btn_cancel.png') no-repeat center / 26px 16px;text-indent: -9999px;}
 .grp_button_bottom > button.default {background-color: #333;color: #fff;}
 .grp_button_bottom > button.submit {background-color: #00a8ae;}
 .grp_button_bottom > .btn-chk-agree, .btn-chk-agree {background:#999;color:#fff; transition:all 0.3s;}
@@ -229,8 +229,8 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder {color:#9
 .grp_button_bottom.sep > button.default {margin-left: -143px;width: 143px;}
 .grp_button_bottom.sep > button.submit {width: 100%;}
 /* close - 닫는 애들한테만 사용 */
-.btn_close_popup {width: 32px;height: 32px;background: url('/pist/images/lifecheck/common/btn_close_popup.png') no-repeat center / 100%;text-indent: -9999px;}
-.btn_close_gray {width: 24px;height: 24px;background: url('/pist/images/lifecheck/common/btn_close_gray.png') no-repeat center / 100%;text-indent: -9999px;}
+.btn_close_popup {width: 32px;height: 32px;background: url('../images/lifecheck/common/btn_close_popup.png') no-repeat center / 100%;text-indent: -9999px;}
+.btn_close_gray {width: 24px;height: 24px;background: url('../images/lifecheck/common/btn_close_gray.png') no-repeat center / 100%;text-indent: -9999px;}
 
 /** 3rd 신규 추가 버튼 **/
 .content-3rd-type>.btnArea{padding:0 24px;}
@@ -253,7 +253,7 @@ a.btn-square-full{display:inline-block;}
 .bt-border.bt-border-color03{border: 1px solid #999;color: #999;}
  /*업데이트 버튼*/
  .btn-update{padding:6px 0;}
-.btn-update:after{display:inline-block;content:'';width:20px;height:22px;vertical-align:middle;background: url('/pist/images/lifecheck/common/bg_btn_upadate.png') no-repeat center center / 12px 12px;}
+.btn-update:after{display:inline-block;content:'';width:20px;height:22px;vertical-align:middle;background: url('../images/lifecheck/common/bg_btn_upadate.png') no-repeat center center / 12px 12px;}
 .btn-update__txt{color:#999;font-size:12px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
 .btn-bd {min-width:147px;height:40px;padding:3px 14px 2px;line-height:35px;vertical-align:middle;text-align:center;white-space:nowrap;font-size:15px;border-radius:4px;-webkit-border-radius:4px;background: #fff; color: #666;border: 1px solid #e2e0e0;font-size: 12px;}
 
@@ -289,8 +289,8 @@ a.btn-square-full{display:inline-block;}
 .grp_togglelist.st_02 > .item {position: relative;border-bottom: 1px solid #eee;}
 .grp_togglelist.st_02 > .item:first-child {border-top: 1px solid #eee;}
 .grp_togglelist.st_02 > .item > .title > .tg_btn {display: inline-block;float: right;position: relative;width: 64px;height: 40px;text-indent: -9999px;}
-.grp_togglelist.st_02 > .item > .title > .tg_btn:after {content: '';position: absolute;top: 8px;right: 20px;width: 24px;height: 24px;background: #fff url('/pist/images/lifecheck/common/bg_list_arrow_down.png') no-repeat right center / 100%;}
-.grp_togglelist.st_02 > .item.active > .title > .tg_btn:after{background-image: url('/pist/images/lifecheck/common/bg_list_arrow_up.png');}
+.grp_togglelist.st_02 > .item > .title > .tg_btn:after {content: '';position: absolute;top: 8px;right: 20px;width: 24px;height: 24px;background: #fff url('../images/lifecheck/common/bg_list_arrow_down.png') no-repeat right center / 100%;}
+.grp_togglelist.st_02 > .item.active > .title > .tg_btn:after{background-image: url('../images/lifecheck/common/bg_list_arrow_up.png');}
 .grp_togglelist.st_02 > .item > .content,
 .grp_togglelist.st_03 > .item > .content {padding: 13px 16px;border-top: 1px solid #eee;}
 .ipt_check_agreement02 {float: left;padding: 8px 0 8px 16px;width: calc(100% - 64px);}
@@ -307,21 +307,21 @@ a.btn-square-full{display:inline-block;}
 .ipt_check input[type=radio] + label:after {top: 8px;}
 
 .ipt_check_agreement {background: #fff;padding: 16px 25px 16px 16px;}	
-.ipt_check_agreement--arrow {background: #fff url('/pist/images/lifecheck/common/bg_list_arrow_down.png') no-repeat 97% center / 24px 24px;}
-.ipt_check_agreement--arrow.toggle-agreement-open {background-image:url('/pist/images/lifecheck/common/bg_list_arrow_up.png')}
+.ipt_check_agreement--arrow {background: #fff url('../images/lifecheck/common/bg_list_arrow_down.png') no-repeat 97% center / 24px 24px;}
+.ipt_check_agreement--arrow.toggle-agreement-open {background-image:url('../images/lifecheck/common/bg_list_arrow_up.png')}
 .ipt_check_agreement--arrow .js-btn-toggle-agreemnt{width:100%;}
 .js-btn-toggle-agreemnt span{vertical-align:middle;color:inherit;}
 .ipt_check_agreement input[type=checkbox] + label,
 .ipt_check_agreement input[type=radio] + label {display: inline-block;padding-left: 36px;min-height: 24px;font-size: 14px;color: #111;}
 .ipt_check_agreement02 input[type=checkbox] + label {display: inline-block;padding: 3px 0 3px 32px;min-height: 24px;line-height: 18px; font-size: 12px;width: 100%;}
-.ipt_check_agreement02 input[type=checkbox] + label:after {background: url(/pist/images/lifecheck/common/bg_checkbox_agreement02.png) no-repeat 0 0 / 100% 100%;}
+.ipt_check_agreement02 input[type=checkbox] + label:after {background: url(../images/lifecheck/common/bg_checkbox_agreement02.png) no-repeat 0 0 / 100% 100%;}
 .ipt_check_agreement02 input[type=checkbox]:checked + label {color: #111}
-.ipt_check_agreement02 input[type=checkbox]:checked + label:after {background-image: url('/pist/images/lifecheck/common/bg_checkbox_agreement02_on.png');}
-.ipt_check_agreement input[type=checkbox] + label:after {background: url('/pist/images/lifecheck/common/bg_checkbox_agreement.png') no-repeat 0 0 / 100% 100%;}
+.ipt_check_agreement02 input[type=checkbox]:checked + label:after {background-image: url('../images/lifecheck/common/bg_checkbox_agreement02_on.png');}
+.ipt_check_agreement input[type=checkbox] + label:after {background: url('../images/lifecheck/common/bg_checkbox_agreement.png') no-repeat 0 0 / 100% 100%;}
 .ipt_check_agreement input[type=checkbox] + label:after,
 .ipt_check_agreement02 input[type=checkbox] + label:after,
 .ipt_check_agreement input[type=radio] + label:after {top: 0;width: 24px;height: 24px;transform:none;-webkit-transform:none;-moz-transform:none;-o-transform:none;}
-.ipt_check_agreement input[type=checkbox]:checked + label:after {background-image: url('/pist/images/lifecheck/common/bg_checkbox_agreement_on.png');}
+.ipt_check_agreement input[type=checkbox]:checked + label:after {background-image: url('../images/lifecheck/common/bg_checkbox_agreement_on.png');}
 .dl_agreement {background: #fff;}
 .ipt_check_agreement02 input[type="checkbox"] + label{color:#999;}
 dt.ipt_check_agreement>label>span{color:inherit;}
@@ -448,7 +448,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 /* style 6 */
 .ipt_comp.st_06 > .inner > div {width: 22%;}
 .ipt_comp.st_06 > .inner > .sp {width: 4%;}
-.ipt_comp.st_06 > .inner > div select {padding: 0 24px 0 10px;background: url(/pist/images/lifecheck/common/bg_select_arrow.png) no-repeat right 5px top 20px / 12px 8px;}
+.ipt_comp.st_06 > .inner > div select {padding: 0 24px 0 10px;background: url(../images/lifecheck/common/bg_select_arrow.png) no-repeat right 5px top 20px / 12px 8px;}
 /* style 7 */
 .ipt_comp.st_07 > .inner > div {width: 50%;padding: 0;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .ipt_comp.st_07 > .inner > div:first-child {padding: 0 10px 0 0;}
@@ -477,8 +477,8 @@ dt.ipt_check_agreement>label>span{color:inherit;}
     tooltip
  ------------------------------------------------------------------------------- */
 .tooltip_box.color-inherit{color:inherit;}
-.btn_tooltip {display: inline-block;position: relative;vertical-align: middle;font-size: 0;width: 16px;height: 16px;font-size: 0;background: url('/pist/images/lifecheck/common/icon_question.png') no-repeat center center / 16px 16px;}
-.btn_tooltip_s {display: inline-block;position: relative;vertical-align: middle;font-size: 0;width: 11px;height: 11px;font-size: 0;background: url('/pist/images/lifecheck/common/icon_question_s.png') no-repeat center center / 11px 11px;}
+.btn_tooltip {display: inline-block;position: relative;vertical-align: middle;font-size: 0;width: 16px;height: 16px;font-size: 0;background: url('../images/lifecheck/common/icon_question.png') no-repeat center center / 16px 16px;}
+.btn_tooltip_s {display: inline-block;position: relative;vertical-align: middle;font-size: 0;width: 11px;height: 11px;font-size: 0;background: url('../images/lifecheck/common/icon_question_s.png') no-repeat center center / 11px 11px;}
 
 /* -------------------------------------------------------------------------------
     Layer popup
@@ -508,7 +508,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .layer_popup.tooltip .wrapper_popup .popup_body h1 {text-align: left;font-size: 14px;color: #111;}
 .layer_popup.fixe .wrapper_popup .popup_header h1  {   	font-size: 0 !important;}
 .layer_popup.tooltip .wrapper_popup .popup_header .grp_title_popup.lv_01 > .box_button {top: -14px;right: -18px;}
-.layer_popup.tooltip .wrapper_popup .popup_header .btn_close_tooltip {width: 22px;height: 22px;font-size: 0;background: url('/pist/images/lifecheck/common/btn_close_help.png') no-repeat center center / 22px 22px;}
+.layer_popup.tooltip .wrapper_popup .popup_header .btn_close_tooltip {width: 22px;height: 22px;font-size: 0;background: url('../images/lifecheck/common/btn_close_help.png') no-repeat center center / 22px 22px;}
 .layer_popup.full .wrapper_popup .popup_header,
 .layer_popup.menuAll .wrapper_popup .popup_header {border-bottom: 1px solid #ddd;}
 .layer_popup.full .wrapper_popup .popup_body,
@@ -536,7 +536,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .keypad_num button {display: inline-block;float: left;width: 25%;line-height: 60px;font-size: 16px;color: #111;text-align: center;}
 .keypad_num button:active,
 .keypad_num button.active {background: #f2f2f2;}
-.keypad_num button.num_img {text-indent: -9999px;background: url('/pist/images/lifecheck/common/bg_keypad_logo.png') no-repeat center center;background-size: 18px 17px;}
+.keypad_num button.num_img {text-indent: -9999px;background: url('../images/lifecheck/common/bg_keypad_logo.png') no-repeat center center;background-size: 18px 17px;}
 
 /** 2020-08 추가 **/
 .popup_content.pop-bgcolor02{background:#f5f5f5;}
@@ -561,7 +561,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 
  /* ----------------------------------------------------------------------------------------------------------------
 	2020-08 : 3차 오픈 
-	신규 컨텐츠 - 보험계약대출조회 에서 사용중 (다 공통으로 사용가능)
+	신규 컨텐츠 - 통합 연금 조회에서 사용중 (다 공통으로 사용가능)
  ------------------------------------------------------------------------------------------------------------------ */
  
 /* 폰트 포인트 컬러 */
@@ -596,8 +596,6 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .bulit-circle:after{content:'';position:absolute;overflow:hidden;left:0;top:8px;width:4px;height:4px;border-radius:100%;background:#999;}
 .bulit-sm-lst>li{position:relative;padding-left:8px;font-size:11px;color:#999;}
 .bulit-sm-lst>li:after{position:absolute;content:'';left:0;top:8px;height:1px;width:4px;background:#999;}
-/*li 밑에 불릿text 올 경우 0907 추가*/
-.txt-lst > li.bulit-circle.lst-bulit-circle {color: #666;}
 /*.termsguide-box -약관대출 메인 상단*/
 .termsguide-box{padding:10px 24px 40px;}
 .termsguide-box__update:first-child{margin-top:20px;}
@@ -616,11 +614,11 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .termsguide-spm-lst__txt{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;width:100%;height:40px;line-height:20px;font-size:14px;text-overflow:ellipsis;color:#111;}
 /*.terms-addbox*/
 .terms-addbox{position:relative;padding:30px 40px 24px 30px;background:#e1e8e8;}
-.terms-addbox--typ02{padding:30px 30px 24px;} 
+.terms-addbox--typ02{padding:30px 30px 24px;}
 .terms-addbox:after{content:'';display:block;clear:both;}
 .terms-addbox__txt{font-size:16px;color:#000;letter-spacing:-1px;}
-.terms-addbox__top{position:absolute;top:27px;left:28px;}
-.terms-addbox__bot{position:absolute;bottom:22px;left:28px;font-size:12px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif}
+.terms-addbox__top{position:absolute;top:28px;left:30px;}
+.terms-addbox__bot{position:absolute;bottom:22px;left:30px;font-size:12px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif}
 .terms-addbox__bot p{color:inherit;}
 .terms-addbox__btn{position:relative;display:inline-block;margin-top:5px;padding-right:12px;font-weight:bold;}
 .terms-addbox__btn:after{content:"";position:absolute;right:0;top:7px;width:5px;height:5px;transform: rotate(45deg);border-top: 1px solid #00a8ae;border-right: 1px solid #00a8ae;}
@@ -714,14 +712,14 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .total-accordion{border-top:12px solid #f5f5f5;}
 .total-accordion .toggleCont {margin-bottom:-12px;}
 .grp_togglelist.st_3rdtype > .item > .title > .tg_btn{display:block;width:100%;height:100%;padding:20px 18px 20px 24px;text-indent:0;text-align:left;font-size:18px;color:#111;}
-.grp_togglelist.st_3rdtype > .item > .title > .tg_btn:after{top:50%;transform:translateY(-50%);background: #fff url(/pist/images/lifecheck/common/bg_btn_accr_up.png) no-repeat center center / 18px 12px;}
+.grp_togglelist.st_3rdtype > .item > .title > .tg_btn:after{top:50%;transform:translateY(-50%);background: #fff url(../images/lifecheck/common/bg_btn_accr_up.png) no-repeat center center / 18px 12px;}
 .toggleCont.bd_solid{border-bottom-style:solid;} 
 .toggleCont > ul.new-toggle > li:not(:first-child) {border-style:solid;}
 .toggleCont > ul.new-toggle > li > dl > dt{padding:20px 18px 20px 24px;}
 .toggleCont > ul.new-toggle > li dt a{font-size:18px;color:#111;}
 .toggleCont > ul.new-toggle > li.on dt a{color:#111;}
-.toggleCont > ul.new-toggle > li dt button{right:26px;background: #fff url(/pist/images/lifecheck/common/bg_btn_accr_down.png) no-repeat center center / 12px 8px;}
-.toggleCont > ul.new-toggle > li.on dt button{background-image:url(/pist/images/lifecheck/common/bg_btn_accr_up.png);}
+.toggleCont > ul.new-toggle > li dt button{right:26px;background: #fff url(../images/lifecheck/common/bg_btn_accr_down.png) no-repeat center center / 12px 8px;}
+.toggleCont > ul.new-toggle > li.on dt button{background-image:url(../images/lifecheck/common/bg_btn_accr_up.png);}
 .toggleCont > ul.new-toggle > li > dl > dd{border-style:solid;}
 .toggleCont .new-toggle__cont{padding:20px 24px 40px;}
 .toggleCont > ul.new-toggle > li dd > div{padding:0;line-height:normal;}
@@ -750,9 +748,9 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .wrong-box{background: #fff;padding:24px;font-size: 16px;color: #666;word-break: keep-all;}
 /*느낌표 텍스트*/
 .bg-exclam-txt{position:relative;text-align:left;padding-left:22px;color:#666;font-size:14px;}
-.bg-exclam-txt:after{position:absolute;top:1px;left:0;content:'';width:17px;height:17px;background: url('/pist/images/lifecheck/common/ico-exclam.png') no-repeat 0 0  / 17px 17px;}
+.bg-exclam-txt:after{position:absolute;top:1px;left:0;content:'';width:17px;height:17px;background: url('../images/lifecheck/common/ico-exclam.png') no-repeat 0 0  / 17px 17px;}
 .bg-exclam-txt02{position:relative;text-align:left;padding: 0 16px;color:#666;font-size:11px;color:#000;}
-.bg-exclam-txt02:after{position:absolute;top:3px;left:0;content:'';width:11px;height:11px;background: url('/pist/images/lifecheck/common/ico-exclam02.png') no-repeat 0 0  / 11px 11px;}
+.bg-exclam-txt02:after{position:absolute;top:3px;left:0;content:'';width:11px;height:11px;background: url('../images/lifecheck/common/ico-exclam02.png') no-repeat 0 0  / 11px 11px;}
 /*없음 안내 */
 /*.warning-ment-wrap{position:absolute;top:0;left:0;width:100%;height:calc(100vh - 145px);background:#f5f5f5;}*/
 .warning-ment-wrap{position:fixed;top:91px;left:0;width:100%;bottom:64px;background:#f5f5f5;}
@@ -760,7 +758,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .warning-ment-wrap__inner .warning-ment{position:absolute;top:50%;left:0;transform:translateY(-50%);}
 .warning-ment-wrap__inner .warning-ment .warning-ment__ico{margin-bottom:14px;}
 .warning-ment{width:100%;text-align:center;}
-.warning-ment__ico{display:inline-block;width:40px;height:42px;margin-bottom:8px; background: url('/pist/images/lifecheck/ico_warning.png') no-repeat 0 0 / 38px 41px;}
+.warning-ment__ico{display:inline-block;width:40px;height:42px;margin-bottom:8px; background: url('../images/lifecheck/ico_warning.png') no-repeat 0 0 / 38px 41px;}
 .warning-ment__ico.ico-sm-warnig{width:25px;height:27px;margin-bottom:4px;background-size:25px 27px;}
 .warning-ment__txt{font-size:16px;color:#666}
 .warning-ment__txt strong{font-weight:bold;color:#111;}
@@ -791,13 +789,13 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .video-wrap:after{content:'';display:block;padding-bottom:58%;}
 .video-wrap .video-area{position:absolute;top:0;left:0;width:100%;height:100%;}
 .video-area video{width:100%;height:100%;}
-.btn-video-play{position:absolute;top:50%;left:50%;z-index:10;width:48px;height:48px;transform:translate(-50%,-50%);background:url('/pist/images/lifecheck/common/bg_video_play.png') no-repeat 0 0 / 48px 48px;}
+.btn-video-play{position:absolute;top:50%;left:50%;z-index:10;width:48px;height:48px;transform:translate(-50%,-50%);background:url('../images/lifecheck/common/bg_video_play.png') no-repeat 0 0 / 48px 48px;}
 .video-notice-box{margin:10px 0 30px;padding:24px 10px;background:#fff;color:#666;font-size:16px;}
 .video-notice-box p{color:inherit;}
 .link-box{position:relative;padding:20px 24px;background:#96b1b2;color:#fff;}
 .link-box__txt{width:76%;color:inherit;font-size:14px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;}
 .link-box .btn-go{color:#fff;}
-.link-box .btn-go:after{background-image:url('/pist/images/lifecheck/common/bg_go_arrow_white.png');}
+.link-box .btn-go:after{background-image:url('../images/lifecheck/common/bg_go_arrow_white.png');}
 .link-box__right-bot{position:absolute;right:24px;bottom:18px;}
 @media only screen and (max-width:375px) {
 	.terms-addbox.terms-addbox--typ02{padding: 36px 26px 36px 30px;}
@@ -897,9 +895,9 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .health-main__update{margin-bottom:4px;text-align:right;}
 .health-main__update .btn-update{padding-left:6px;}
 .health-main__update .btn-update__txt{color:#fff;}
-.health-main__update .btn-update:after{width:19px;height:19px;margin-left:3px;background:url('/pist/images/lifecheck/common/bg_btn_upadate03.png') no-repeat 0 0 / 18px 18px;}
+.health-main__update .btn-update:after{width:19px;height:19px;margin-left:3px;background:url('../images/lifecheck/common/bg_btn_upadate03.png') no-repeat 0 0 / 18px 18px;}
 .health-main__button{position:relative;margin-bottom:10px;padding:4px 30px 4px 4px;display:inline-block;border-bottom:1px solid #fff;font-size:22px;color:#fff;}
-.health-main__button:after{content:'';position:absolute;top:19px;right:6px;width:12px;height:8px;background:url('/pist/images/lifecheck/common/bg_select_arrow_white.png') no-repeat 0 0 / 12px 8px;} 
+.health-main__button:after{content:'';position:absolute;top:19px;right:6px;width:12px;height:8px;background:url('../images/lifecheck/common/bg_select_arrow_white.png') no-repeat 0 0 / 12px 8px;} 
 .health-main__progress{overflow:hidden;background:#fff;padding: 24px 42px 34px; box-shadow: 0 10px 10px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);}
 
 /*** 프로그래스바 시작 ***/
@@ -1012,7 +1010,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .btn-go{position:relative;padding-right:28px;font-size:12px;color:#111;}
 .recom-box a.btn-go, .recom-box a.btn-go:link, .recom-box a.btn-go:visited, .recom-box a.btn-go:active{color:#111;}
 button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;}
-.btn-go:after{content:'';position:absolute;bottom:4px;right:0;width:19px;height:4px;background:url('/pist/images/lifecheck/common/bg_go_arrow.png') no-repeat 0 0 / 19px 4px;}
+.btn-go:after{content:'';position:absolute;bottom:4px;right:0;width:19px;height:4px;background:url('../images/lifecheck/common/bg_go_arrow.png') no-repeat 0 0 / 19px 4px;}
 /* .health-chk-header, .annuity-chk-header */
 .health-chk-header, .annuity-chk-header{padding:25px 24px 17px;background:#eee;}
 .health-chk-tit, .annuity-chk-tit{color:#111;font-size:15px;font-family: 'NotoSansM', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif}
@@ -1050,20 +1048,6 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
 /** 3차오픈 후 신규 요건 추가 **/
 /* .progress-bot-notice */
 .progress-bot-notice{position:relative;z-index:10;margin:30px -2px 0;color:#666;font-size:10px;letter-spacing:-1px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;}
-/* 10.07 추가 .disease-box */
-.disease-box{width:100%;  margin-top:25px; border-top:1px solid #ddd; display:flex; flex-wrap:wrap;}
-.disease-box>div{display:flex; justify-content: space-between; width:100%;}
-.disease-box>div:first-child{padding-top:20px;}
-.disease-box>div:not(:first-child){padding-top:12px;}
-.disease-box__item{flex:0 0 47%;}
-.disease-box__item>div{ vertical-align:top;}
-.disease-box__icon{float:left;}  
-.age_badge{display:inline-block; text-align:center;  padding:2px 8px; font-family: 'NotoSans'; border-radius:3px; font-size:12px; }
-.age_badge.good{background:#009591; color:#fff;}/*좋음*/
-.age_badge.bad{background:#ff6868; color:#fff;}/*나쁨*/
-.age_badge.normal{background:#1fc99f; color:#fff;}/*보통*/
-.disease-box__txt{font-size:12px; float:right; text-align:right; color: #111111; }
-.disease-box__txt .disease-tit-age{font-size:20px; font-family: 'NotoSansM'}
 /*.score-box */
 .score-box{margin-top:10px;padding:14px 10px;background:#fff;}
 .score-box:after{content:"";display:block;clear:both;}
@@ -1125,8 +1109,8 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
 .chart-btn-next{left:auto;right:-27px;}
 .chart-btn-prev{left:-27px;right:auto;}
 .annuity-slider .swiper-button-prev, .annuity-slider .swiper-button-next{bottom:auto;top:50%;width:30px;height:30px;}
-.annuity-slider .swiper-button-prev{left:26px;background: url('/pist/images/lifecheck/common/bg_swiper_prev.png') no-repeat center center / 6px 10px;}
-.annuity-slider .swiper-button-next{right:26px;background: url('/pist/images/lifecheck/common/bg_swiper_next.png') no-repeat center center / 6px 10px;}
+.annuity-slider .swiper-button-prev{left:26px;background: url('../images/lifecheck/common/bg_swiper_prev.png') no-repeat center center / 6px 10px;}
+.annuity-slider .swiper-button-next{right:26px;background: url('../images/lifecheck/common/bg_swiper_next.png') no-repeat center center / 6px 10px;}
 
 /*.annuity-chart*/
 .annuity-chart-warp {padding:30px 9%;}
@@ -1151,7 +1135,7 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
 .annuity-graph:after{content:'';clear:both;display:block;}
 .annuity-graph__left,.annuity-graph__right{position:relative;float:left;width:50%;}
 .graph-stick{position:relative;width:46%;height:0;padding-top:92%;margin:0 auto;}
-.annuity-graph__left .graph-stick{background: url('/pist/images/lifecheck/common/bg_graph_pattern.jpg') repeat 0 0 / 30px 31px;}
+.annuity-graph__left .graph-stick{background: url('../images/lifecheck/common/bg_graph_pattern.jpg') repeat 0 0 / 30px 31px;}
 .graph-stick__move{position:absolute;bottom:0;left:0;width:100%;background:#ddd;height:0;transition:all 0.3s;}
 .annuity-graph__right .graph-stick__move{background:#cde6e7;}
 .graph-bot-txt{padding-top:10px;text-align:center;font-size:14px;color:#666;}
@@ -1171,11 +1155,11 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
 .annuity-advice__status{margin-bottom:5px;font-size:16px;color:#111;font-weight:bold;}
 .annuity-advice__desc{width:calc(100% + 4px);font-size:14px;color:#111;}
 /*.ico-status {width:40px;height:40px;} */
-.ico-status{overflow:hidden;display:inline-block;width:37px;height:53px;text-indent:-999px;background: url('/pist/images/lifecheck/common/sp_status_num.png') no-repeat 0 0 / 37px 270px;}
+.ico-status{overflow:hidden;display:inline-block;width:37px;height:53px;text-indent:-999px;background: url('../images/lifecheck/common/sp_status_num.png') no-repeat 0 0 / 37px 270px;}
 /*
-.ico-status--good{background: url('/pist/images/lifecheck/common/ico_status_good.png') repeat 0 0 / 40px 40px;}
-.ico-status--normal{background: url('/pist/images/lifecheck/common/ico_status_noraml.png') repeat 0 0/ 40px 40px;}
-.ico-status--bad{background: url('/pist/images/lifecheck/common/ico_status_bad.png') repeat 0 0 / 40px 40px;}
+.ico-status--good{background: url('../images/lifecheck/common/ico_status_good.png') repeat 0 0 / 40px 40px;}
+.ico-status--normal{background: url('../images/lifecheck/common/ico_status_noraml.png') repeat 0 0/ 40px 40px;}
+.ico-status--bad{background: url('../images/lifecheck/common/ico_status_bad.png') repeat 0 0 / 40px 40px;}
 */
 .ico-status--num02{background-position-y:-54px;}
 .ico-status--num03{background-position-y:-108px;}
@@ -1221,7 +1205,7 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
                  
 /*.btn-prd-info*/
 .prd-btn-warp{padding:20px 24px;}
-.btn-prd-info{position:relative;width:100%;height:52px;padding:0 46px 0 16px;border-bottom:0;color:#fff;font-size:14px;text-align:left;font-weight:normal;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;background:#00a8ae url('/pist/images/lifecheck/common/bg_slect_arrow_type02.png') 95% center no-repeat;background-size:10px 6px;}
+.btn-prd-info{position:relative;width:100%;height:52px;padding:0 46px 0 16px;border-bottom:0;color:#fff;font-size:14px;text-align:left;font-weight:normal;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;background:#00a8ae url('../images/lifecheck/common/bg_slect_arrow_type02.png') 95% center no-repeat;background-size:10px 6px;}
 /*.deatil-chk-wrap*/
 .deatil-chk-wrap{border-top:12px solid #f5f5f5;background:#f5f5f5;}
 .deatil-chk-wrap .bg-exclam-txt02, .lst-table--annuity .bg-exclam-txt02 {margin-left:4px;}
