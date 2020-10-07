@@ -10,7 +10,7 @@ header.header-3rd-type {z-index: 300;position: fixed;top: 0;left: 0;width:100%;r
 .header-3rd-type .header-inner {padding-top: 42px;}
 .header-3rd-type .page-tit {font-size: 22px;color: #111;}
 .header-3rd-type .page-tit-desc {overflow: hidden;padding-top:8px;font-size:14px;color:#999;text-overflow: ellipsis;white-space: nowrap;width:99%;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
-.btn_go_prev{ z-index: 301;position: fixed;top: 10px;width: 32px;height: 32px;background-repeat: no-repeat;background-size: 100%;background-position: center;text-indent: -9999px;left: 20px;background-image: url(../images/common/btn/btn_prev.png);}
+.btn_go_prev{ z-index: 301;position: fixed;top: 10px;width: 32px;height: 32px;background-repeat: no-repeat;background-size: 100%;background-position: center;text-indent: -9999px;left: 20px;background-image: url(/images/common/btn/btn_prev.png);}
 /* container */
 #container.container-3rd-type{position:relative;min-height:100%;padding:91px 0 0;}
 #container.container-3rd-type.header-fixed-type2{padding-top:132px;}
@@ -561,7 +561,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 
  /* ----------------------------------------------------------------------------------------------------------------
 	2020-08 : 3차 오픈 
-	신규 컨텐츠 - 통합 연금 조회에서 사용중 (다 공통으로 사용가능)
+	신규 컨텐츠 - 보험계약대출조회 에서 사용중 (다 공통으로 사용가능)
  ------------------------------------------------------------------------------------------------------------------ */
  
 /* 폰트 포인트 컬러 */
@@ -596,6 +596,8 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .bulit-circle:after{content:'';position:absolute;overflow:hidden;left:0;top:8px;width:4px;height:4px;border-radius:100%;background:#999;}
 .bulit-sm-lst>li{position:relative;padding-left:8px;font-size:11px;color:#999;}
 .bulit-sm-lst>li:after{position:absolute;content:'';left:0;top:8px;height:1px;width:4px;background:#999;}
+/*li 밑에 불릿text 올 경우 0907 추가*/
+.txt-lst > li.bulit-circle.lst-bulit-circle {color: #666;}
 /*.termsguide-box -약관대출 메인 상단*/
 .termsguide-box{padding:10px 24px 40px;}
 .termsguide-box__update:first-child{margin-top:20px;}
@@ -614,11 +616,11 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .termsguide-spm-lst__txt{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;width:100%;height:40px;line-height:20px;font-size:14px;text-overflow:ellipsis;color:#111;}
 /*.terms-addbox*/
 .terms-addbox{position:relative;padding:30px 40px 24px 30px;background:#e1e8e8;}
-.terms-addbox--typ02{padding:30px 30px 24px;}
+.terms-addbox--typ02{padding:30px 30px 24px;} 
 .terms-addbox:after{content:'';display:block;clear:both;}
 .terms-addbox__txt{font-size:16px;color:#000;letter-spacing:-1px;}
-.terms-addbox__top{position:absolute;top:28px;left:30px;}
-.terms-addbox__bot{position:absolute;bottom:22px;left:30px;font-size:12px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif}
+.terms-addbox__top{position:absolute;top:27px;left:28px;}
+.terms-addbox__bot{position:absolute;bottom:22px;left:28px;font-size:12px;font-family:'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif}
 .terms-addbox__bot p{color:inherit;}
 .terms-addbox__btn{position:relative;display:inline-block;margin-top:5px;padding-right:12px;font-weight:bold;}
 .terms-addbox__btn:after{content:"";position:absolute;right:0;top:7px;width:5px;height:5px;transform: rotate(45deg);border-top: 1px solid #00a8ae;border-right: 1px solid #00a8ae;}
@@ -1048,6 +1050,21 @@ button.btn-go{font-family: 'NotoSansR', '맑은 고딕', Malgun Gothic, Dotum, '
 /** 3차오픈 후 신규 요건 추가 **/
 /* .progress-bot-notice */
 .progress-bot-notice{position:relative;z-index:10;margin:30px -2px 0;color:#666;font-size:10px;letter-spacing:-1px;font-family: 'NotoSansL', '맑은 고딕', Malgun Gothic, Dotum, '돋움', Helvetica, Apple SD Gothic Neo, sans-serif;}
+/* 10.07 추가 .disease-box */
+.disease-box{width:100%;  margin-top:25px; border-top:1px solid #ddd; display:flex; flex-wrap:wrap;}
+.disease-box>div{display:flex; display:-webkit-box; display:-ms-flexbox; justify-content: space-between; -webkit-box-pack:justify; -ms-flex-pack:justify; width:100%;}
+.disease-box>div:first-child{padding-top:20px;}
+.disease-box>div:not(:first-child){padding-top:12px;}
+.disease-box__item{flex:0 0 47%;}
+.disease-box__item>div{ vertical-align:top;}
+.disease-box__icon{float:left;}  
+.disease-box__icon:after{content:'';clear:both;display:block;}
+.age_badge{display:inline-block; text-align:center;  padding:2px 8px; font-family: 'NotoSans'; border-radius:3px; font-size:12px; }
+.age_badge.good{background:#009591; color:#fff;}/*좋음*/
+.age_badge.bad{background:#ff6868; color:#fff;}/*나쁨*/
+.age_badge.normal{background:#1fc99f; color:#fff;}/*보통*/
+.disease-box__txt{font-size:12px; float:right; text-align:right; color: #111111; }
+.disease-box__txt .disease-tit-age{font-size:20px; font-family: 'NotoSansM'}
 /*.score-box */
 .score-box{margin-top:10px;padding:14px 10px;background:#fff;}
 .score-box:after{content:"";display:block;clear:both;}
