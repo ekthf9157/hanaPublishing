@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="ko">
+<title>메인</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="copyright" content="[하나 1Q 다이렉트 보험]" />
+<meta name="keywords" content="[하나 1Q 다이렉트 보험]" />
+<meta name="description" content="[하나 1Q 다이렉트 보험]" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../css/3rd_open.css" />
+<!-- 3차 open용 -->
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/3rd_open.js"></script>
+<script type="text/javascript" src="../js/Chart.js"></script>
+<script type="text/javascript" src="../js/onlypub.js"></script>
+<script type="text/javascript" src="../js/swiper.js"></script>
+	
+	<!--3차 open 약관 토글 실행 시작 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			toggleMoreTerms();
+			
+		});
+	</script>
+	<!-- //3차 open 약관 토글 실행 긑 -->
+	<!--<style>
+		.disease-box{width:100%;  margin-top:25px; border-top:1px solid #ddd; display:flex; flex-wrap:wrap;}
+		.disease-box>div{display:flex; justify-content: space-between; width:100%;}
+		.disease-box>div:first-child{padding-top:20px;}
+		.disease-box>div:not(:first-child){padding-top:12px;}
+		.disease-box__item{flex:0 0 47%;}
+		.disease-box__item>div{ vertical-align:top;}
+		.disease-box__icon{float:left;}
+		.age_bedge{display:inline-block; text-align:center;  padding:2px 8px; font-family: 'NotoSans'; border-radius:3px; font-size:12px; }
+		.age_bedge.good{background:#009591; color:#fff;}
+		.age_bedge.bad{background:#ff6868; color:#fff;}
+		.age_bedge.normal{background:#1fc99f; color:#fff;}
+		.disease-box__txt{font-size:12px; float:right; text-align:right; color: #111111; }
+		.disease-box__txt .disease-tit-age{font-size:20px; font-family: 'NotoSansM'}
+	</style>-->
+</head>
+<body>
+<!-- skipToContent -->
+<div id="skipToContent">
+   <a href="#container">본문 바로가기</a>
+</div>
+<!-- //skipToContent -->
+<!-- wrapper -->
+<div id="wrapper">
+    
+    <header id="header" class="header-3rd-type">  <!-- // 3차 오픈 페이지  .header-3rd-type 추가  -->
+    	<div class="header-inner">
+            <h1 class="page-tit">건강검진</h1>
+        </div>   
+        <button type="button" class="btnAllMenu" title="메뉴 열기">메뉴 열기</button>
+        <button type="button" class="btn_go_prev" title="이전페이지로 이동">이전페이지로 이동</button>
+    </header>
+   
+	<!-- 전체메뉴 popup -->
+	<article id="menuAll" class="layer_popup menuAll"><!-- 20200420 -->
+	    <div class="wrapper_popup">
+	        <!-- header -->
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1 class="logo"><a href="javascript:;">하나생명</a></h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <!-- //header -->
+	        <!-- container -->
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content fix_btn_menuall">
+	                <!-- menu list -->
+                    <ul class="list_menu_all">
+                        <li>
+                            <a href="javascript:;" title="상품">상품</a>
+                            <ul>
+                                <li>
+                                    <!-- toggle 버튼 클릭시 상위 li에 'active' class 자동 토글 -->
+                                    <a href="javascript:;" class="link_toggle" title="하나1Q다이렉트보험">하나1Q다이렉트보험</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" title="My보험설계">My보험설계</a><!-- 20200302 -->
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="new" title="건강보장">건강보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="사망보장">사망보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="암보장">암보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="연금저축">연금저축</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="어린이보장">어린이보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="교통사고보장">교통사고보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="상해보장">상해보장</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="목회자복지연금">목회자복지연금</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="다이렉트 이벤트">다이렉트 이벤트</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="보험검진">보험검진</a><!-- 20200514 -->
+                            <ul>
+                                <li>
+                                    <a href="javscript:;" class="link_toggle" title="보험검진 서비스">보험검진 서비스</a><!-- 20200514 -->
+                                    <ul>
+                                        <li>
+                                            <a href="javscript:;" title="보유계약분석">보유계약분석</a>
+                                        </li>
+                                        <li>
+                                            <a href="javscript:;" title="보장내용분석">보장내용분석</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="모바일창구">모바일창구</a>
+                            <ul>
+								<li>
+									<a href="javascript:;" title="메인화면">메인화면</a>
+								</li> 
+								<li>
+									<a href="javascript:;" class="link_toggle" title="보험계약조회">보험계약조회</a>
+									<ul>
+										<li><a href="javascript:;" title="계약조회">계약조회</a></li>
+										<li><a href="javascript:;" title="내 안내장">내 안내장</a></li>
+									</ul>
+								</li>                             
+								<li>                              
+									<a href="javascript:;" class="link_toggle" title="보험계약대출">보험계약대출</a>
+									<ul>
+										<li><a href="javascript:;" title="대출안내">대출안내</a></li>
+										<li><a href="javascript:;" title="대출 조회/신청">대출 조회/신청</a></li>
+										<li><a href="javascript:;" title="변액보험 예약 조회/취소">변액보험 예약 조회/취소</a></li>
+										<li><a href="javascript:;" title="이자납입/원리금상환">이자납입/원리금상환</a></li>
+									</ul>
+								</li>                             
+								<li>                              
+									<a href="javascript:;" class="link_toggle" title="입출금서비스">입출금서비스</a>
+									<ul>
+										<li><a href="javascript:;" title="보험료 납입">보험료 납입</a></li>
+										<li><a href="javascript:;" title="자동이체 계좌변경">자동이체 계좌변경</a></li>
+										<li><a href="javascript:;" title="납입일시중지 신청/해지">납입일시중지 신청/해지</a></li>
+										<li><a href="javascript:;" title="해지환급금">해지환급금</a></li>
+										<li><a href="javascript:;" title="중도인출금">중도인출금</a></li>
+										<li><a href="javascript:;" title="중도급부금">중도급부금</a></li>
+										<li><a href="javascript:;" title="미지급연금">미지급연금</a></li>
+										<li><a href="javascript:;" title="만기보험금">만기보험금</a></li>
+										<li><a href="javascript:;" title="(자동)송금 계좌변경">(자동)송금 계좌변경</a></li>
+										<li><a href="javascript:;" title="자동송금 신청/해지">자동송금 신청/해지</a></li>
+										<li><a href="javascript:;" title="청약철회">청약철회</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="연금/변액보험">연금/변액보험</a>
+									<ul>
+										<li><a href="javascript:;" title="예상연금액 조회">예상연금액 조회</a></li>
+										<li><a href="javascript:;" title="연금신청">연금신청</a></li>
+										<li><a href="javascript:;" title="펀드 변경">펀드 변경</a></li>
+										<li><a href="javascript:;" title="채권형펀드/일반계정 자동전환">채권형펀드/일반계정 자동전환</a></li>
+										<li><a href="javascript:;" title="계약자적립금">계약자적립금</a></li>
+										<li><a href="javascript:;" title="수수료 안내표">수수료 안내표</a></li>
+										<li><a href="javascript:;" title="변액보험 상담센터">변액보험 상담센터</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="사고보험금">사고보험금</a>
+									<ul>
+										<li><a href="javascript:;" title="보험금 안내">보험금 안내</a></li>
+										<li><a href="javascript:;" title="보험금접수">보험금접수</a></li>
+										<li><a href="javascript:;" title="보험금진행현황">보험금진행현황</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="계약변경">계약변경</a>
+									<ul>
+										<li><a href="javascript:;" title="계약내용 변경">계약내용 변경</a></li>
+										<li><a href="javascript:;" title="계약관계자 변경">계약관계자 변경</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;" class="link_toggle" title="고객서비스">고객 정보 변경</a>
+									<ul>
+										<li><a href="javascript:;" title="연락처">연락처</a></li>
+										<li><a href="javascript:;" title="성명 정정">z성명 정정</a></li>
+										<li><a href="javascript:;" title="e-안내장 수신 동의">e-안내장 수신 동의</a></li>
+									</ul>
+								</li>    
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="고객서비스">고객서비스</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" title="구비서류 안내">구비서류 안내</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="모바일 창구 이용 안내">모바일 창구 이용 안내</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="push 수신동의">push 수신동의</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="하나서비스">하나서비스</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" title="변액자산관리">변액자산관리</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" title="하나멤버스">하나멤버스</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="공시실" class="link_direct">공시실</a>
+                        </li>
+                    </ul>
+	                <!-- //menu list -->
+	            </div>
+	            <!-- //content -->
+		        <!-- bottom button -->
+				<div class="grp_button_menuall customerMenu">
+					<span><a href="tel:1577-1112" title="고객센터 전화걸기">고객센터</a></span>
+					<span><a href="javascript:;">전화상담예약</a></span>
+					<span><a href="javascript:;">인증센터</a></span>
+				</div>
+		        <!-- //bottom button -->
+	        </div>
+	        <!-- //container -->
+	    </div>
+	</article>
+	<!-- //전체메뉴 popup -->
+	
+	 <!-- container -->
+    <section id="container" class="container-3rd-type"> <!-- // 3차 오픈 페이지  .container-3rd-type 추가  --> 
+        <!-- content -->
+        <div id="content" class="content-3rd-type">  <!-- // 3차 오픈 페이지  .content-3rd-type 추가  --> 
+			
+			<div class="health-main">
+				<div class="health-main__spot tc">
+					<strong>김하나님</strong>의 <br/>
+					<button type="button" class="health-main__button" onclick="layerPop('MyhealthListPop');">2020.03.30 일반검진 </button> <br/>
+					 결과입니다.
+				</div>
+				<div class="health-main__update">
+					<button class="btn-update" onclick="layerPop('popup1');">
+		                <span class="btn-update__txt">20200616 기준</span>
+		            </button>
+				</div>
+				
+				<!-- .health-main__progress -->
+				<div class="health-main__progress">
+					<div class="progress-header">
+						<p class="progerss-tit">2020년 건강 나이</p>
+					</div>
+					<div class="progress-top">	
+						<span class="progress-top__top-txt">실제나이</span> 
+						<strong class="progress-top__bot-txt">50</strong>
+					</div>
+					<!-- .half-circle-progress -->
+					<div class="half-circle-progress"> <!-- //오른쪽 그래프 실행 될 때 .progress-right-on 추가  -->
+					
+						<!-- 프로그래스바 중앙 텍스트  -->
+						<div class="progress-result">
+							<p class="progress-result__spot">건강나이 <strong>47.2</strong> 세</p>
+							<p class="progress-result__desc">실제 나이보다 <strong>-2.8세</strong> 적습니다.</p> <!-- //2020-08-18 .progress-result__desc 추가 -->
+						</div>
+						<!-- //프로그래스바 중앙 텍스트  -->
+						
+						<!-- 왼쪽 프로그래스바 -->
+						<div class="progress-left">
+							<div class="progress-left__inner">
+								<div class="progress-bar" style="transform: rotate(-70deg);"></div> <!-- rotate 값: -45deg ~ -135deg : 음수 입니다.-->
+							</div>
+						</div>
+						<!-- //왼쪽 프로그래스바 -->
+						
+						<!-- 오른쪽 프로그래스바 -->
+						<div class="progress-right">
+							<div class="progress-left__inner">
+								<div class="progress-bar" style="transform: rotate(45deg);"></div> <!-- rotate 값: 45deg ~ 135deg : 양수 입니다.-->
+							</div>
+						</div>
+						<!-- //오른쪽 프로그래스바 -->
+						
+						<div class="progress-center-dot"></div> <!-- // 중앙 기준 점 -->
+						
+						<!-- 프로그래스바  숫자 영역  -->
+						<div class="progress-thumb" style="transform: rotate(-73deg);"> <!-- rotate 값: progress-left, progress-right 에 적용 되는 값 에서 +3 정도 적용 부탁 드립니다. -->
+							<div class="progress-thumb__inner">	
+								<p class="progress-circle"><span> 47.2  <!-- 개발 숫자 들어가는 곳--> </span></p>
+							</div>
+						</div>
+						<!-- //프로그래스바  숫자 영역  -->
+						
+					</div>
+					<!-- //.half-circle-progress -->
+					
+					<!-- 2020-09-03 추가요건  .progress-bot-notice 추가 -->
+					<div class="progress-bot-notice tc">
+						위 건강 나이 계산은 보험개발원에서 제공한 모델을 활용하여 개발된 서비스입니다. 당사에서는 건강 나이를 보험상품에 적용하여, <br/> 보험료를 할인하는 서비스를 제공할 예정입니다.
+					</div>
+					<!-- //2020-09-03 추가요건  .progress-bot-notice 추가 -->
+
+					<!-- 2020.10.07 추가요건 .disease-box css -->
+					<div class="disease-box">
+						<div class="disease-box-inner">
+							<div class="disease-box__item">
+								<div class="disease-box__icon">
+									<span class="age_badge good">정상</span>
+								</div>
+								<div class="disease-box__txt">
+									<p class="disease-tit">3대 질병 나이</p>
+									<p class="disease-tit-age"><strong>47세</strong></p>
+								</div>
+							</div>
+							<div class="disease-box__item">
+								<div class="disease-box__icon">
+									<span class="age_badge bad">나쁨</span>
+								</div>
+								<div class="disease-box__txt">
+									<p class="disease-tit">암 나이</p>
+									<p class="disease-tit-age"> <strong>47세 </strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="disease-box-inner">
+							<div class="disease-box__item">
+								<div class="disease-box__icon">
+									<span class="age_badge normal">보통</span>
+								</div>
+								<div class="disease-box__txt">
+									<p class="disease-tit">심장 나이</p>
+									<p class="disease-tit-age">47세 </p>
+								</div>
+							</div>
+							<div class="disease-box__item">
+								<div class="disease-box__txt">
+									<p class="disease-tit">뇌혈관 나이</p>
+									<p class="disease-tit-age">- 세 </p>
+								</div>
+							</div>	
+						</div>
+					</div><!--2020.10.07 추가요건 끝 -->
+
+				</div>
+				<!-- //.health-main__progress -->
+
+				<!-- 2020-09-03 추가요건  .score-box -->
+				<div class="score-box">
+					<div class="score-box__item">
+						<p class="score-box__tit">정상</p>
+						<p class="score-box__num">2개</p>
+					</div>
+					<div class="score-box__item">
+						<p class="score-box__tit">주의</p>
+						<p class="score-box__num">1개</p>
+					</div>
+					<div class="score-box__item">
+						<p class="score-box__tit">위험</p>
+						<p class="score-box__num">1개</p>
+					</div>
+				</div>
+				<!-- //2020-09-03 추가요건 .score-box  -->
+			</div>
+			
+			
+			
+			<!-- 2020-08-26 배너영역 삭제 요청
+			<div class="health-prd">
+				<div class="recom-box">
+					<p class="recom-box__tit">걱정말아요 싱글벙글 건강보험</p>
+					<p class="recom-box__desc">보험 하나의 상품으로 암, 생활, 상해를 동시에 <br/>지켜드립니다.</p>
+					<div class="recom-box__btns">
+						<a class="btn-go">가입하기</a>					
+					</div>
+				</div>				
+			</div>
+			-->
+			
+			<div class="health-chk-header">
+				<p class="health-chk-tit">건강검진 항목</p>
+			</div>
+			
+			<div class="health-chk">
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">신체검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">신장</div>
+	                        <div class="lst-table__right"><span class="chk-num">160cm</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">체중</div>
+	                        <div class="lst-table__right">48kg</div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>허리둘레</span><!-- //2020-08-24 오타  수정 -->
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop01');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right"><span class="chk-num">70.0cm</span> <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>체질량지수</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop02');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">23.0kg/m² <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">시력 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">시력(좌/우)</div>
+	                        <div class="lst-table__right">0.8/0.5</div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">청력 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">청력(좌/우)</div>
+	                        <div class="lst-table__right">정상/정상</div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">고혈압 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left flex-col-06">
+	                        	<span class="tooltip_box color-inherit">
+									<span>혈압(최고/최저)</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop03');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right flex-col-06">107/64mmHg <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">신장질환 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>요단백</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop04');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">음성 <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">빈혈 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>혈색소</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop05');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">80mg/dl <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">당뇨 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>공복혈당</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop06');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">107/64mmHg <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">이상지질혈증 검사 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>총콜레스테롤</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop07');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">123mg/dL <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                     <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>HDL 콜레스테롤</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop08');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">123mg/dL <span class="bdg-status bdg-status--type02 bdg-right">주의</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>LDL 콜레스테롤</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop09');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">123mg/dL <span class="bdg-status bdg-status--type03 bdg-right">위험</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                     <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>중성지방</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop10');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">123mg/dL <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">만성신장질환 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>혈청크레아티닌</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop11');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">123mg/dL <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                     <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>신사구체여과율(GFR)</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop12');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">123mg/dL <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">간장질환 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                   <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>AST(SGOT)</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop13');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">17U/L <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>ALT(SGPT)</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop14');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">17U/L <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>감마지티피(γ-GPT)</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop15');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">17U/L <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">폐결핵/흉부질환 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>폐결핵 흉부질환</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop16');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">정상 <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				<!-- .chk-list 시작 -->
+				<div class="chk-list">
+					<!-- .chk-list__header 시작 --> 
+					<div class="chk-list__header">
+						<button class="chk-list__btn">골다공증 검사</button>
+					</div>
+					<!-- //.chk-list__header 끝 -->
+					 
+					<!-- .chk-list__table -->
+					<div class="lst-table chk-list__table">
+	                    <!-- lst-table__row -->
+	                    <div class="lst-table__row">
+	                        <div class="lst-table__left">
+	                        	<span class="tooltip_box color-inherit">
+									<span>골다공증</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('physicalPop17');">도움말</button>
+								</span>
+	                        </div>
+	                        <div class="lst-table__right">정상 <span class="bdg-status bdg-right">정상</span></div>
+	                    </div>
+	                    <!-- //lst-table__row -->
+	                </div>
+	                <!-- //.chk-list__table -->
+				</div>
+				<!-- //.chk-list 끝 -->
+				
+				
+			</div>
+        </div>
+        <!-- //content -->
+        
+	    <!-- 하단 fixed 버튼 -->
+	    <div class="bot-gnb">
+	    	<div id="gnb">
+		        <!-- 버튼 활성화 : 'active' class 추가 -->
+		        <button type="button" class="btn_main active" title="메인"><span>메인</span></button>
+		        <button type="button" class="btn_product" title="상품"><span>상품</span></button>
+		        <button type="button" class="btn_mobile_counter" title="모바일 창구"><span>모바일 창구</span></button>
+	            <button type="button" class="btn_diagnosis" title="원큐라이프"><span>원큐라이프</span></button><!-- 20200514 -->
+		    </div>
+	    </div>   
+	    <!-- //하단 fixed 버튼 -->
+    </section>
+    <!-- //container -->
+
+<!-- ---------------------------------- 팝업 ----------------------------------------- -->
+
+<!-- 내 건강검진 리스트 popup -->
+<article id="MyhealthListPop" class="layer_popup full">
+    <div class="wrapper_popup">
+        <!-- header -->
+        <div class="popup_header">
+            <!-- title -->
+            <div class="grp_title_popup lv_01">
+                <h1>내 건강검진 리스트</h1>
+                <div class="box_button">
+                    <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+                </div>
+            </div>
+            <!-- //title -->
+        </div>
+        <!-- //header -->
+        <!-- container -->
+        <div class="popup_body">
+            <!-- content -->
+            <div class="popup_content ">
+            
+                <!-- popup_content_inner -->
+	            <div class="popup_content_inner" >
+					<!-- 2020.0907 동의박스 추가-->
+					<div class="agree-box tc">
+						<p>본 정보는 국민건강보험공단에서 제공받은 정보에<br>한하여 제공됩니다. 특별검진을 받으셨을 경우 <br>제공받는 정보가 없을 수 있습니다.</p>
+					</div>
+					<!-- .my-health-lst -->
+               		<ul class="my-health-lst">
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               			<li>
+               				<p class="my-health-lst__tit">2019년 일반 검진</p>
+               				<p class="my-health-lst__desc">한국건강관리협회 건강증진의원 서울강남지부</p>
+               				<p class="my-health-lst__date">2019.08.30</p>
+               			</li>
+               		</ul>
+               		<!-- //.my-health-lst -->
+
+	            </div>		     
+                <!-- //popup_content_inner -->
+                
+            </div>
+            <!-- //content -->
+	        
+        </div>
+        <!-- //container -->
+    </div>
+</article>
+<!-- //내 건강검진 리스트 popup -->
+
+
+<!-- ---------------------------------- 팝업 ----------------------------------------- -->
+    <!-- 허리둘레 popup : physicalPop01 -->
+	<article id="physicalPop01" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>허리둘레</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 남 : 90미만 / 여 : 85미만</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 남 : 90이상 / 여 : 85이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //허리둘레 popup : physicalPop01 -->
+	
+	<!-- 체질량지수 popup : physicalPop02 -->
+	<article id="physicalPop02" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>체질량지수</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 18.5~24.9</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 25~29.9 / 18.5미만</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span>30이상</li><!-- //2020-08-24 위험 추가 -->
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //체질량지수 popup : physicalPop02 -->
+	
+	
+	<!-- 혈압 popup : physicalPop03 -->
+	<article id="physicalPop03" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>혈압(최고/최저)</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 120미만이며/80미만</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 102~139또는/80~89</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험 </span> 140이상또는/90이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //혈압 popup : physicalPop03 -->
+	
+	<!-- 요단백 popup : physicalPop04 -->
+	<article id="physicalPop04" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>요단백</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 음성</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 약양성±</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 양성(+1)</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //요단백 popup : physicalPop04 -->
+	
+	<!-- 혈색소 popup : physicalPop05 -->
+	<article id="physicalPop05" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>혈색소</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 남 : 13~16.5 / 여 : 12~15.5</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 남 : 12~12.9 / 여 : 10~11.9</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 남 : 12.0미만 / 여 : 10.0미만</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //혈색소 popup : physicalPop05 -->
+	
+	<!-- 공복혈당 popup : physicalPop06 -->
+	<article id="physicalPop06" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>공복혈당</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 100미만</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 100~125</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 126이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //공복혈당  popup : physicalPop06 -->
+	
+	<!-- 총콜레스테롤 popup : physicalPop07 -->
+	<article id="physicalPop07" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>총콜레스테롤</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 200미만</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 200~239</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 240이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //총콜레스테롤  popup : physicalPop07 -->
+	
+	<!-- HDL콜레스테롤 popup : physicalPop08 -->
+	<article id="physicalPop08" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>HDL콜레스테롤</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 60이상</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 40~59</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 40미만</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //HDL콜레스테롤  popup : physicalPop08 -->
+	
+	<!-- LDL콜레스테롤 popup : physicalPop09 -->
+	<article id="physicalPop09" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>LDL콜레스테롤</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 130미만</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 130~159</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 160이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //총콜레스테롤  popup : physicalPop09 -->
+	
+	<!-- 중성지방 popup : physicalPop10 -->
+	<article id="physicalPop10" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>중성지방</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 150미만</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 150~199</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 200이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //중성지방 popup : physicalPop10 -->
+	
+	<!-- 혈청크레아티닌 popup : physicalPop11 -->
+	<article id="physicalPop11" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>혈청크레아티닌</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 1.6이하</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 1.6초과</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //혈청크레아티닌 popup : physicalPop11 -->
+	
+	<!-- 신사구체여과율(GFR) popup : physicalPop12 -->
+	<article id="physicalPop12" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>신사구체여과율(GFR)</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 60이상</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 60미만</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //신사구체여과율(GFR) popup : physicalPop12 -->
+	
+	<!-- AST(SGOT) popup : physicalPop13 -->
+	<article id="physicalPop13" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>AST(SGOT)</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 40이하</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 41~50</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 51이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //AST(SGOT) popup : physicalPop13 -->
+	
+	<!-- ALT(SGPT) popup : physicalPop14 -->
+	<article id="physicalPop14" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>ALT(SGPT)</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 35이하</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span>  36~45</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 46이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //AST(SGOT) popup : physicalPop14 -->
+	
+	<!-- 감마지티피(γ-GPT) popup : physicalPop15 -->
+	<article id="physicalPop15" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>감마지티피(γ-GPT)</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 남 : 11~63 / 여 : 8~35</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> 남 : 64~77 / 여 : 36~45</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 남 : 78이상 / 여 : 46이상</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //감마지티피(γ-GPT) popup : physicalPop15 -->
+	
+	<!-- 폐결핵 흉부질환 popup : physicalPop16 -->
+	<article id="physicalPop16" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>폐결핵 흉부질환</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> 정상,비활동성</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> 정상 및 비활동성이외의자</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //폐결핵 흉부질환 popup : physicalPop16 -->
+	
+	<!-- 골다공증  popup : physicalPop17 -->
+	<article id="physicalPop17" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header bdb-none">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>골다공증</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content popup_content_health">
+	                <div class="text_tooltip_popup">
+						<ul class="health-result-lst">
+							<li><span class="bdg-status bdg-left">정상</span> T-score-1이상</li>
+							<li><span class="bdg-status bdg-status--type02 bdg-left">주의</span> -1~-2.5초과</li>
+							<li><span class="bdg-status bdg-status--type03 bdg-left">위험</span> -2.5이하</li>
+						</ul>
+	                </div>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //골다공증 popup : physicalPop17 -->
+	
+
+	
+	<!-- ------필수 동의 팝업------- -->
+	
+	<!-- 휴대폰인증 필수 선택 동의 popup -->
+	<article id="popup1" class="layer_popup full">
+	    <div class="wrapper_popup">
+	        <!-- header -->
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>필수&middot;선택 사항 동의</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <!-- //header -->
+	        <!-- container -->
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content fix_btn">
+	                <!-- component -->
+		           
+		            <div class="box_01 grp_check_agree type02">
+		            	<!-- 2020-08-31 .agree-box 추가 시작 -->
+		            	<div class="agree-box tc">
+		            		<p>본 서비스를 이용하기 위하여 건강보험공단<br/>사이트에 접속하여 검진정보를 조회하기 위해 <br/>고객님 본인 공인인증서가 꼭 필요합니다.</p>
+		            	</div>
+		            	<!-- //2020-08-31 .agree-box 추가 끝 -->
+		                 <!-- agreement -->
+			            <div class="grp_check_agree type_all">
+			                <div class="ipt_check_agreement">
+			                    <input type="checkbox" name="chk_agr" id="chk_agr_all">
+			                    <label for="chk_agr_all"><span>전체 동의합니다</span></label>
+			                </div>
+		                </div>
+              		    <!-- 2020-08-31 삭제
+              		    <dl class="dl_agreement mt10">
+							<dt class="ipt_check_agreement">
+								<input type="checkbox" name="chk_agr" id="chk_agr_01" class="all-check-input">					
+								<label for="chk_agr_01"><span>[필수] 공인인증서 이용을 위한 개인정보의 수집·이용에 관한 사항에 동의합니다.</span></label>							
+							</dt>
+							<dd>
+										           
+					            <div class="grp_togglelist st_02">
+					              
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<input type="checkbox" name="" id="agree01_01" >
+												<label for="agree01_01">
+					                    			개인정보 수집 및 이용 동의
+												</label>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    <div class="content">
+					                    	<div class="scroll_box01 agree_box">
+												<p>당사는「개인정보보호법」 및 「신용정보의 이용 및 보호에 관한 법률」에 따라 귀하의 개인(신용)정보를 다음과 같이 수집·이용하고자 합니다.</p>
+												<ol class="agree_list_01">
+													<li>
+														<strong>가. 수집 및 이용 목적</strong>
+														<ul class="agree_dash_list">
+															<li>해당 서비스 이용시 본인의 확인</li>
+														</ul>
+													</li>
+													<li>
+														<strong>나. 수집 및 이용하는 개인 정보 항목</strong>
+														<ul class="agree_dash_list">
+															<li>주민등록번호(외국인등록번호)</li>
+														</ul>
+													</li>
+													<li>
+														<strong>다. 보유 및 이용기간</strong>
+														<ul class="agree_dash_list">
+															<li>해당 서비스 이용시 본인 확인 용도로만 사용하므로 별도로 보유하지 않음</li>
+														</ul>
+													</li>
+												</ol>
+					                    	</div>
+					                    </div>
+					                </div>
+					              
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<input type="checkbox" name="" id="agree01_02">
+												<label for="agree01_02">
+													고유식별 정보 처리 동의
+												</label>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    <div class="content">
+					                    	
+					                    	<div class="scroll_box01 agree_box">
+												
+												<p>
+													고객님의 고유식별정보를 처리(수집, 이용, 제공, 조회 등)하기 위해서는 &gt;개인정보보호법&lt; 제24조에 의하여 동의를 얻어야 합니다. 여기서 제공해주시는 고유식별정보(주민등록번호, 외국인등록번호)는 요청하신 서비스를 제공하는 목적에 부합하는 용도로만 사용됩니다.													
+												</p>
+												<ol class="agree_list_01">
+													<li>
+														<strong>가. 수집 및 이용 목적</strong>
+														<ul class="agree_dash_list">
+															<li>해당 서비스 이용시 본인의 확인</li>
+														</ul>
+													</li>
+													<li>
+														<strong>나. 수집 및 이용하는 개인 정보 항목</strong>
+														<ul class="agree_dash_list">
+															<li>주민등록번호(외국인등록번호)</li>
+														</ul>
+													</li>
+													<li>
+														<strong>다. 보유 및 이용기간</strong>
+														<ul class="agree_dash_list">
+															<li>해당 서비스 이용시 본인 확인 용도로만 사용하므로 별도로 보유하지 않음</li>
+														</ul>
+													</li>
+												</ol>
+					                    	</div>
+					                    
+					                    </div>
+					                </div>
+					               
+					       
+					              
+					            </div>
+		                    
+							</dd>
+						</dl>
+						-->
+						
+						<dl class="dl_agreement mt10">
+							<dt class="ipt_check_agreement">
+								<input type="checkbox" name="chk_agr" id="chk_agr_02" class="all-check-input">
+									
+								<label for="chk_agr_02"><span>[필수] 건강검진서비스를 위한 개인(신용) 정보 처리 동의</span></label>
+								<span class="tooltip_box">
+									<span>더 알아보기</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('essConsectPop');">도움말</button>
+								</span>
+							</dt>
+							<dd>
+								<!-- .grp_togglelist -->				           
+					            <div class="grp_togglelist st_02">
+					                <!-- item -->
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<input type="checkbox" name="" id="agree02_01" >
+												<label for="agree02_01">
+					                    			개인(신용)정보 수집·이용에 관한 사항
+												</label>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    <div class="content">
+					                    	<!--  -->
+					                    	<div class="scroll_box01 agree_box">
+												<p>당사는「개인정보보호법」 및 「신용정보의 이용 및 보호에 관한 법률」에 따라 귀하의 개인(신용)정보를 다음과 같이 수집·이용하고자 합니다.</p>
+												<ol class="agree_list_01">
+													<li>
+														<strong>가. 개인(신용)정보 수집·이용 목적</strong>
+														<ul class="agree_dash_list">
+														
+															<li>국민건강보험공단에서 제공하는 건강검진정보를 분석하여 건강나이 산출 및 서비스 제공 </li>
+															<li>건강검진서비스 이용에 대한 분석 및 이력 관리</li>
+														</ul>
+													</li>			
+					
+													<li>
+														<strong>나. 수집·이용할 개인(신용)정보의 내용</strong>
+														<ul class="agree_dash_list">
+															<li>개인식별정보(성명, 성별, 내/외국인 여부, 주민등록번호, 외국인등록번호,)</li> <!-- //2020-08-31 문구 삭제 -->
+															<li>국민건강보험공단에서 보유하고 있는 건강검진정보(검진년도, 검진일자, 신장, 체중, 허리둘레, BMI, 시력(좌/우), 청력(좌/우), 혈압(수축기혈압/확장기혈압), 요단백, 혈색소, 식전혈당, 총콜레스테롤, hdl콜레스테롤, 혈청크레아티닌, 신사구체여과율(GFR), AST(SGOT), ALT(SGPT), 감마지피티(y-GPT), 골다공증</li>
+														</ul>
+													</li>
+													<li>
+														<strong>다. 개인(신용)정보의 보유·이용 기간</strong>
+														<ul class="agree_dash_list">
+															<li>이용기간 : 수집·이용 동의일로부터 5년까지</li>
+															<li>보유기간 : 수집·이용 동의일로부터 5년까지</li>
+														</ul>
+													</li>
+												</ol>
+					                    	</div>
+					                    	<!--  -->
+					                    </div>
+					                </div>
+					                <!-- //item -->
+					                <!-- item -->
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<input type="checkbox" name="" id="agree02_02">
+												<label for="agree02_02">
+													개인(신용)정보 조회에 관한 사항
+												</label>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    <div class="content">
+					                    	<!--  -->
+					                    	<div class="scroll_box01 agree_box">
+												<p>당사는「신용정보의 이용 및 보호에 관한 법률」에 따라 귀하의 개인(신용)정보를 다음과 같이  등으로부터 조회하고자 합니다.</p>
+												<ol class="agree_list_01">
+													<li>
+														<strong>가. 개인(신용)정보 조회 목적</strong>
+														<ul class="agree_dash_list"><li>국민건강보험공단에서 제공하는 건강검진정보 조회</li></ul>
+													</li>			
+					
+													<li>
+														<strong>나. 조회할 개인(신용)정보의 내용</strong>
+														<ul class="agree_dash_list">
+															<!-- <li>개인식별정보(성명, 성별, 내/외국인 여부, 주민등록번호(공인인증서), 외국인등록번호, 휴대전화번호)</li> 2020-08-31 삭제 -->
+															<li>국민건강보험공단에서 보유하고 있는 건강검진정보(검진년도, 검진일자, 신장, 체중, 허리둘레, BMI, 시력(좌/우), 청력(좌/우), 혈압(수축기혈압/확장기혈압), 요단백, 혈색소, 식전혈당, 총콜레스테롤, hdl콜레스테롤, 혈청크레아티닌, 신사구체여과율(GFR), AST(SGOT), ALT(SGPT), 감마지피티(y-GPT), 골다공증 </li>
+														</ul>
+													</li>
+													<li>
+														<strong>다. 개인(신용)정보의 조회 유효 기간</strong>
+														<ul class="agree_dash_list">
+															<li>조회 동의일로부터 5년까지</li>
+														</ul>
+													</li>
+												</ol>
+					                    	</div>
+					                    	<!--  -->
+					                    </div>
+					                </div>
+					                <!-- //item -->
+					                <!-- item -->
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<input type="checkbox" name="" id="agree02_03">
+												<label for="agree02_03">
+													민감정보 및 고유식별정보 처리 동의
+												</label>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    <div class="content">
+					                    	<!--  -->
+					                    	<div class="agree_box02">
+												<p>당사는「개인정보보호법」및「신용정보의 이용 및 보호에 관한 법률」에 따라 개인(신용)정보에 대한 개별 동의 사항에 대하여 다음과 같이 귀하의 고유식별정보(주민등록번호&middot;외국인등록번호)를 처리(수집&middot;이용, 조회)하고자 합니다.</p>
+					                    	</div>
+					                    	<!--  -->
+					                    </div>
+					                </div>
+					                <!-- //item -->				                
+					            </div>
+		                    	<!-- //.grp_togglelist -->	
+							</dd>
+						</dl>
+						
+						<dl class="dl_agreement mt10">
+							<dt class="ipt_check_agreement">
+								<input type="checkbox" name="chk_agr" id="chk_agr_03" class="all-check-input">
+								<label for="chk_agr_03"><span>[선택] 금융상품 소개 등을 위한 개인(신용)정보 처리 동의</span></label>
+								<span class="tooltip_box">
+									<span>더 알아보기</span>
+									<button type="button" class="btn_tooltip" onclick="layerPop('choConsectPop');">도움말</button>
+								</span>
+							</dt>
+							<dd>
+								<!-- .grp_togglelist -->				           
+					            <div class="grp_togglelist st_02">
+					                <!-- item -->
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<input type="checkbox" name="" id="agree03_01" >
+												<label for="agree03_01">
+					                    			개인(신용)정보 수집·이용에 관한 사항
+												</label>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    <div class="content">
+					                    	<!--  -->
+					                    	<div class="scroll_box01 agree_box02">
+												<p>당사는 '개인정보보호법' 및 '신용정보의 이용 및 보호에 관한 법률' 에 따라 <strong>보험상품 소개 및 홍보</strong> 등을 위하여 귀하의 개인(신용)정보를 다음과 같이 수집&middot;이용하고자 합니다.</p>
+												<dl>
+													<dt>개인(신용)정보의 수집&middot;이용 목적</dt>
+													<dd>
+														<p><strong>상품&middot;서비스 소개 및 판매, 사은&middot;판촉행사 안내, 시장조사</strong></p>
+													</dd>
+													<dt>수집&middot;이용할 개인(신용)정보의 내용</dt>
+													<dd>
+														<ul>
+															<li>개인식별정보(성명, 생년월일, 휴대폰전화번호)</li>
+														</ul>
+													</dd>
+													<dt>개인(신용)정보 보유&middot;이용 기간</dt>
+													<dd>
+														<ul>
+															<li><strong>당사와 보험계약 체결실적이 있는 고객 : 계약자 최대 2년, 피보험자 최대 2년</strong></li>
+															<li><strong>당사와 보험계약 체결실적이 없는 고객 : 동의일로부터 2년 이내</strong></li>
+														</ul>
+													</dd>
+												</dl>
+					                    	</div>
+						                    	
+											<dl class="agree_sel">
+												<dt><strong>가입권유 연락방식</strong></dt>
+												<dd>
+												
+													<div class="ipt_check_agreement">
+						                                <input type="checkbox" name="method01" id="gijbsjAll">
+						                                <label for="gijbsjAll">전체</label>
+						                            </div>
+													<div class="ipt_check type02">
+						                                <input type="checkbox" name="method01" id="gijbsjTel">
+						                                <label for="gijbsjTel">전화</label>
+						                                <input type="checkbox" name="method01" id="gijbsjSms">
+						                                <label for="gijbsjSms">SMS</label>
+						                                <input type="checkbox" name="method01" id="gijbsjPost">
+						                                <label for="gijbsjPost">우편</label>
+														<input type="checkbox" name="method01" id="gijbsjEmail">
+														<label for="gijbsjEmail">이메일</label>
+						                            </div>
+												
+												</dd>
+											</dl>
+											<dl class="agree_sel">
+												<dt><strong>정보 보유-이용기간</strong></dt>
+												<dd>
+													<div class="ipt_check type03">
+														<input type="radio" name="yearG01" id="2YearA004" value="2">
+														<label for="2YearA004">2년제공</label>
+														<input type="radio" name="yearG01" id="1YearA004" value="1">
+														<label for="1YearA004">1년제공</label>
+													</div>
+												</dd>
+											</dl>
+					                    	<!--  -->
+					                    </div>
+					                </div>
+					                <!-- //item -->
+					                <!-- item -->
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<input type="checkbox" name="" id="agree03_02">
+												<label for="agree03_02">
+													개인(신용)정보의 제공 동의
+												</label>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    <div class="content">
+					                    	<div class="scroll_box01 agree_box02">
+												<p>당사는 '개인정보보호법' 및 '신용정보의 이용 및 보호에 관한 법률' 에 따라 귀하의 개인(신용)정보를 다음과 같이 제3자에게 <strong>상품소개 및 홍보</strong> 등 영업목적으로 제공하고자 합니다.</p><!-- //20200311 텍스트변경 -->
+												<dl>
+													<dt>개인(신용)정보 등을 제공받는 자</dt>
+													<dd>
+														<p>당사 상품 &middot;서비스 소개 및 판매 ; 당사와 모집위탁계약을 체결한 자(설계사&middot;대리점) (단, 비전속대리점의 경우, 동 계약을 모집한 대리점에 한함)</p>
+													</dd>
+													<dt>개인(신용) 정보를 제공 받는 자의 이용 목적</dt>
+													<dd>
+														<p>모집수탁자 : 당사의 상품&middot;서비스 소개 및 판매, 사은&middot;판촉행사 안내, 시장조사</p>
+													</dd>
+													<dt>제공할 개인(신용)정보의 내용</dt>
+													<dd>
+														<p>모집수탁자 : '1. 개인(신용)정보의 수집&middot;이용에 관한 사항' 의 정보내용</p>
+													</dd>
+													<dt>제공받는 자의 개인(신용)정보 보유&middot;이용기간</dt>
+													<dd>
+														<p>모집수탁자 : 당사와 보험게약 체결실적이 있는 고객 : 계약자 최대 2년, 피보험자 최대 2년<br>당사와 보험계약 체결실적이 없는 고객 : 동의일로부터 2년 이내</p>
+														<p>※ 각 제공대상기관 및 이용목적의 구체적인 정보는 당사 홈페이지(<a title="새창" href="http://www.hanalife.co.kr" target="_blank" class="link">www.hanalife.co.kr</a>, <a href="https://m.hanalife.co.kr" target="_blank" title="새창">m.hanalife.co.kr</a>)에서 확인할 수 있습니다.</p>
+													</dd>
+												</dl>
+					                    	</div>
+											<dl class="agree_sel">
+												<dt><strong>제공받는자 이용기간</strong></dt>
+												<dd>
+													<div class="ipt_check">
+														<input type="radio" name="yearG02" id="2YearB004" value="2">
+														<label for="2YearB004">2년제공</label>
+														<input type="radio" name="yearG02" id="1YearB004" value="1">
+														<label for="1YearB004">1년제공</label>
+													</div>
+												</dd>
+											</dl>
+					                    </div>
+					                </div>
+					                <!-- //item -->
+					                <!-- item -->
+					                <div class="item">
+					                    <div class="title">
+											<span class="ipt_check_agreement02">
+												<strong>고객정보취급방침</strong>
+											</span>
+											<button type="button" class="tg_btn">열기</button>
+					                    </div>
+					                    
+					                    <div class="content">
+					                    	<!--  -->
+					                    	<div class="scroll_box01 agree_box03">
+												<p>
+													하나금융그룹을 아끼고 사랑해 주시는 고객 여러분께 깊은 감사를 드립니다. 하나금융그룹은 금융지주회사법령에 의해 그룹사간에는 고객정보의 제공 및 이용이 가능하게 되어 있습니다. 이에 다음과 같이 안내하여 드리오니 참고하시기 바랍니다.
+												</p>
+												<strong>금융지주회사법 제 48조의 2(고객정보의 제공 및 관리)</strong>
+												<ol>
+													<li>
+														① 금융지주회사등은 「금융실명거래 및 비밀보장에 관한 법률」제4조 제1항 및「신용정보의 이용 및 보호에 관한 법률」 제32조, 제33조에도 불구하고 「 금융실거래 및 비밀보장에 관한 법률」 제4조에 따른 금융거래의 내용에 관한 정보 또는 자료(이하"금융거래정보"라 한다) 및 「 신용정보의 이용 및 보호에 관한 법률」제32조 제1항에 따른 개인신용정보를 다음 각 호의 사항에 관하여 금융위원회가 정하는 방법과 절차(이하 "고객정보제공절차"라 한다)에 따라 그가 속하는 금융지주회사등에게 신용위험관리 등 대통령령으로 정하는 내부 경영관리상 이용하게 할 목적으로 제공 할 수 있다.
+														<ol>
+															<li>1. 제공할 수 있는 정보의 범위</li>
+															<li>2. 고객정보의 암호화 등 처리방법</li>
+															<li>3. 고객정보의 분리 보관</li>
+															<li>4. 고객정보의 이용기간 및 이용목적</li>
+															<li>5. 이용기간 경과 시 고객정보의 삭제</li>
+															<li>6. 그 밖에 고객정보의 엄격한 관리를 위하여 대통령령으로 정하는 사항</li>
+														</ol>
+													</li>
+													<li>
+														② 금융지주회사의 자회사등인 「자본시장과 금융투자업에 관한 법률」에 따른 투자매매업자 또는 투자중개업자는 해당 투자매매 업자 또는 투자중개업자를 통하여 증권을 매매하거나 매매하고자 하는 위탁자가 예탁한 금전 또는 증권에 관한 정보 중 다음 각 호의 어느 하나에 해당하는 정보(이하 "증권총액정보등"이라 한다)를 고객정보제공절차에 따라 그가 속하는 금융지주회사등에게 신용위험관리 등 대통령령으로 정하는 내부경영관리상 이용하게 할 목적으로 제공할 수 있다.
+														<ol>
+															<li>1. 예탁한 금전의 총액</li>
+															<li>2. 예탁한 증권의 총액</li>
+															<li>3. 예탁한 증권의 종류별 총액</li>
+															<li>4. 그 밖에 제 1호부터 제 3호까지에 준하는 것으로서 금융위원회가 정하여 고시하는 정보</li>
+														</ol>
+													</li>
+												</ol>
+												<ul>
+													<li>
+														이에 따라 하나금융그룹은 하나금융지주를 중심으로 고객정보를 그룹사간에 제공 및 이용하기 위하여 「 고객정보 취급방침」을 제정, 운영하고 있습니다. 이러한 고객정보의 제공 및 이용은 고객 여러분의 금융거래에 따른 불편함을 해소하고 더욱 더 만족스러운 금융서비를 제공하기 위해 시행하는 것이며 만에 하나 발생할지도 모르는 부작용을 방지하기 위하여 다음과 같이 제공되는 정보의 종류 및 제공처를 한정하고, 정보의 엄격한 관리를 위한 제도를 마련하였습니다.
+													</li>
+												</ul>
+	
+												<strong>제공되는 고객정보의 종류</strong>
+												<ol>
+													<li>1. 『금융실명거래 및 비밀보장에 관한 법률』 제4조에 따른 금융거래의 내용에 관한 정보 또는 자료</li>
+													<li>2. 『신용정보의 이용 및 보호에 관한 법률』제32조 제1항에 따른 개인신용정보</li>
+													<li>3. 『자본시장과 금융투자업에 관한 법률』에 따른 투자매매업자 또는 투자중개업자를 통하여 매매하고자 하는 위탁자가 예탁한 금전 또는 증권에 관한 정보 중 다음 각 항목에 해당하는 정보
+														<ol>
+															 <li>&nbsp;가.예탁한 금전의 총액</li>
+															 <li>&nbsp;나.예탁한 증권의 총액</li>
+															 <li>&nbsp;다.예탁한 증권의 종류별 총액</li>
+															 <li>&nbsp;라.채무증권의 종류별 총액</li>
+															 <li>&nbsp;마.수익증권으로서 「자본시장과 금융투자업에 관한 법률」 제229조 각 호의 구분에 따른 집합투자기구의 종류별 총액</li>
+															 <li>&nbsp;바.예탁한 증권의 총액을 기준으로 한 위탁자의 평균 증권 보유기간 및 일정기간 동안의 평균 거래회수</li>
+														</ol>
+													</li>
+	
+												</ol>
+												<strong>고객정보의 제공처</strong>
+												<p>
+													하나금융그룹 중 금융지주회사법령에 의한 고객정보의 제공 및 이용이 가능한 회사는 하나금융지주(금융지주회사), KEB하나은행(은행업), 하나금융투자(금융투자업), 하나카드(신용카드업), 하나캐피탈(할부금융 및 시설대여업), 하나생명보험(생명보험업), 하나저축은행(상호저축은행업), 하나자산신탁(신탁업), 하나에프앤아이(NPL투자관리업), 하나금융티아이(시스템 소프트웨어 개발 및 공급업), 핀크(그 외 기타금융지원서비스업)입니다.
+												</p>
+	
+												<strong>고객정보의 보호에 관한 내부방침</strong>
+												<p>
+													하나금융그룹에서는 고객 여러분의 고객정보를 최대한 안전하게 관리하기 위해 그룹사간 정보 제공 및 이용이 아래와 같이 엄격한 절차와 관리 감독 하에 이루어지도록 하였습니다.
+												</p>
+												<ol>
+													<li>① 고객정보의 제공 및 이용은 내부 경영관리 목적으로만 이용되도록 하였습니다.
+													<li>② 그룹사의 임원 1인 이상을 고객정보관리인으로 선임하여 고객정보의 제공 및 이용에 관련된 일체의 책임을 지도록 하였습니다.
+													<li>③ 그룹사별로 소관부서 및 담당자를 지정하여 체계적이고 집중적인 관리를 도모하였습니다.
+													<li>④ 고객정보의 요청 및 제공시 서면 또는 전자결재시스템을 통하여 금융지주회사법령에 따라 고객정보관리인등의 결재를 받은 후 요청 및 제공하도록 하는 등 업무 프로세스의 정형화를 통해 엄격한 관리 및 통제가 이루어지도록 하였습니다.</li>
+													<li>⑤ 그룹사간 고객정보의 요청 및 제공, 이용 등과 관련한 업무에 대하여 금융지주회사 고객정보관리인에게 총괄관리 역할을 부여함으로써 고객정보의 보호에 만전을 기하였습니다.</li>
+													<li>⑥ 고객정보의 제공 및 이용 관련 취급방침의 제개정시 2개 이상의 일간지에 공고하고, 각 영업점(본점 해당부서 포함), 그리고 각 그룹사 홈페이지 등에 게시하는 등 고객공지 의무에 최선을 다할 것입니다.</li>
+													<li>⑦ 그룹사간 고객정보 제공 내역을 각 그룹사 홈페이지에 게시하여 정보이용에 대한 고객의 조회가 용이하도록 하였습니다.</li>
+													<li>⑧ 위법 부당한 방법으로 인해 피해를 입게 된 고객 분을 위해 적정한 보상 및 처리가 이루어지도록 민원사항에 대한 안내 및 상담, 처리, 그리고 결과 및 통지 등 민원처리 관련 일체의 업무를 수행할 소관부서를 그룹사마다 두었습니다. 그리고 소관부서 외 금융감독원 분쟁조정제도를 통하여 구제받으실 수 있도록 하였습니다.</li>
+													<li>⑨ 고객정보 제공 및 관리에 대한 권한이 부여된 자만 고객정보에 접근하고, 고객정보의 송수신, 보관 등에 있어 암호화하여 관리하며, 천재지변 및 외부로부터의 공격 침입 등 불가항력에 대비한 보안시스템을 구축하였고, 고객정보와 관련된 임직원에 대하여는 정기적으로 보안 교육을 실시하는 등 철저한 보안 대책을 마련하고 있습니다.</li>
+												</ol>
+												<p>
+													하나금융그룹은 그룹사간 고객정보의 제공 및 이용을 허용한 것이 금융서비스의 질을 높이고, 나아가 우리나라 금융산업을 선진화시키기 위한 조치임을 명심하고 고객정보의 교류를 토대로 고객 여러분들께 보다 편리하고 질 높은 선진금융서비스를 제공할 것을 약속드리며, 고객 여러분의 고객정보의 보호 및 엄격한 관리를 위해 최선을 다할 것입니다.
+												</p>
+												<strong>하나금융그룹</strong>
+												<p>
+													하나금융지주고객정보관리인&middot;하나은행고객정보관리인&middot;하나금융투자고객정보관리인&middot;하나카드고객정보관리인&middot;하나캐피탈고객정보관리인&middot;하나생명보험고객정보관리인&middot;하나저축은행고객정보관리인&middot;하나자산신탁고객정보관리인&middot;하나금융티아이고객정보관리인&middot;핀트고객정보관리인
+												</p>
+												<p>준법감시인 심의필 하생 2016-040호</p>
+					                    	</div>
+					                    	<!--  -->
+					                    </div>
+					                </div>
+					                <!-- //item -->				                
+					            </div>
+		                    	<!-- //.grp_togglelist -->	
+							</dd>
+						</dl>        
+		            </div>
+		            <!-- //agreement -->
+	                <!-- //component -->
+	            </div>
+	            <!-- //content -->
+		        <!-- bottom button -->
+		         <div id="" class="grp_button_bottom full">
+		            <button type="button" class="btn-chk-agree">동의</button>  <!-- 버튼 활성화 : .btn-chk-ok 추가 -->
+		        </div>
+		        <!-- //bottom button -->
+	        </div>
+	        <!-- //container -->
+	    </div>
+	</article>
+	<!-- //휴대폰인증 필수 선택 동의 popup -->
+	
+	  <!-- 소비자 권익보호 툴팁-case01 popup -->
+	<article id=essConsectPop class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>소비자 권익보호에 관한 사항</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content">
+	                <p class="text_tooltip_popup">
+	                	본 동의를 거부하시는 경우에는 건강검진서비스 등 정상적인 서비스 제공이 불가능하며 본 동의서에 의한 개인(신용) 정보 조회는 귀하의 신용등급에 영향을 주지 않습니다. 또한, 동의하시더라도 당사 홈페이지(<a href="www.hanalife.co.kr" target="_blank" title="새창" class="link">www.hanalife.co.kr</a>) 및 고객센터(<a href="tel:1577-1112">1577-1112</a>)를 통해 철회하거나 보험계약상담 목적의 연락에 대한 중단을 요청하실 수 있습니다.
+	                </p>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //소비자 권이보호 툴팁-case01 popup  -->
+   
+   <!-- 소비자 권익보호 툴팁-case02 popup -->
+	<article id="choConsectPop" class="layer_popup tooltip">
+	    <div class="wrapper_popup">
+	        <div class="popup_header">
+	            <!-- title -->
+	            <div class="grp_title_popup lv_01">
+	                <h1>소비자 권익보호에 관한 사항</h1>
+	                <div class="box_button">
+	                    <button type="button" class="btn_close_tooltip" title="닫기">닫기</button>
+	                </div>
+	            </div>
+	            <!-- //title -->
+	        </div>
+	        <div class="popup_body">
+	            <!-- content -->
+	            <div class="popup_content">
+	                <p class="text_tooltip_popup">
+	                	본 동의는 보험계약 체결에 필수적이지 않으며 동의를 거부하실 수 있습니다. 또한, 동의하시더라도 당사 홈페이지 및 고객센토(<a href="tel:1577-1112">1577-1112</a>)를 통해 철회하거나 가입권유 목적의 연락에 대한 중단을 요청하실 수 있으며, 은행연합회의의 Do not Call센터(<a href="http://www.donotcall.or.kr" target="_blank" title="새창" class="link">www.donotcall.or.kr</a>)를 통해 언제든지 마케팅활동에 대한 중지를 요청할 수 있습니다.
+					
+					</p>
+	            </div>
+	            <!-- //content -->
+	        </div>
+	    </div>
+	</article>
+	<!-- //소비자 권이보호 툴팁-case02 popup  -->
+	    
+</div>
+<!-- //wrapper -->
+
+</body>
+</html>
