@@ -23,7 +23,10 @@
 <script type="text/javascript" src="../js/Chart.js"></script>
 <script type="text/javascript" src="../js/onlypub.js"></script>
 <script type="text/javascript" src="../js/swiper.js"></script>
-	
+	<!--아이폰 safe area test-->
+	<style>
+		.bot-gnb{padding:0 0 15px 0 calc(env(safe-inset-bottom) + 15px);}
+	</style>
 	<!--3차 open 약관 토글 실행 시작 -->
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -818,10 +821,10 @@
 	    <div class="bot-gnb">
 	    	<div id="gnb">
 		        <!-- 버튼 활성화 : 'active' class 추가 -->
-		        <button type="button" class="btn_main active" title="메인"><span>메인</span></button>
+		        <button type="button" class="btn_main " title="메인"><span>메인</span></button>
 		        <button type="button" class="btn_product" title="상품"><span>상품</span></button>
 		        <button type="button" class="btn_mobile_counter" title="모바일 창구"><span>모바일 창구</span></button>
-	            <button type="button" class="btn_diagnosis" title="원큐라이프"><span>원큐라이프</span></button><!-- 20200514 -->
+	            <button type="button" class="btn_diagnosis active" title="원큐라이프"><span>원큐라이프</span></button><!-- 20200514 -->
 		    </div>
 	    </div>   
 	    <!-- //하단 fixed 버튼 -->
