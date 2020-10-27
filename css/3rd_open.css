@@ -656,7 +656,7 @@ dt.ipt_check_agreement>label>span{color:inherit;}
 .terms-money-result__tit{margin-bottom:6px;font-size:14px;color:#111;font-family:'NotoSansM', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;word-break: keep-all;}
 .terms-money-result__won{font-size:15px;color:#111;font-family:'NotoSansM', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
 .terms-money-result__won strong{display:inline-block;padding-right:2px;letter-spacing:-1px;font-size:24px;color:#00a8ae;font-family:'RobotoR', '맑은 고딕', Malgun Gothic, Dotum, '돋움',sans-serif;}
-.terms-money-result .bicStarList{margin-top:24px; padding-bottom:6px; color:#666; font-family:'NotoSansL'}/*2020-10-27 문구 추가 css */
+.terms-money-result .bicStarList{margin-top:15px;color:#666; font-family:'NotoSansL'}/*2020-10-27 문구 추가 css */
 /*.lst-table - 가격 정보 테이블 */
 .lst-table{border-top:1px solid #ddd;padding:13px 0 12px 0;}
 .lst-table__row{display:flex;flex-wrap:wrap;font-size:14px;}
